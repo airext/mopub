@@ -10,6 +10,8 @@ import com.jirbo.adcolony.AdColonyAd;
 import com.jirbo.adcolony.AdColonyAdListener;
 import com.jirbo.adcolony.AdColonyVideoAd;
 import com.mopub.common.util.Json;
+import com.mopub.mobileads.CustomEventInterstitial;
+import com.mopub.mobileads.MoPubErrorCode;
 
 import java.util.Map;
 import java.util.concurrent.ScheduledThreadPoolExecutor;

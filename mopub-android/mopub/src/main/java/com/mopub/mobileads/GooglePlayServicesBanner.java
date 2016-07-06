@@ -1,4 +1,4 @@
-package com.sticksports.mopub.mobileads;
+package com.mopub.mobileads;
 
 import android.content.Context;
 import android.util.Log;
