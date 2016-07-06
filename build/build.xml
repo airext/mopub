@@ -9,7 +9,6 @@
 
     <property name="ios.project.dir" value="../${name}-ios/ANXMoPub" />
     <property name="air.project.dir" value="../${name}-air/${name}" />
-    <property name="air-default.project.dir" value="../${name}-air/${name}-default" />
     <property name="air-debug.project.dir" value="../${name}-air/${name}-debug" />
     <property name="android.project.dir" value="../${name}-android" />
 
@@ -22,7 +21,7 @@
     <!--                             Build All                               -->
     <!--=====================================================================-->
 
-    <target name="all" depends="ios,android,air,default,package" description="Full build of extension">
+    <target name="all" depends="android,air,package" description="Full build of extension">
         <exec executable="java">
             <arg value="-version" />
         </exec>
@@ -312,43 +311,6 @@
         <!-- Remove temporary folder -->
         <delete dir="temp/swc/build/"/>
     </target>
-
-    <!--=====================================================================-->
-    <!--                     Build AIR Default Library                       -->
-    <!--=====================================================================-->
-
-    <target name="default" description="Build default swc library">
-
-        <!-- Create temporary folder -->
-		<mkdir dir="temp/default/"/>
-
-        <!-- Gather classes for default .SWC library -->
-		<fileset dir="${air-default.project.dir}/src" casesensitive="yes" id="classfiles2">
-			<include name="**/*.as"/>
-		</fileset>
-		<pathconvert property="classlist-default" refid="classfiles2" pathsep=" " dirsep=".">
-			<regexpmapper from=".*src.(.*)\.as" to="\1"/>
-		</pathconvert>
-
-        <!-- Compile default .SWC library -->
-        <exec executable="java" failonerror="true">
-            <arg line='-jar ${air.sdk}/lib/compc-cli.jar' />
-            <arg line='-source-path ${air-default.project.dir}/src'/>
-            <arg line='-output temp/default/${name}.swc'/>
-            <arg line='-swf-version=13'/>
-            <arg line='-external-library-path+="${air.sdk}/frameworks/libs/air/airglobal.swc"'/>
-            <arg line='-include-classes ${classlist-default}'/>
-        </exec>
-
-        <!-- Unzip .SWC to copy internal library.swf file to default platform folder -->
-		<unzip src="temp/default/${name}.swc" dest="temp/default/swc" overwrite="true"/>
-
-        <!-- Copy library.swf to default platform folder -->
-		<copy file="temp/default/swc/library.swf" todir="temp/default" overwrite="true"/>
-
-        <!-- Remove temporary folder -->
-		<delete dir="temp/default/swc"/>
-	</target>
 
     <!--=====================================================================-->
     <!--                         Package ANE file                            -->
