@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Air Native Extension Build Scripts" default="all">
+
+    <!--=====================================================================-->
+    <!--                             Properties                              -->
+    <!--=====================================================================-->
+
+    <property name="name" value="mopub" />
+
+    <property name="ios.project.dir" value="../${name}-ios/ANXMoPub" />
+    <property name="air.project.dir" value="../${name}-air/${name}" />
+    <property name="air-default.project.dir" value="../${name}-air/${name}-default" />
+    <property name="air-debug.project.dir" value="../${name}-air/${name}-debug" />
+    <property name="android.project.dir" value="../${name}-android" />
+
+    <property name="mopub.android.sdk" value="mopub-sdk-4.7.0" />
+    <property name="play-services.version" value="9.2.0" />
+
+	<property file="build.properties"/>
+
+    <!--=====================================================================-->
+    <!--                             Build All                               -->
+    <!--=====================================================================-->
+
+    <target name="all" depends="ios,android,air,default,package" description="Full build of extension">
+        <exec executable="java">
+            <arg value="-version" />
+        </exec>
+    </target>
+
+    <!--=====================================================================-->
+    <!--                          Build iOS Library                          -->
+    <!--=====================================================================-->
+
+	<target name="ios" description="Build iOS Library">
+
+        <!-- Create temporary directory for iOS artifacts -->
+        <mkdir dir="temp/ios/build/"/>
+
+        <!-- Install Pods dependencies -->
+        <!--<exec executable="pod" dir="${ios.project.dir}">-->
+            <!--<arg value="install"/>-->
+        <!--</exec>-->
+
+        <!--&lt;!&ndash; Build iOS part of the extension &ndash;&gt;-->
+        <!--<exec executable="xcodebuild" failonerror="true" dir="${ios.project.dir}">-->
+            <!--<arg line='-project ANXMoPub.xcodeproj'/>-->
+            <!--<arg line='-sdk iphoneos' />-->
+            <!--<arg line="-target ANXMoPub"/>-->
+            <!--<arg line='-configuration Release'/>-->
+            <!--<arg line='SYMROOT=$(PWD)/../build/temp/ios/build'/>-->
+        <!--</exec>-->
+
+        <!--&lt;!&ndash; Build iOS-simulator part of the extension &ndash;&gt;-->
+        <!--<exec executable="xcodebuild" failonerror="true" dir="${ios.project.dir}">-->
+            <!--<arg line='-project ANXMoPub.xcodeproj'/>-->
+            <!--<arg line='-sdk iphonesimulator' />-->
+            <!--<arg line="-target ANXMoPub"/>-->
+            <!--<arg line='-configuration Release'/>-->
+            <!--<arg line='SYMROOT=$(PWD)/../build/temp/ios/build'/>-->
+        <!--</exec>-->
+
+        <!-- Build iOS part of the extension -->
+        <exec executable="xcodebuild" failonerror="true" dir="${ios.project.dir}">
+            <arg line='-workspace ANXMoPub.xcworkspace'/>
+            <arg line='-scheme ANXMoPub'/>
+            <arg line='-sdk iphoneos' />
+            <arg line='-configuration Release'/>
+            <arg line='SYMROOT=$(PWD)/../build/temp/ios/build'/>
+        </exec>
+
+        <!-- Build iOS-simulator part of the extension -->
+        <exec executable="xcodebuild" failonerror="true" dir="${ios.project.dir}">
+            <arg line='-workspace ANXMoPub.xcworkspace'/>
+            <arg line='-scheme ANXMoPub'/>
+            <arg line='-sdk iphonesimulator' />
+            <arg line='-configuration Release'/>
+            <arg line='SYMROOT=$(PWD)/../build/temp/ios/build'/>
+        </exec>
+
+        <!-- Copy iOS native part for iOS platform -->
+		<copy file="temp/ios/build/Release-iphoneos/libANXMoPub.a" todir="temp/ios" overwrite="true"/>
+
+        <!-- Copy iOS native part for iOS-Simulator platform -->
+        <copy file="temp/ios/build/Release-iphonesimulator/libANXMoPub.a" tofile="temp/ios-simulator/libANXMoPubSimulator.a" overwrite="true"/>
+
+        <!-- Copy iOS dependencies for iOS platform -->
+        <copy file="temp/ios/build/Release-iphoneos/libBraintree.a" todir="temp/ios" overwrite="true"/>
+        <copy file="${ios.project.dir}/Pods/Braintree/Braintree/PayPal/mSDK/libPayPalMobile-BT.a" todir="temp/ios" overwrite="true"/>
+
+        <!-- Copy iOS dependencies for iOS-Simualtor platform -->
+        <copy file="temp/ios/build/Release-iphoneos/libBraintree.a" todir="temp/ios-simulator" overwrite="true"/>
+        <copy file="${ios.project.dir}/Pods/Braintree/Braintree/PayPal/mSDK/libPayPalMobile-BT.a" todir="temp/ios-simulator" overwrite="true"/>
+
+        <!-- Remove temporary directory for iOS artifacts -->
+		<delete dir="temp/ios/build/"/>
+	</target>
+
+    <!--=====================================================================-->
+    <!--                        Build Android Library                        -->
+    <!--=====================================================================-->
+
+	<target name="android" description="Build android Library">
+
+        <!-- Builds Android part of the extension -->
+		<!-- Compiles Android project and makes .JAR -->
+		<exec executable="gradle" failonerror="true" dir="${android.project.dir}/${name}">
+			<arg line="jar" />
+			<arg line="--info" />
+		</exec>
+
+		<!-- Copy Android build artifacts to temporary build folder -->
+		<copy file="${android.project.dir}/${name}/build/libs/${name}.jar" tofile="temp/android/libANXMoPub.jar" overwrite="true"/>
+
+        <!-- Copy manifest to include it into ANE file -->
+        <copy file="${android.project.dir}/${name}/src/main/AndroidManifest.xml" todir="temp/android" overwrite="true"/>
+
+        <!-- Copy dependencies -->
+
+        <!-- Copy all .jar files from dependencies -->
+        <copy todir="temp/android" overwrite="true">
+            <fileset dir="${android.project.dir}/${name}/dependencies" includes="*.jar" excludes="FlashRuntimeExtensions.jar" />
+        </copy>
+
+        <!-- Extract mopub.aar file and copy .jar file and resources from it -->
+        <unzip src="${android.project.dir}/${name}/dependencies/${mopub.android.sdk}.aar" dest="temp/android/tmp/${mopub.android.sdk}" />
+        <copy file="temp/android/tmp/${mopub.android.sdk}/classes.jar" tofile="temp/android/${mopub.android.sdk}.jar" overwrite="true"/>
+        <copy todir="temp/android/${name}-res" overwrite="true">
+            <fileset dir="temp/android/tmp/${mopub.android.sdk}/res" includes="**/**.**" />
+        </copy>
+
+        <!-- Extract play-services-ads.aar file and copy .jar file and resources from it -->
+        <unzip src="${android.project.dir}/${name}/dependencies/play-services-ads-${play-services.version}.aar" dest="temp/android/tmp/play-services-ads-${play-services.version}" />
+        <copy file="temp/android/tmp/play-services-ads-${play-services.version}/classes.jar" tofile="temp/android/play-services-ads-${play-services.version}.jar" overwrite="true"/>
+        <copy todir="temp/android/google-play-services-ads-res" overwrite="true">
+            <fileset dir="temp/android/tmp/play-services-ads-${play-services.version}/res" includes="**/**.**" />
+        </copy>
+
+        <!-- Extract play-services-ads-lite.aar file and copy .jar file and resources from it -->
+        <unzip src="${android.project.dir}/${name}/dependencies/play-services-ads-lite-${play-services.version}.aar" dest="temp/android/tmp/play-services-ads-lite-${play-services.version}" />
+        <copy file="temp/android/tmp/play-services-ads-lite-${play-services.version}/classes.jar" tofile="temp/android/play-services-ads-lite-${play-services.version}.jar" overwrite="true"/>
+        <copy todir="temp/android/google-play-services-ads-lite-res" overwrite="true">
+            <fileset dir="temp/android/tmp/play-services-ads-lite-${play-services.version}/res" includes="**/**.**" />
+        </copy>
+
+        <!-- Extract play-services-base.aar file and copy .jar file and resources from it -->
+        <unzip src="${android.project.dir}/${name}/dependencies/play-services-base-${play-services.version}.aar" dest="temp/android/tmp/play-services-base-${play-services.version}" />
+        <copy file="temp/android/tmp/play-services-base-${play-services.version}/classes.jar" tofile="temp/android/play-services-base-${play-services.version}.jar" overwrite="true"/>
+        <copy todir="temp/android/google-play-services-base-res" overwrite="true">
+            <fileset dir="temp/android/tmp/play-services-base-${play-services.version}/res" includes="**/**.**" />
+        </copy>
+
+        <!-- Extract play-services-basement.aar file and copy .jar file and resources from it -->
+        <unzip src="${android.project.dir}/${name}/dependencies/play-services-basement-${play-services.version}.aar" dest="temp/android/tmp/play-services-basement-${play-services.version}" />
+        <copy file="temp/android/tmp/play-services-basement-${play-services.version}/classes.jar" tofile="temp/android/play-services-basement-${play-services.version}.jar" overwrite="true"/>
+        <copy todir="temp/android/google-play-services-basement-res" overwrite="true">
+            <fileset dir="temp/android/tmp/play-services-basement-${play-services.version}/res" includes="**/**.**" />
+        </copy>
+
+        <!-- Extract play-services-clearcut.aar file and copy .jar file and resources from it -->
+        <unzip src="${android.project.dir}/${name}/dependencies/play-services-clearcut-${play-services.version}.aar" dest="temp/android/tmp/play-services-clearcut-${play-services.version}" />
+        <copy file="temp/android/tmp/play-services-clearcut-${play-services.version}/classes.jar" tofile="temp/android/play-services-clearcut-${play-services.version}.jar" overwrite="true"/>
+        <copy todir="temp/android/google-play-services-clearcut-res" overwrite="true">
+            <fileset dir="temp/android/tmp/play-services-clearcut-${play-services.version}/res" includes="**/**.**" />
+        </copy>
+
+        <!-- Extract play-services-gass.aar file and copy .jar file and resources from it -->
+        <unzip src="${android.project.dir}/${name}/dependencies/play-services-gass-${play-services.version}.aar" dest="temp/android/tmp/play-services-gass-${play-services.version}" />
+        <copy file="temp/android/tmp/play-services-gass-${play-services.version}/classes.jar" tofile="temp/android/play-services-gass-${play-services.version}.jar" overwrite="true"/>
+        <copy todir="temp/android/google-play-services-gass-res" overwrite="true">
+            <fileset dir="temp/android/tmp/play-services-gass-${play-services.version}/res" includes="**/**.**" />
+        </copy>
+
+        <!-- Extract play-services-tasks.aar file and copy .jar file and resources from it -->
+        <unzip src="${android.project.dir}/${name}/dependencies/play-services-tasks-${play-services.version}.aar" dest="temp/android/tmp/play-services-tasks-${play-services.version}" />
+        <copy file="temp/android/tmp/play-services-tasks-${play-services.version}/classes.jar" tofile="temp/android/play-services-tasks-${play-services.version}.jar" overwrite="true"/>
+        <copy todir="temp/android/google-play-services-tasks-res" overwrite="true">
+            <fileset dir="temp/android/tmp/play-services-tasks-${play-services.version}/res" includes="**/**.**" />
+        </copy>
+
+        <!-- Android Support v4 -->
+        <copy file="${android.sdk}/extras/android/support/v4/android-support-v4.jar" todir="temp/android/" />
+
+        <!-- Android Support Annotations -->
+        <copy file="${android.sdk}/extras/android/support/annotations/android-support-annotations.jar" todir="temp/android/" />
+
+        <!-- RecylerView -->
+        <copy file="${android.sdk}/extras/android/support/v7/recyclerview/libs/android-support-v7-recyclerview.jar" todir="temp/android/" />
+        <copy todir="temp/android/android-support-v7-recyclerview-res">
+            <fileset dir="${android.sdk}/extras/android/support/v7/recyclerview/res"/>
+        </copy>
+
+        <!-- Remove temporary directory for Android artifacts -->
+        <delete dir="temp/android/tmp" />
+	</target>
+
+    <!--=====================================================================-->
+    <!--                         Build AIR Library                           -->
+    <!--=====================================================================-->
+
+    <target name="air" description="Build swc library" depends="ios.swc, android.swc, default.swc">
+
+	</target>
+
+    <!-- ActionScript iOS -->
+    <target name="ios.swc" description="Build iOS SWC library">
+
+        <!-- Create temporary directory -->
+        <mkdir dir="temp/swc/build/"/>
+
+        <echo message="Building iOS SWC library ..."/>
+        <fileset dir="${air.project.dir}" casesensitive="yes" id="classfiles.ios">
+            <include name="src/common/com/**/*.as"  />
+            <include name="src/ios/com/**/*.as" />
+        </fileset>
+
+        <pathconvert property="classlist.ios" refid="classfiles.ios" pathsep=" " dirsep=".">
+            <regexpmapper from=".*src.\w+.(.*)\.as" to="\1" />
+        </pathconvert>
+
+        <!-- Compile .SWC library -->
+        <exec executable="java" failonerror="true">
+            <arg line='-jar ${air.sdk}/lib/compc-cli.jar' />
+            <arg line='-source-path ${air.project.dir}/src/common'/>
+            <arg line='-source-path+=${air.project.dir}/src/ios'/>
+            <arg line='-output temp/swc/ios/${name}.swc'/>
+            <!-- <arg line='-swf-version=13'/> -->
+            <arg line='-external-library-path+="${air.sdk}/frameworks/libs/air/airglobal.swc"'/>
+            <arg line='-include-classes ${classlist.ios}'/>
+        </exec>
+        
+        <!-- Unzip .SWC to copy internal library.swf file to corresponded platfom folders -->
+        <unzip src="temp/swc/ios/${name}.swc" dest="temp/swc/build" overwrite="true"/>
+
+        <!-- Copy library.swf to iOS platform folder -->
+        <copy file="temp/swc/build/library.swf" todir="temp/ios" overwrite="true"/>
+
+        <!-- Remove temporary folder -->
+        <delete dir="temp/swc/build/"/>
+    </target>
+
+    <!-- ActionScript Android -->
+    <target name="android.swc" description="Build Android SWC library">
+
+        <!-- Create temporary directory -->
+        <mkdir dir="temp/swc/build/"/>
+
+        <echo message="Building Android SWC library ..."/>
+        <fileset dir="${air.project.dir}" casesensitive="yes" id="classfiles.android">
+            <include name="src/common/com/**/*.as"  />
+            <include name="src/android/com/**/*.as" />
+        </fileset>
+
+        <pathconvert property="classlist.android" refid="classfiles.android" pathsep=" " dirsep=".">
+            <regexpmapper from=".*src.\w+.(.*)\.as" to="\1" />
+        </pathconvert>
+
+        <!-- Compile .SWC library -->
+        <exec executable="java" failonerror="true">
+            <arg line='-jar ${air.sdk}/lib/compc-cli.jar' />
+            <arg line='-source-path ${air.project.dir}/src/common'/>
+            <arg line='-source-path+=${air.project.dir}/src/android'/>
+            <arg line='-output temp/swc/android/${name}.swc'/>
+            <!-- <arg line='-swf-version=13'/> -->
+            <arg line='-external-library-path+="${air.sdk}/frameworks/libs/air/airglobal.swc"'/>
+            <arg line='-include-classes ${classlist.android}'/>
+        </exec>
+        
+        <!-- Unzip .SWC to copy internal library.swf file to corresponded platfom folders -->
+        <unzip src="temp/swc/android/${name}.swc" dest="temp/swc/build" overwrite="true"/>
+
+        <!-- Copy library.swf to Android platform folder -->
+        <copy file="temp/swc/build/library.swf" todir="temp/android" overwrite="true"/>
+
+        <!-- Remove temporary folder -->
+        <delete dir="temp/swc/build/"/>
+    </target>
+
+    <!-- ActionScript Default -->
+    <target name="default.swc" description="Build Default SWC library">
+
+        <!-- Create temporary directory -->
+        <mkdir dir="temp/swc/build/"/>
+
+        <echo message="Building Default SWC library ..."/>
+        <fileset dir="${air.project.dir}" casesensitive="yes" id="classfiles.default">
+            <include name="src/common/com/**/*.as"  />
+            <include name="src/default/com/**/*.as" />
+        </fileset>
+
+        <pathconvert property="classlist.default" refid="classfiles.default" pathsep=" " dirsep=".">
+            <regexpmapper from=".*src.\w+.(.*)\.as" to="\1" />
+        </pathconvert>
+
+        <!-- Compile .SWC library -->
+        <exec executable="java" failonerror="true">
+            <arg line='-jar ${air.sdk}/lib/compc-cli.jar' />
+            <arg line='-source-path ${air.project.dir}/src/common'/>
+            <arg line='-source-path+=${air.project.dir}/src/default'/>
+            <arg line='-output temp/swc/default/${name}.swc'/>
+            <!-- <arg line='-swf-version=13'/> -->
+            <arg line='-external-library-path+="${air.sdk}/frameworks/libs/air/airglobal.swc"'/>
+            <arg line='-include-classes ${classlist.default}'/>
+        </exec>
+        
+        <!-- Unzip .SWC to copy internal library.swf file to corresponded platfom folders -->
+        <unzip src="temp/swc/default/${name}.swc" dest="temp/swc/build" overwrite="true"/>
+
+        <!-- Copy library.swf to Default platform folder -->
+        <copy file="temp/swc/build/library.swf" todir="temp/default" overwrite="true"/>
+
+        <!-- Remove temporary folder -->
+        <delete dir="temp/swc/build/"/>
+    </target>
+
+    <!--=====================================================================-->
+    <!--                     Build AIR Default Library                       -->
+    <!--=====================================================================-->
+
+    <target name="default" description="Build default swc library">
+
+        <!-- Create temporary folder -->
+		<mkdir dir="temp/default/"/>
+
+        <!-- Gather classes for default .SWC library -->
+		<fileset dir="${air-default.project.dir}/src" casesensitive="yes" id="classfiles2">
+			<include name="**/*.as"/>
+		</fileset>
+		<pathconvert property="classlist-default" refid="classfiles2" pathsep=" " dirsep=".">
+			<regexpmapper from=".*src.(.*)\.as" to="\1"/>
+		</pathconvert>
+
+        <!-- Compile default .SWC library -->
+        <exec executable="java" failonerror="true">
+            <arg line='-jar ${air.sdk}/lib/compc-cli.jar' />
+            <arg line='-source-path ${air-default.project.dir}/src'/>
+            <arg line='-output temp/default/${name}.swc'/>
+            <arg line='-swf-version=13'/>
+            <arg line='-external-library-path+="${air.sdk}/frameworks/libs/air/airglobal.swc"'/>
+            <arg line='-include-classes ${classlist-default}'/>
+        </exec>
+
+        <!-- Unzip .SWC to copy internal library.swf file to default platform folder -->
+		<unzip src="temp/default/${name}.swc" dest="temp/default/swc" overwrite="true"/>
+
+        <!-- Copy library.swf to default platform folder -->
+		<copy file="temp/default/swc/library.swf" todir="temp/default" overwrite="true"/>
+
+        <!-- Remove temporary folder -->
+		<delete dir="temp/default/swc"/>
+	</target>
+
+    <!--=====================================================================-->
+    <!--                         Package ANE file                            -->
+    <!--=====================================================================-->
+
+    <target name="package" description="Create the extension package">
+
+        <!-- Package ANE file-->
+        <exec executable="java" failonerror="true" dir="temp">
+            <arg line='-jar ${air.sdk}/lib/adt.jar' />
+            <arg line="-package"/>
+            <arg line="-storetype"/>
+            <arg line="pkcs12"/>
+            <arg line="-keystore"/>
+            <arg line="${keystore.file}"/>
+            <arg line="-storepass"/>
+            <arg line="${keystore.password}"/>
+            <arg line="-target"/>
+            <arg line="ane"/>
+            <arg line="${name}.ane"/>
+            <arg line="../extension.xml"/>
+            <arg line="-swc swc/default/${name}.swc"/>
+            <!-- <arg line="-platform iPhone-ARM -platformoptions ../platform-ios.xml -C ios/ ."/> -->
+            <!-- <arg line="-platform iPhone-x86 -platformoptions ../platform-ios.xml -C ios-simulator/ ."/> -->
+            <arg line="-platform Android-ARM -platformoptions ../platform-android.xml -C android/ ."/>
+            <arg line="-platform Android-x86 -platformoptions ../platform-android.xml -C android/ ."/>
+            <arg line="-platform default -C default/ ."/>
+        </exec>
+
+        <!-- Move packaged .ANE file to /bin directory -->
+        <move file="temp/${name}.ane" todir="../bin"/>
+
+        <!-- Move default .SWC library to /bin directory -->
+        <copy file="temp/swc/default/${name}.swc" todir="../bin"/>
+
+        <!-- Remove temporary directory -->
+        <!-- <delete dir="temp"/> -->
+    </target>
+
+</project>

@@ -1,0 +1,4 @@
+build/temp
+build.properties
+dependencies/
+bin-debug/
