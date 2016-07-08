@@ -23,11 +23,11 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:23.4.0'
 
+    compile 'com.google.android.gms:play-services-ads:9.2.0'
+
     compile files('libs/FlashRuntimeExtensions.jar')
-    compile files('libs/vungle-publisher-adaptive-id-3.3.5.jar')
-    compile files('libs/dagger-2.1.jar')
-    compile files('libs/javax.inject-1.jar')
 }
+
 
 task copyDependencies(type: Copy) {
     from configurations.compile
@@ -35,7 +35,7 @@ task copyDependencies(type: Copy) {
 }
 
 task clearJar(type: Delete) {
-    delete 'build/mopub-vungle.jar'
+    delete 'build/mopub-admob.jar'
 }
 
 task jar(type: Jar) {

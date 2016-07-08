@@ -13,6 +13,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 import com.mopub.mobileads.MoPubErrorCode;
 import com.mopub.mobileads.MoPubInterstitial;
+import com.mopub.mobileads.MoPubView;
 import com.vungle.publisher.VunglePub;
 
 public class MainActivity extends AppCompatActivity implements MoPubInterstitial.InterstitialAdListener {
@@ -22,11 +23,18 @@ public class MainActivity extends AppCompatActivity implements MoPubInterstitial
 
     private MoPubInterstitial mInterstitial;
 
+    private MoPubView moPubView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        setContentView(R.layout.activity_main);
+
         // MoPub
+
+        moPubView = (MoPubView) findViewById(R.id.adview);
+        moPubView.setAdUnitId("12d45ab3263f45f6bba2661d1dec5931");
 
 //        mInterstitial = new MoPubInterstitial(this, "541b4aa543cc483388d2573a763c2c21");
         mInterstitial = new MoPubInterstitial(this, "089b926b2209400099455b0b33143e5a");
@@ -42,7 +50,7 @@ public class MainActivity extends AppCompatActivity implements MoPubInterstitial
 
         // Rest
 
-        setContentView(R.layout.activity_main);
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -102,6 +110,11 @@ public class MainActivity extends AppCompatActivity implements MoPubInterstitial
     }
 
     // Handlers
+
+    public void loadMoPubBanner(View view)
+    {
+        moPubView.loadAd();
+    }
 
     public void showVungleInterstitial(View view)
     {

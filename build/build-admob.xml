@@ -5,16 +5,18 @@
     <!--                             Properties                              -->
     <!--=====================================================================-->
 
-    <property name="network" value="vungle" />
+    <property name="network" value="admob" />
     <property name="extension" value="mopub-${network}" />
-    
-    <property name="lib.name" value="libANXMoPubVungleSupport" />
+
+    <property name="lib.name" value="libANXMoPubMoPubSupport" />
 
     <property name="temp.dir" value="temp/${network}" />
 
     <property name="network.ios.project.dir" value="../mopub-ios/ANXMoPub" />
     <property name="network.air.project.dir" value="../mopub-air/${extension}" />
     <property name="network.android.project.dir" value="../mopub-android/${extension}" />
+
+    <property name="play-services.version" value="9.2.0" />
 
     <property file="build.properties"/>
 
@@ -39,25 +41,25 @@
 
         <!-- Install Pods dependencies -->
         <!--<exec executable="pod" dir="${network.ios.project.dir}">-->
-            <!--<arg value="install"/>-->
+        <!--<arg value="install"/>-->
         <!--</exec>-->
 
         <!--&lt;!&ndash; Build iOS part of the extension &ndash;&gt;-->
         <!--<exec executable="xcodebuild" failonerror="true" dir="${network.ios.project.dir}">-->
-            <!--<arg line='-project ANXMoPub.xcodeproj'/>-->
-            <!--<arg line='-sdk iphoneos' />-->
-            <!--<arg line="-target ANXMoPub"/>-->
-            <!--<arg line='-configuration Release'/>-->
-            <!--<arg line='SYMROOT=$(PWD)/../build/${temp.dir}/ios/build'/>-->
+        <!--<arg line='-project ANXMoPub.xcodeproj'/>-->
+        <!--<arg line='-sdk iphoneos' />-->
+        <!--<arg line="-target ANXMoPub"/>-->
+        <!--<arg line='-configuration Release'/>-->
+        <!--<arg line='SYMROOT=$(PWD)/../build/${temp.dir}/ios/build'/>-->
         <!--</exec>-->
 
         <!--&lt;!&ndash; Build iOS-simulator part of the extension &ndash;&gt;-->
         <!--<exec executable="xcodebuild" failonerror="true" dir="${network.ios.project.dir}">-->
-            <!--<arg line='-project ANXMoPub.xcodeproj'/>-->
-            <!--<arg line='-sdk iphonesimulator' />-->
-            <!--<arg line="-target ANXMoPub"/>-->
-            <!--<arg line='-configuration Release'/>-->
-            <!--<arg line='SYMROOT=$(PWD)/../build/${temp.dir}/ios/build'/>-->
+        <!--<arg line='-project ANXMoPub.xcodeproj'/>-->
+        <!--<arg line='-sdk iphonesimulator' />-->
+        <!--<arg line="-target ANXMoPub"/>-->
+        <!--<arg line='-configuration Release'/>-->
+        <!--<arg line='SYMROOT=$(PWD)/../build/${temp.dir}/ios/build'/>-->
         <!--</exec>-->
 
         <!-- Build iOS part of the extension -->
@@ -125,6 +127,55 @@
             <fileset dir="${network.android.project.dir}/dependencies" includes="*.jar" excludes="FlashRuntimeExtensions.jar" />
         </copy>
 
+        <!-- Extract play-services-ads.aar file and copy .jar file and resources from it -->
+        <unzip src="${network.android.project.dir}/dependencies/play-services-ads-${play-services.version}.aar" dest="${temp.dir}/android/tmp/play-services-ads-${play-services.version}" />
+        <copy file="${temp.dir}/android/tmp/play-services-ads-${play-services.version}/classes.jar" tofile="${temp.dir}/android/play-services-ads-${play-services.version}.jar" overwrite="true"/>
+        <copy todir="${temp.dir}/android/google-play-services-ads-res" overwrite="true">
+        <fileset dir="${temp.dir}/android/tmp/play-services-ads-${play-services.version}/res" includes="**/**.**" />
+        </copy>
+
+        <!-- Extract play-services-ads-lite.aar file and copy .jar file and resources from it -->
+        <unzip src="${network.android.project.dir}/dependencies/play-services-ads-lite-${play-services.version}.aar" dest="${temp.dir}/android/tmp/play-services-ads-lite-${play-services.version}" />
+        <copy file="${temp.dir}/android/tmp/play-services-ads-lite-${play-services.version}/classes.jar" tofile="${temp.dir}/android/play-services-ads-lite-${play-services.version}.jar" overwrite="true"/>
+        <copy todir="${temp.dir}/android/google-play-services-ads-lite-res" overwrite="true">
+        <fileset dir="${temp.dir}/android/tmp/play-services-ads-lite-${play-services.version}/res" includes="**/**.**" />
+        </copy>
+
+        <!-- Extract play-services-base.aar file and copy .jar file and resources from it -->
+        <unzip src="${network.android.project.dir}/dependencies/play-services-base-${play-services.version}.aar" dest="${temp.dir}/android/tmp/play-services-base-${play-services.version}" />
+        <copy file="${temp.dir}/android/tmp/play-services-base-${play-services.version}/classes.jar" tofile="${temp.dir}/android/play-services-base-${play-services.version}.jar" overwrite="true"/>
+        <copy todir="${temp.dir}/android/google-play-services-base-res" overwrite="true">
+        <fileset dir="${temp.dir}/android/tmp/play-services-base-${play-services.version}/res" includes="**/**.**" />
+        </copy>
+
+        <!-- Extract play-services-basement.aar file and copy .jar file and resources from it -->
+        <unzip src="${network.android.project.dir}/dependencies/play-services-basement-${play-services.version}.aar" dest="${temp.dir}/android/tmp/play-services-basement-${play-services.version}" />
+        <copy file="${temp.dir}/android/tmp/play-services-basement-${play-services.version}/classes.jar" tofile="${temp.dir}/android/play-services-basement-${play-services.version}.jar" overwrite="true"/>
+        <copy todir="${temp.dir}/android/google-play-services-basement-res" overwrite="true">
+        <fileset dir="${temp.dir}/android/tmp/play-services-basement-${play-services.version}/res" includes="**/**.**" />
+        </copy>
+
+        <!-- Extract play-services-clearcut.aar file and copy .jar file and resources from it -->
+        <unzip src="${network.android.project.dir}/dependencies/play-services-clearcut-${play-services.version}.aar" dest="${temp.dir}/android/tmp/play-services-clearcut-${play-services.version}" />
+        <copy file="${temp.dir}/android/tmp/play-services-clearcut-${play-services.version}/classes.jar" tofile="${temp.dir}/android/play-services-clearcut-${play-services.version}.jar" overwrite="true"/>
+        <copy todir="${temp.dir}/android/google-play-services-clearcut-res" overwrite="true">
+        <fileset dir="${temp.dir}/android/tmp/play-services-clearcut-${play-services.version}/res" includes="**/**.**" />
+        </copy>
+
+        <!-- Extract play-services-gass.aar file and copy .jar file and resources from it -->
+        <unzip src="${network.android.project.dir}/dependencies/play-services-gass-${play-services.version}.aar" dest="${temp.dir}/android/tmp/play-services-gass-${play-services.version}" />
+        <copy file="${temp.dir}/android/tmp/play-services-gass-${play-services.version}/classes.jar" tofile="${temp.dir}/android/play-services-gass-${play-services.version}.jar" overwrite="true"/>
+        <copy todir="${temp.dir}/android/google-play-services-gass-res" overwrite="true">
+        <fileset dir="${temp.dir}/android/tmp/play-services-gass-${play-services.version}/res" includes="**/**.**" />
+        </copy>
+
+        <!-- Extract play-services-tasks.aar file and copy .jar file and resources from it -->
+        <unzip src="${network.android.project.dir}/dependencies/play-services-tasks-${play-services.version}.aar" dest="${temp.dir}/android/tmp/play-services-tasks-${play-services.version}" />
+        <copy file="${temp.dir}/android/tmp/play-services-tasks-${play-services.version}/classes.jar" tofile="${temp.dir}/android/play-services-tasks-${play-services.version}.jar" overwrite="true"/>
+        <copy todir="${temp.dir}/android/google-play-services-tasks-res" overwrite="true">
+        <fileset dir="${temp.dir}/android/tmp/play-services-tasks-${play-services.version}/res" includes="**/**.**" />
+        </copy>
+
         <!-- Remove temporary directory for Android artifacts -->
         <delete dir="${temp.dir}/android/tmp" />
     </target>
@@ -161,7 +212,7 @@
             <arg line='-external-library-path+="${air.sdk}/frameworks/libs/air/airglobal.swc"'/>
             <arg line='-include-classes ${classlist.main}'/>
         </exec>
-        
+
         <!-- Unzip .SWC to copy internal library.swf file to corresponded platfom folders -->
         <unzip src="${temp.dir}/swc/ios/${extension}.swc" dest="${temp.dir}/swc/build" overwrite="true"/>
 
@@ -194,12 +245,13 @@
         <exec executable="java" failonerror="true">
             <arg line='-jar ${air.sdk}/lib/compc-cli.jar' />
             <arg line='-source-path ${network.air.project.dir}/src/default'/>
+            <arg line='-source-path+=${network.air.project.dir}/src/default'/>
             <arg line='-output ${temp.dir}/swc/default/${extension}.swc'/>
             <!-- <arg line='-swf-version=13'/> -->
             <arg line='-external-library-path+="${air.sdk}/frameworks/libs/air/airglobal.swc"'/>
             <arg line='-include-classes ${classlist.default}'/>
         </exec>
-        
+
         <!-- Unzip .SWC to copy internal library.swf file to corresponded platfom folders -->
         <unzip src="${temp.dir}/swc/default/${extension}.swc" dest="${temp.dir}/swc/build" overwrite="true"/>
 

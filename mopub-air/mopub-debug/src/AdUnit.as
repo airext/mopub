@@ -14,9 +14,9 @@ package {
 		public static const MP_INTERSTITIAL:String = "AdUnit.MoPub.Interstitial";
 		
 		// MOPUB AD UNITS IDS :
-		private static const BANNER_ANDROID_PHONE:String = BANNER_ANDROID_PHONE_CHARTBOOST;
+		private static const BANNER_ANDROID_PHONE:String = BANNER_ANDROID_PHONE_ADMOB;
 		private static const BANNER_ANDROID_PHONE_MOPUB:String = "5663bb9010164d7cb435d2e6be6b3e6c";
-		private static const BANNER_ANDROID_PHONE_ADMOB:String = "2ab8ae5afc104ae990aa2033227925d7";
+		private static const BANNER_ANDROID_PHONE_ADMOB:String = "12d45ab3263f45f6bba2661d1dec5931";//"2ab8ae5afc104ae990aa2033227925d7";
 		private static const BANNER_ANDROID_PHONE_CHARTBOOST:String = "423fd616ce2746129dd482cb1adb2b56";
 		private static const BANNER_ANDROID_TABLET:String = "e7ce950d4d444cdb9d243d859f016248";
 

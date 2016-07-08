@@ -6,52 +6,11 @@
         <packagedDependency>android-support-v7-recyclerview.jar</packagedDependency>
         <packagedDependency>mopub-volley-1.1.0.jar</packagedDependency>
 
-        <packagedDependency>play-services-ads-9.2.0.jar</packagedDependency>
-        <packagedDependency>play-services-ads-lite-9.2.0.jar</packagedDependency>
-        <packagedDependency>play-services-base-9.2.0.jar</packagedDependency>
-        <packagedDependency>play-services-basement-9.2.0.jar</packagedDependency>
-        <packagedDependency>play-services-clearcut-9.2.0.jar</packagedDependency>
-        <packagedDependency>play-services-gass-9.2.0.jar</packagedDependency>
-        <packagedDependency>play-services-tasks-9.2.0.jar</packagedDependency>
-
-        <packagedDependency>chartboost.jar</packagedDependency>
+        <!--<packagedDependency>chartboost.jar</packagedDependency>-->
 
     </packagedDependencies>
 
     <packagedResources>
-       <!--  
-       <packagedResource> 
-            <packageName>com.google.android.gms</packageName> 
-            <folderName>google-play-services-ads-res</folderName> 
-        </packagedResource> 
-        -->
-        <packagedResource> 
-            <packageName>com.google.android.gms</packageName> 
-            <folderName>google-play-services-ads-lite-res</folderName> 
-        </packagedResource>
-         <packagedResource> 
-            <packageName>com.google.android.gms</packageName> 
-            <folderName>google-play-services-base-res</folderName> 
-        </packagedResource>
-         <packagedResource> 
-            <packageName>com.google.android.gms</packageName> 
-            <folderName>google-play-services-basement-res</folderName> 
-        </packagedResource>
-        <!-- 
-        <packagedResource> 
-            <packageName>com.google.android.gms</packageName> 
-            <folderName>google-play-services-clearcut-res</folderName> 
-        </packagedResource>
-        <packagedResource> 
-            <packageName>com.google.android.gms</packageName> 
-            <folderName>google-play-services-gass-res</folderName> 
-        </packagedResource>
-        <packagedResource> 
-            <packageName>com.google.android.gms</packageName> 
-            <folderName>google-play-services-tasks-res</folderName> 
-        </packagedResource> 
-        -->
-
         <packagedResource>
             <packageName>android.support.v7</packageName>
             <folderName>android-support-v7-recyclerview-res</folderName>

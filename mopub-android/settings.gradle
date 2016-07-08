@@ -1,1 +1,1 @@
-include ':app', ':mopub', ':mopub', ':mopub-vungle'
+include ':app', ':mopub', ':mopub', ':mopub-vungle', ':mopub-admob'

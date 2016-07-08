@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/mopub/mopub.iml" filepath="$PROJECT_DIR$/mopub/mopub.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mopub-admob/mopub-admob.iml" filepath="$PROJECT_DIR$/mopub-admob/mopub-admob.iml" />
       <module fileurl="file://$PROJECT_DIR$/mopub-debug/mopub-debug.iml" filepath="$PROJECT_DIR$/mopub-debug/mopub-debug.iml" />
       <module fileurl="file://$PROJECT_DIR$/mopub-default/mopub-default.iml" filepath="$PROJECT_DIR$/mopub-default/mopub-default.iml" />
       <module fileurl="file://$PROJECT_DIR$/mopub-vungle/mopub-vungle.iml" filepath="$PROJECT_DIR$/mopub-vungle/mopub-vungle.iml" />

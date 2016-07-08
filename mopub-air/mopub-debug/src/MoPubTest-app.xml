@@ -118,6 +118,7 @@
 
     <extensions>
         <extensionID>com.sticksports.nativeExtensions.MoPub</extensionID>
+        <extensionID>com.sticksports.nativeExtensions.mopub.admob</extensionID>
         <extensionID>com.sticksports.nativeExtensions.mopub.vungle</extensionID>
     </extensions>
 
