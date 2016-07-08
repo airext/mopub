@@ -14,9 +14,16 @@ package {
 		public static const MP_INTERSTITIAL:String = "AdUnit.MoPub.Interstitial";
 		
 		// MOPUB AD UNITS IDS :
-		private static const BANNER_ANDROID_PHONE:String = "5663bb9010164d7cb435d2e6be6b3e6c";
+		private static const BANNER_ANDROID_PHONE:String = BANNER_ANDROID_PHONE_CHARTBOOST;
+		private static const BANNER_ANDROID_PHONE_MOPUB:String = "5663bb9010164d7cb435d2e6be6b3e6c";
+		private static const BANNER_ANDROID_PHONE_ADMOB:String = "2ab8ae5afc104ae990aa2033227925d7";
+		private static const BANNER_ANDROID_PHONE_CHARTBOOST:String = "423fd616ce2746129dd482cb1adb2b56";
 		private static const BANNER_ANDROID_TABLET:String = "e7ce950d4d444cdb9d243d859f016248";
-		private static const INTERSTITIAL_ANDROID_PHONE:String = "b3e4dae0310f464b9d1d0903494dcc5a";
+
+		private static const INTERSTITIAL_ANDROID_PHONE:String = INTERSTITIAL_ANDROID_PHONE_VUNGLE;//"0d79197382d941ab9f01f578553d9600";
+		private static const INTERSTITIAL_ANDROID_PHONE_MOPUB:String = "0d79197382d941ab9f01f578553d9600";
+		private static const INTERSTITIAL_ANDROID_PHONE_CHARTBOOST:String = "5b118a58e2484be0a71bb2f5ed25e273";
+		private static const INTERSTITIAL_ANDROID_PHONE_VUNGLE:String = "089b926b2209400099455b0b33143e5a";
 		private static const INTERSTITIAL_ANDROID_TABLET:String = "f5451b6962de4f4b99df56e4ed47e725";
 		
 		private static const BANNER_IOS_PHONE:String = "9ffc32d8454a42bc93effafe5d38ecc2";

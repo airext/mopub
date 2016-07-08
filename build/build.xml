@@ -10,7 +10,7 @@
     <property name="ios.project.dir" value="../${name}-ios/ANXMoPub" />
     <property name="air.project.dir" value="../${name}-air/${name}" />
     <property name="air-debug.project.dir" value="../${name}-air/${name}-debug" />
-    <property name="android.project.dir" value="../${name}-android" />
+    <property name="android.project.dir" value="../${name}-android/${name}" />
 
     <property name="mopub.android.sdk" value="mopub-sdk-4.7.0" />
     <property name="play-services.version" value="9.2.0" />
@@ -103,75 +103,75 @@
 
         <!-- Builds Android part of the extension -->
 		<!-- Compiles Android project and makes .JAR -->
-		<exec executable="gradle" failonerror="true" dir="${android.project.dir}/${name}">
-			<arg line="jar" />
+		<exec executable="gradle" failonerror="true" dir="${android.project.dir}">
+			<arg line=":${name}:jar" />
 			<arg line="--info" />
 		</exec>
 
 		<!-- Copy Android build artifacts to temporary build folder -->
-		<copy file="${android.project.dir}/${name}/build/libs/${name}.jar" tofile="temp/android/libANXMoPub.jar" overwrite="true"/>
+		<copy file="${android.project.dir}/build/libs/${name}.jar" tofile="temp/android/libANXMoPub.jar" overwrite="true"/>
 
         <!-- Copy manifest to include it into ANE file -->
-        <copy file="${android.project.dir}/${name}/src/main/AndroidManifest.xml" todir="temp/android" overwrite="true"/>
+        <copy file="${android.project.dir}/src/main/AndroidManifest.xml" todir="temp/android" overwrite="true"/>
 
         <!-- Copy dependencies -->
 
         <!-- Copy all .jar files from dependencies -->
         <copy todir="temp/android" overwrite="true">
-            <fileset dir="${android.project.dir}/${name}/dependencies" includes="*.jar" excludes="FlashRuntimeExtensions.jar" />
+            <fileset dir="${android.project.dir}/dependencies" includes="*.jar" excludes="FlashRuntimeExtensions.jar" />
         </copy>
 
         <!-- Extract mopub.aar file and copy .jar file and resources from it -->
-        <unzip src="${android.project.dir}/${name}/dependencies/${mopub.android.sdk}.aar" dest="temp/android/tmp/${mopub.android.sdk}" />
+        <unzip src="${android.project.dir}/dependencies/${mopub.android.sdk}.aar" dest="temp/android/tmp/${mopub.android.sdk}" />
         <copy file="temp/android/tmp/${mopub.android.sdk}/classes.jar" tofile="temp/android/${mopub.android.sdk}.jar" overwrite="true"/>
         <copy todir="temp/android/${name}-res" overwrite="true">
             <fileset dir="temp/android/tmp/${mopub.android.sdk}/res" includes="**/**.**" />
         </copy>
 
         <!-- Extract play-services-ads.aar file and copy .jar file and resources from it -->
-        <unzip src="${android.project.dir}/${name}/dependencies/play-services-ads-${play-services.version}.aar" dest="temp/android/tmp/play-services-ads-${play-services.version}" />
+        <unzip src="${android.project.dir}/dependencies/play-services-ads-${play-services.version}.aar" dest="temp/android/tmp/play-services-ads-${play-services.version}" />
         <copy file="temp/android/tmp/play-services-ads-${play-services.version}/classes.jar" tofile="temp/android/play-services-ads-${play-services.version}.jar" overwrite="true"/>
         <copy todir="temp/android/google-play-services-ads-res" overwrite="true">
             <fileset dir="temp/android/tmp/play-services-ads-${play-services.version}/res" includes="**/**.**" />
         </copy>
 
         <!-- Extract play-services-ads-lite.aar file and copy .jar file and resources from it -->
-        <unzip src="${android.project.dir}/${name}/dependencies/play-services-ads-lite-${play-services.version}.aar" dest="temp/android/tmp/play-services-ads-lite-${play-services.version}" />
+        <unzip src="${android.project.dir}/dependencies/play-services-ads-lite-${play-services.version}.aar" dest="temp/android/tmp/play-services-ads-lite-${play-services.version}" />
         <copy file="temp/android/tmp/play-services-ads-lite-${play-services.version}/classes.jar" tofile="temp/android/play-services-ads-lite-${play-services.version}.jar" overwrite="true"/>
         <copy todir="temp/android/google-play-services-ads-lite-res" overwrite="true">
             <fileset dir="temp/android/tmp/play-services-ads-lite-${play-services.version}/res" includes="**/**.**" />
         </copy>
 
         <!-- Extract play-services-base.aar file and copy .jar file and resources from it -->
-        <unzip src="${android.project.dir}/${name}/dependencies/play-services-base-${play-services.version}.aar" dest="temp/android/tmp/play-services-base-${play-services.version}" />
+        <unzip src="${android.project.dir}/dependencies/play-services-base-${play-services.version}.aar" dest="temp/android/tmp/play-services-base-${play-services.version}" />
         <copy file="temp/android/tmp/play-services-base-${play-services.version}/classes.jar" tofile="temp/android/play-services-base-${play-services.version}.jar" overwrite="true"/>
         <copy todir="temp/android/google-play-services-base-res" overwrite="true">
             <fileset dir="temp/android/tmp/play-services-base-${play-services.version}/res" includes="**/**.**" />
         </copy>
 
         <!-- Extract play-services-basement.aar file and copy .jar file and resources from it -->
-        <unzip src="${android.project.dir}/${name}/dependencies/play-services-basement-${play-services.version}.aar" dest="temp/android/tmp/play-services-basement-${play-services.version}" />
+        <unzip src="${android.project.dir}/dependencies/play-services-basement-${play-services.version}.aar" dest="temp/android/tmp/play-services-basement-${play-services.version}" />
         <copy file="temp/android/tmp/play-services-basement-${play-services.version}/classes.jar" tofile="temp/android/play-services-basement-${play-services.version}.jar" overwrite="true"/>
         <copy todir="temp/android/google-play-services-basement-res" overwrite="true">
             <fileset dir="temp/android/tmp/play-services-basement-${play-services.version}/res" includes="**/**.**" />
         </copy>
 
         <!-- Extract play-services-clearcut.aar file and copy .jar file and resources from it -->
-        <unzip src="${android.project.dir}/${name}/dependencies/play-services-clearcut-${play-services.version}.aar" dest="temp/android/tmp/play-services-clearcut-${play-services.version}" />
+        <unzip src="${android.project.dir}/dependencies/play-services-clearcut-${play-services.version}.aar" dest="temp/android/tmp/play-services-clearcut-${play-services.version}" />
         <copy file="temp/android/tmp/play-services-clearcut-${play-services.version}/classes.jar" tofile="temp/android/play-services-clearcut-${play-services.version}.jar" overwrite="true"/>
         <copy todir="temp/android/google-play-services-clearcut-res" overwrite="true">
             <fileset dir="temp/android/tmp/play-services-clearcut-${play-services.version}/res" includes="**/**.**" />
         </copy>
 
         <!-- Extract play-services-gass.aar file and copy .jar file and resources from it -->
-        <unzip src="${android.project.dir}/${name}/dependencies/play-services-gass-${play-services.version}.aar" dest="temp/android/tmp/play-services-gass-${play-services.version}" />
+        <unzip src="${android.project.dir}/dependencies/play-services-gass-${play-services.version}.aar" dest="temp/android/tmp/play-services-gass-${play-services.version}" />
         <copy file="temp/android/tmp/play-services-gass-${play-services.version}/classes.jar" tofile="temp/android/play-services-gass-${play-services.version}.jar" overwrite="true"/>
         <copy todir="temp/android/google-play-services-gass-res" overwrite="true">
             <fileset dir="temp/android/tmp/play-services-gass-${play-services.version}/res" includes="**/**.**" />
         </copy>
 
         <!-- Extract play-services-tasks.aar file and copy .jar file and resources from it -->
-        <unzip src="${android.project.dir}/${name}/dependencies/play-services-tasks-${play-services.version}.aar" dest="temp/android/tmp/play-services-tasks-${play-services.version}" />
+        <unzip src="${android.project.dir}/dependencies/play-services-tasks-${play-services.version}.aar" dest="temp/android/tmp/play-services-tasks-${play-services.version}" />
         <copy file="temp/android/tmp/play-services-tasks-${play-services.version}/classes.jar" tofile="temp/android/play-services-tasks-${play-services.version}.jar" overwrite="true"/>
         <copy todir="temp/android/google-play-services-tasks-res" overwrite="true">
             <fileset dir="temp/android/tmp/play-services-tasks-${play-services.version}/res" includes="**/**.**" />
@@ -188,6 +188,9 @@
         <copy todir="temp/android/android-support-v7-recyclerview-res">
             <fileset dir="${android.sdk}/extras/android/support/v7/recyclerview/res"/>
         </copy>
+
+        <!-- Chartboost -->
+         <copy file="${android.project.dir}/libs/chartboost.jar" todir="temp/android/" />
 
         <!-- Remove temporary directory for Android artifacts -->
         <delete dir="temp/android/tmp" />
@@ -348,6 +351,14 @@
 
         <!-- Remove temporary directory -->
         <!-- <delete dir="temp"/> -->
+    </target>
+
+    <!--=====================================================================-->
+    <!--                         Networks Support                            -->
+    <!--=====================================================================-->
+
+    <target name="network.vungle">
+        <ant antfile="build-vungle.xml" />
     </target>
 
 </project>

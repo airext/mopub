@@ -28,9 +28,14 @@ dependencies {
         transitive = true
     }
 
-    compile files('libs/adcolony.jar')
-}
+    compile files('libs/chartboost.jar')
 
+    compile files('libs/adcolony.jar')
+
+    compile files('libs/vungle-publisher-adaptive-id-3.3.5.jar')
+    compile files('libs/dagger-2.1.jar')
+    compile files('libs/javax.inject-1.jar')
+}
 
 task copyDependencies(type: Copy) {
     from configurations.compile
@@ -38,7 +43,7 @@ task copyDependencies(type: Copy) {
 }
 
 task clearJar(type: Delete) {
-    delete 'build/braintree.jar'
+    delete 'build/mopub.jar'
 }
 
 task jar(type: Jar) {
