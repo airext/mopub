@@ -11,23 +11,28 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
 import android.widget.Toast;
+import com.facebook.ads.*;
 import com.mopub.mobileads.MoPubErrorCode;
 import com.mopub.mobileads.MoPubInterstitial;
 import com.mopub.mobileads.MoPubView;
 import com.vungle.publisher.VunglePub;
 
-public class MainActivity extends AppCompatActivity implements MoPubInterstitial.InterstitialAdListener {
+public class MainActivity extends AppCompatActivity implements MoPubInterstitial.InterstitialAdListener, InterstitialAdListener {
 
     // get the VunglePub instance
     final VunglePub vunglePub = VunglePub.getInstance();
 
     private MoPubInterstitial mInterstitial;
 
+    private InterstitialAd interstitialAd;
+
     private MoPubView moPubView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        AdSettings.addTestDevice("ab4eb95b195efc9dc8c5668123147516");
 
         setContentView(R.layout.activity_main);
 
@@ -37,7 +42,9 @@ public class MainActivity extends AppCompatActivity implements MoPubInterstitial
         moPubView.setAdUnitId("12d45ab3263f45f6bba2661d1dec5931");
 
 //        mInterstitial = new MoPubInterstitial(this, "541b4aa543cc483388d2573a763c2c21");
-        mInterstitial = new MoPubInterstitial(this, "089b926b2209400099455b0b33143e5a");
+//        mInterstitial = new MoPubInterstitial(this, "089b926b2209400099455b0b33143e5a"); // Vungle
+//        mInterstitial = new MoPubInterstitial(this, "920c39bda78046879370d4b59c197e7d"); // AdColony
+        mInterstitial = new MoPubInterstitial(this, "cc1cad7724f44ce1abbf9bec3854eb4c"); // Facebook Audience
         mInterstitial.setInterstitialAdListener(this);
 
         // Vungle
@@ -47,6 +54,11 @@ public class MainActivity extends AppCompatActivity implements MoPubInterstitial
 
         // initialize the Publisher SDK
 //        vunglePub.init(this, app_id);
+
+        // Facebook
+
+        interstitialAd = new InterstitialAd(this, "864123657026264_864123927026237");
+        interstitialAd.setAdListener(this);
 
         // Rest
 
@@ -121,6 +133,16 @@ public class MainActivity extends AppCompatActivity implements MoPubInterstitial
         vunglePub.playAd();
     }
 
+    public void loadFacebookInterstitial(View view)
+    {
+        interstitialAd.loadAd();
+    }
+
+    public void showFacebookInterstitial(View view)
+    {
+        interstitialAd.show();
+    }
+
     public void loadMoPubInterstitial(View view)
     {
         mInterstitial.load();
@@ -136,7 +158,7 @@ public class MainActivity extends AppCompatActivity implements MoPubInterstitial
         }
     }
 
-    // InterstitialAdListener
+    // MoPubInterstitial.InterstitialAdListener
 
     @Override
     public void onInterstitialLoaded(MoPubInterstitial interstitial) {
@@ -160,6 +182,33 @@ public class MainActivity extends AppCompatActivity implements MoPubInterstitial
 
     @Override
     public void onInterstitialDismissed(MoPubInterstitial interstitial) {
+
+    }
+
+    // Facebook.AdListener
+
+    @Override
+    public void onInterstitialDisplayed(Ad ad) {
+
+    }
+
+    @Override
+    public void onInterstitialDismissed(Ad ad) {
+
+    }
+
+    @Override
+    public void onError(Ad ad, AdError adError) {
+        showToast("Facebook Error: " + adError.getErrorMessage());
+    }
+
+    @Override
+    public void onAdLoaded(Ad ad) {
+        showToast("Facebook Loaded");
+    }
+
+    @Override
+    public void onAdClicked(Ad ad) {
 
     }
 }

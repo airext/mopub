@@ -11,16 +11,16 @@
     </platform> -->
     <platform name="Android-ARM">
       <applicationDeployment>
-        <nativeLibrary>libANXMoPubMoPubSupport.jar</nativeLibrary>
-        <initializer>com.sticksports.nativeExtensions.mopub.vungle.MoPubMoPubSupport</initializer>
-        <finalizer>com.sticksports.nativeExtensions.mopub.vungle.MoPubMoPubSupport</finalizer>
+        <nativeLibrary>libANXMoPubAdMobSupport.jar</nativeLibrary>
+        <initializer>com.sticksports.nativeExtensions.mopub.admob.MoPubAdMobSupport</initializer>
+        <finalizer>com.sticksports.nativeExtensions.mopub.admob.MoPubAdMobSupport</finalizer>
       </applicationDeployment>
     </platform>
     <platform name="Android-x86">
       <applicationDeployment>
-        <nativeLibrary>libANXMoPubMoPubSupport.jar</nativeLibrary>
-        <initializer>com.sticksports.nativeExtensions.mopub.vungle.MoPubMoPubSupport</initializer>
-        <finalizer>com.sticksports.nativeExtensions.mopub.vungle.MoPubMoPubSupport</finalizer>
+        <nativeLibrary>libANXMoPubAdMobSupport.jar</nativeLibrary>
+        <initializer>com.sticksports.nativeExtensions.mopub.admob.MoPubAdMobSupport</initializer>
+        <finalizer>com.sticksports.nativeExtensions.mopub.admob.MoPubAdMobSupport</finalizer>
       </applicationDeployment>
     </platform>
     <platform name="default">

@@ -1,0 +1,32 @@
+<extension xmlns="http://ns.adobe.com/air/extension/16.0">
+  <id>com.sticksports.nativeExtensions.mopub.facebook</id>
+  <versionNumber>0.0.1</versionNumber>
+  <platforms>
+    <!--
+     <platform name="iPhone-ARM">
+      <applicationDeployment>
+        <nativeLibrary>libMoPubIosExtension.a</nativeLibrary>
+        <initializer>MoPubExtensionInitializer</initializer>
+        <finalizer>MoPubExtensionFinalizer</finalizer>
+      </applicationDeployment>
+    </platform>
+    -->
+    <platform name="Android-ARM">
+      <applicationDeployment>
+        <nativeLibrary>libANXMoPubFacebookSupport.jar</nativeLibrary>
+        <initializer>com.sticksports.nativeExtensions.mopub.facebook.MoPubFacebookSupport</initializer>
+        <finalizer>com.sticksports.nativeExtensions.mopub.facebook.MoPubFacebookSupport</finalizer>
+      </applicationDeployment>
+    </platform>
+    <platform name="Android-x86">
+      <applicationDeployment>
+        <nativeLibrary>libANXMoPubFacebookSupport.jar</nativeLibrary>
+        <initializer>com.sticksports.nativeExtensions.mopub.facebook.MoPubFacebookSupport</initializer>
+        <finalizer>com.sticksports.nativeExtensions.mopub.facebook.MoPubFacebookSupport</finalizer>
+      </applicationDeployment>
+    </platform>
+    <platform name="default">
+      <applicationDeployment/>
+    </platform>
+  </platforms>
+</extension>

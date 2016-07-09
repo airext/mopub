@@ -20,7 +20,7 @@
     <!--                             Build All                               -->
     <!--=====================================================================-->
 
-    <target name="all" depends="android,air,package" description="Full build of extension">
+    <target name="all" depends="android,air,package,networks" description="Full build of extension">
         <exec executable="java">
             <arg value="-version" />
         </exec>
@@ -306,6 +306,7 @@
     <target name="networks">
         <ant antfile="build-vungle.xml" />
         <ant antfile="build-admob.xml" />
+        <ant antfile="build-facebook.xml" />
     </target>
 
 </project>

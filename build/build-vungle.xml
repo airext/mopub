@@ -148,7 +148,7 @@
             <include name="src/main/com/**/*.as"  />
         </fileset>
 
-        <pathconvert property="classlist.main" refid="classfiles.main" pathsep=" " dirsep=".">
+        <pathconvert property="vungle-classlist.main" refid="classfiles.main" pathsep=" " dirsep=".">
             <regexpmapper from=".*src.\w+.(.*)\.as" to="\1" />
         </pathconvert>
 
@@ -159,9 +159,9 @@
             <arg line='-output ${temp.dir}/swc/ios/${extension}.swc'/>
             <!-- <arg line='-swf-version=13'/> -->
             <arg line='-external-library-path+="${air.sdk}/frameworks/libs/air/airglobal.swc"'/>
-            <arg line='-include-classes ${classlist.main}'/>
+            <arg line='-include-classes ${vungle-classlist.main}'/>
         </exec>
-        
+
         <!-- Unzip .SWC to copy internal library.swf file to corresponded platfom folders -->
         <unzip src="${temp.dir}/swc/ios/${extension}.swc" dest="${temp.dir}/swc/build" overwrite="true"/>
 
@@ -186,7 +186,7 @@
             <include name="src/default/com/**/*.as" />
         </fileset>
 
-        <pathconvert property="classlist.default" refid="classfiles.default" pathsep=" " dirsep=".">
+        <pathconvert property="vungle-classlist.default" refid="classfiles.default" pathsep=" " dirsep=".">
             <regexpmapper from=".*src.\w+.(.*)\.as" to="\1" />
         </pathconvert>
 
@@ -197,7 +197,7 @@
             <arg line='-output ${temp.dir}/swc/default/${extension}.swc'/>
             <!-- <arg line='-swf-version=13'/> -->
             <arg line='-external-library-path+="${air.sdk}/frameworks/libs/air/airglobal.swc"'/>
-            <arg line='-include-classes ${classlist.default}'/>
+            <arg line='-include-classes ${vungle-classlist.default}'/>
         </exec>
         
         <!-- Unzip .SWC to copy internal library.swf file to corresponded platfom folders -->

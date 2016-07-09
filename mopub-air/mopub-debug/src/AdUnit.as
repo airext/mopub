@@ -1,5 +1,7 @@
 package {
-	import flash.system.Capabilities;
+import com.sticksports.nativeExtensions.mopub.facebook.MoPubFacebookSupport;
+
+import flash.system.Capabilities;
 	
 	/**
 	 * A singleton managing the ad units and their IDs. Use <code>AdUnits.getId(MP_INTERSTITIAL_INCENTIVE)</code> 
@@ -20,10 +22,11 @@ package {
 		private static const BANNER_ANDROID_PHONE_CHARTBOOST:String = "423fd616ce2746129dd482cb1adb2b56";
 		private static const BANNER_ANDROID_TABLET:String = "e7ce950d4d444cdb9d243d859f016248";
 
-		private static const INTERSTITIAL_ANDROID_PHONE:String = INTERSTITIAL_ANDROID_PHONE_VUNGLE;//"0d79197382d941ab9f01f578553d9600";
+		private static const INTERSTITIAL_ANDROID_PHONE:String = INTERSTITIAL_ANDROID_PHONE_FACEBOOK;//"0d79197382d941ab9f01f578553d9600";
 		private static const INTERSTITIAL_ANDROID_PHONE_MOPUB:String = "0d79197382d941ab9f01f578553d9600";
 		private static const INTERSTITIAL_ANDROID_PHONE_CHARTBOOST:String = "5b118a58e2484be0a71bb2f5ed25e273";
 		private static const INTERSTITIAL_ANDROID_PHONE_VUNGLE:String = "089b926b2209400099455b0b33143e5a";
+		private static const INTERSTITIAL_ANDROID_PHONE_FACEBOOK:String = "cc1cad7724f44ce1abbf9bec3854eb4c";
 		private static const INTERSTITIAL_ANDROID_TABLET:String = "f5451b6962de4f4b99df56e4ed47e725";
 		
 		private static const BANNER_IOS_PHONE:String = "9ffc32d8454a42bc93effafe5d38ecc2";
@@ -48,7 +51,9 @@ package {
 		 * Initializes the AdUnit IDs matching their corresponding AdUnit.
 		 */
 		internal static function init():void {
-			
+
+            MoPubFacebookSupport.addTestDevice("ab4eb95b195efc9dc8c5668123147516");
+
 			// -> iPad
 			if(Capabilities.os.indexOf("iPad") > -1) {
 				trace("Using iPad ad units.");
