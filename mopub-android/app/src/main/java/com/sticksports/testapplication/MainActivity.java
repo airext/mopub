@@ -1,11 +1,13 @@
 package com.sticksports.testapplication;
 
+import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -15,9 +17,11 @@ import com.facebook.ads.*;
 import com.mopub.mobileads.MoPubErrorCode;
 import com.mopub.mobileads.MoPubInterstitial;
 import com.mopub.mobileads.MoPubView;
+import com.unity3d.ads.android.IUnityAdsListener;
+import com.unity3d.ads.android.UnityAds;
 import com.vungle.publisher.VunglePub;
 
-public class MainActivity extends AppCompatActivity implements MoPubInterstitial.InterstitialAdListener, InterstitialAdListener {
+public class MainActivity extends AppCompatActivity implements MoPubInterstitial.InterstitialAdListener, InterstitialAdListener, IUnityAdsListener {
 
     // get the VunglePub instance
     final VunglePub vunglePub = VunglePub.getInstance();
@@ -44,7 +48,8 @@ public class MainActivity extends AppCompatActivity implements MoPubInterstitial
 //        mInterstitial = new MoPubInterstitial(this, "541b4aa543cc483388d2573a763c2c21");
 //        mInterstitial = new MoPubInterstitial(this, "089b926b2209400099455b0b33143e5a"); // Vungle
 //        mInterstitial = new MoPubInterstitial(this, "920c39bda78046879370d4b59c197e7d"); // AdColony
-        mInterstitial = new MoPubInterstitial(this, "cc1cad7724f44ce1abbf9bec3854eb4c"); // Facebook Audience
+//        mInterstitial = new MoPubInterstitial(this, "cc1cad7724f44ce1abbf9bec3854eb4c"); // Facebook Audience
+        mInterstitial = new MoPubInterstitial(this, "2a7f6223fbdd41179b6124fcabeefeb8"); // Unity Ads
         mInterstitial.setInterstitialAdListener(this);
 
         // Vungle
@@ -60,8 +65,14 @@ public class MainActivity extends AppCompatActivity implements MoPubInterstitial
         interstitialAd = new InterstitialAd(this, "864123657026264_864123927026237");
         interstitialAd.setAdListener(this);
 
-        // Rest
+        // Unity Ads
 
+//        UnityAds.init((Activity)this, "1092775", (IUnityAdsListener)this);
+//        UnityAds.setDebugMode(true);
+//        UnityAds.setTestMode(true);
+//        UnityAds.changeActivity(this);
+
+        // Rest
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -86,6 +97,8 @@ public class MainActivity extends AppCompatActivity implements MoPubInterstitial
     protected void onResume() {
         super.onResume();
         vunglePub.onResume();
+
+//        UnityAds.changeActivity(this);
     }
 
     @Override
@@ -158,6 +171,20 @@ public class MainActivity extends AppCompatActivity implements MoPubInterstitial
         }
     }
 
+    public void showUnityInterstitial(View view)
+    {
+        if (UnityAds.canShow())
+        {
+            Log.i("MAIN_ACTIVITY", UnityAds.getZone());
+
+            UnityAds.show();
+        }
+        else
+        {
+            showToast("Unity Ads: Can't show ad");
+        }
+    }
+
     // MoPubInterstitial.InterstitialAdListener
 
     @Override
@@ -185,7 +212,7 @@ public class MainActivity extends AppCompatActivity implements MoPubInterstitial
 
     }
 
-    // Facebook.AdListener
+    // AdListener (Facebook)
 
     @Override
     public void onInterstitialDisplayed(Ad ad) {
@@ -210,5 +237,37 @@ public class MainActivity extends AppCompatActivity implements MoPubInterstitial
     @Override
     public void onAdClicked(Ad ad) {
 
+    }
+
+    // IUnityAdsListener
+
+    @Override
+    public void onHide() {
+
+    }
+
+    @Override
+    public void onShow() {
+
+    }
+
+    @Override
+    public void onVideoStarted() {
+
+    }
+
+    @Override
+    public void onVideoCompleted(String s, boolean b) {
+
+    }
+
+    @Override
+    public void onFetchCompleted() {
+        showToast("Unity Ads: Fetch Complete");
+    }
+
+    @Override
+    public void onFetchFailed() {
+        showToast("Unity Ads: Fetch Failed");
     }
 }

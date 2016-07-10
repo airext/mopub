@@ -307,6 +307,7 @@
         <ant antfile="build-vungle.xml" />
         <ant antfile="build-admob.xml" />
         <ant antfile="build-facebook.xml" />
+        <ant antfile="build-unity.xml" />
     </target>
 
 </project>

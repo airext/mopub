@@ -1,0 +1,13 @@
+<platform xmlns="http://ns.adobe.com/air/extension/16.0">
+    <description></description> 
+    <packagedDependencies>
+        <packagedDependency>unity-ads-sdk.jar</packagedDependency>
+    </packagedDependencies>
+
+    <packagedResources>
+        <packagedResource>
+            <packageName>com.unity3d.ads.android</packageName>
+            <folderName>unity-ads-sdk-res</folderName>
+        </packagedResource>
+    </packagedResources>
+</platform>
