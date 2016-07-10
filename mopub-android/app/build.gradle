@@ -34,6 +34,9 @@ dependencies {
 
     compile(name: 'unity-ads', ext: 'aar')
 
+
+
+    compile files('libs/adcolony.jar')
     compile 'com.android.support:appcompat-v7:24.0.0'
     compile 'com.android.support:design:24.0.0'
     compile 'com.android.support:recyclerview-v7:24.0.0'

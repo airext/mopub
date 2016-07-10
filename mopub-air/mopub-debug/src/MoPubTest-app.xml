@@ -122,6 +122,7 @@
         <extensionID>com.sticksports.nativeExtensions.mopub.vungle</extensionID>
         <extensionID>com.sticksports.nativeExtensions.mopub.facebook</extensionID>
         <extensionID>com.sticksports.nativeExtensions.mopub.unity</extensionID>
+        <extensionID>com.sticksports.nativeExtensions.mopub.adcolony</extensionID>
     </extensions>
 
 	<!-- We recommend omitting the supportedProfiles element, -->
@@ -364,10 +365,18 @@
                             android:hardwareAccelerated="true"
                             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
 
-                    <!--<activity-->
-                            <!--android:name="com.unity3d.ads.android.view.UnityAdsFullscreenActivity"-->
-                            <!--android:configChanges="fontScale|keyboard|keyboardHidden|locale|mnc|mcc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode|touchscreen"-->
-                            <!--android:hardwareAccelerated="true" />-->
+                    <!-- MoPub: AdColony -->
+                    <activity android:name="com.jirbo.adcolony.AdColonyOverlay"
+                            android:configChanges="keyboardHidden|orientation|screenSize"
+                            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+
+                    <activity android:name="com.jirbo.adcolony.AdColonyFullscreen"
+                            android:configChanges="keyboardHidden|orientation|screenSize"
+                            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
+
+                    <activity android:name="com.jirbo.adcolony.AdColonyBrowser"
+                            android:configChanges="keyboardHidden|orientation|screenSize"
+                            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
 
 			    </application>
 			    

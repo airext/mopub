@@ -81,4 +81,11 @@
             android:id="@+id/button7" android:layout_below="@+id/button6"
             android:layout_centerHorizontal="true"
             android:onClick="showUnityInterstitial"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show AdColony Interstitial"
+            android:id="@+id/button8" android:layout_below="@+id/button7"
+            android:layout_centerHorizontal="true"
+            android:onClick="showAdColonyInterstitial"/>
 </RelativeLayout>

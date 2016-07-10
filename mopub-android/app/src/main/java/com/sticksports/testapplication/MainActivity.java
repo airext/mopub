@@ -14,6 +14,8 @@ import android.view.MenuItem;
 import android.widget.TextView;
 import android.widget.Toast;
 import com.facebook.ads.*;
+import com.jirbo.adcolony.AdColony;
+import com.jirbo.adcolony.AdColonyInterstitialAd;
 import com.mopub.mobileads.MoPubErrorCode;
 import com.mopub.mobileads.MoPubInterstitial;
 import com.mopub.mobileads.MoPubView;
@@ -32,6 +34,8 @@ public class MainActivity extends AppCompatActivity implements MoPubInterstitial
 
     private MoPubView moPubView;
 
+    private AdColonyInterstitialAd interstitialAdColony;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,9 +51,9 @@ public class MainActivity extends AppCompatActivity implements MoPubInterstitial
 
 //        mInterstitial = new MoPubInterstitial(this, "541b4aa543cc483388d2573a763c2c21");
 //        mInterstitial = new MoPubInterstitial(this, "089b926b2209400099455b0b33143e5a"); // Vungle
-//        mInterstitial = new MoPubInterstitial(this, "920c39bda78046879370d4b59c197e7d"); // AdColony
+        mInterstitial = new MoPubInterstitial(this, "b5f1df18ca4b4fa9a71074ae92c55d40"); // AdColony
 //        mInterstitial = new MoPubInterstitial(this, "cc1cad7724f44ce1abbf9bec3854eb4c"); // Facebook Audience
-        mInterstitial = new MoPubInterstitial(this, "2a7f6223fbdd41179b6124fcabeefeb8"); // Unity Ads
+//        mInterstitial = new MoPubInterstitial(this, "2a7f6223fbdd41179b6124fcabeefeb8"); // Unity Ads
         mInterstitial.setInterstitialAdListener(this);
 
         // Vungle
@@ -72,6 +76,10 @@ public class MainActivity extends AppCompatActivity implements MoPubInterstitial
 //        UnityAds.setTestMode(true);
 //        UnityAds.changeActivity(this);
 
+        // AdColony
+
+//        AdColony.configure(this, "version:1.0,store:google", "app9e4cbee29ef74f5685", "vzeb7823d1c3d84890b8");
+
         // Rest
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -91,6 +99,7 @@ public class MainActivity extends AppCompatActivity implements MoPubInterstitial
     protected void onPause() {
         super.onPause();
         vunglePub.onPause();
+//        AdColony.pause();
     }
 
     @Override
@@ -99,6 +108,8 @@ public class MainActivity extends AppCompatActivity implements MoPubInterstitial
         vunglePub.onResume();
 
 //        UnityAds.changeActivity(this);
+
+//        AdColony.resume(this);
     }
 
     @Override
@@ -169,6 +180,16 @@ public class MainActivity extends AppCompatActivity implements MoPubInterstitial
             // Caching is likely already in progress if `isReady()` is false.
             // Avoid calling `load()` here and instead rely on the callbacks as suggested below.
         }
+    }
+
+    public void showAdColonyInterstitial(View view)
+    {
+        if (interstitialAdColony == null)
+        {
+            interstitialAdColony = new AdColonyInterstitialAd();
+        }
+
+        interstitialAdColony.show();
     }
 
     public void showUnityInterstitial(View view)

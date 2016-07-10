@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/mopub/mopub.iml" filepath="$PROJECT_DIR$/mopub/mopub.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mopub-adcolony/mopub-adcolony.iml" filepath="$PROJECT_DIR$/mopub-adcolony/mopub-adcolony.iml" />
       <module fileurl="file://$PROJECT_DIR$/mopub-admob/mopub-admob.iml" filepath="$PROJECT_DIR$/mopub-admob/mopub-admob.iml" />
       <module fileurl="file://$PROJECT_DIR$/mopub-android.iml" filepath="$PROJECT_DIR$/mopub-android.iml" />
       <module fileurl="file://$PROJECT_DIR$/mopub-facebook/mopub-facebook.iml" filepath="$PROJECT_DIR$/mopub-facebook/mopub-facebook.iml" />
