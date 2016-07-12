@@ -123,6 +123,8 @@
         <extensionID>com.sticksports.nativeExtensions.mopub.facebook</extensionID>
         <extensionID>com.sticksports.nativeExtensions.mopub.unity</extensionID>
         <extensionID>com.sticksports.nativeExtensions.mopub.adcolony</extensionID>
+
+        <extensionID>com.sbhave.nativeExtensions.zbar</extensionID>
     </extensions>
 
 	<!-- We recommend omitting the supportedProfiles element, -->
@@ -276,7 +278,7 @@
         <manifestAdditions><![CDATA[
 			<manifest android:installLocation="auto">
 				
-				<uses-sdk android:minSdkVersion="13" android:targetSdkVersion="23" />
+				<uses-sdk android:minSdkVersion="13" android:targetSdkVersion="19" />
 			    
 			    <!-- MoPub -->
 				<uses-permission android:name="android.permission.INTERNET" />  
@@ -286,6 +288,9 @@
 				<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 				<uses-permission android:name="android.permission.VIBRATE"/>
 				<uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+				<!-- QR reader -->
+				<uses-permission android:name="android.permission.CAMERA"/>
 			    
 			    <application>
 			    	

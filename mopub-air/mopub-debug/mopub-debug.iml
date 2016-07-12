@@ -8,13 +8,16 @@
             <entry library-id="cd5fc38a-c10c-4280-a840-d79351eb5acb">
               <dependency linkage="Merged" />
             </entry>
+            <entry library-id="3c6b11df-9584-4a7a-880f-e2d5480c2c01">
+              <dependency linkage="Merged" />
+            </entry>
           </entries>
           <sdk name="19.0.0" />
         </dependencies>
         <compiler-options />
         <packaging-air-desktop />
         <packaging-android enabled="true" use-generated-descriptor="false" custom-descriptor-path="$MODULE_DIR$/src/MoPubTest-app.xml" package-file-name="MoPubTest" />
-        <packaging-ios enabled="true" package-file-name="MoPubTest" />
+        <packaging-ios package-file-name="MoPubTest" />
       </configuration>
     </configurations>
     <compiler-options />
@@ -35,6 +38,17 @@
         <JAVADOC />
         <SOURCES />
         <jarDirectory url="file://$MODULE_DIR$/../../bin" recursive="false" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="3c6b11df-9584-4a7a-880f-e2d5480c2c01" />
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/ane" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/ane" recursive="false" />
       </library>
     </orderEntry>
   </component>

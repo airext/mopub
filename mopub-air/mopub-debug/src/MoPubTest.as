@@ -1,14 +1,20 @@
 package {
-	import com.sticksports.nativeExtensions.mopub.MoPub;
+import com.sbhave.nativeExtensions.zbar.Scanner;
+import com.sbhave.nativeExtensions.zbar.ScannerEvent;
+import com.sticksports.nativeExtensions.mopub.MoPub;
 	import com.sticksports.nativeExtensions.mopub.MoPubBanner;
 	import com.sticksports.nativeExtensions.mopub.MoPubKeywords;
 	
 	import flash.display.Sprite;
 	import flash.display.StageAlign;
 	import flash.display.StageScaleMode;
-	import flash.events.MouseEvent;
-	import flash.text.TextField;
-	import flash.text.TextFormat;
+import flash.events.Event;
+import flash.events.MouseEvent;
+import flash.events.TextEvent;
+import flash.system.Capabilities;
+import flash.text.TextField;
+import flash.text.TextFieldType;
+import flash.text.TextFormat;
 	import flash.text.TextFormatAlign;
 	import flash.utils.getTimer;
 	
@@ -23,7 +29,11 @@ package {
 		private var interstitial:MpInterstitial;
 		
 		private var dy:Number;
-		
+
+		private var scanner:Scanner;
+
+		private var interstitialIdInput:TextField;
+
 		// CONSTRUCTOR
 		public function MoPubTest() {
 			super();
@@ -43,8 +53,9 @@ package {
 		/////////////
 		
 		private function initDisplay():void {
-			dy = 30;
+			dy = 10;
 			
+			addButton("Scan ADS id as QR code", scanQR);
 			addButton("Track conversion", trackConversion);
 			addButton("Set keywords", setKeywords);
 			addButton("Show banner", showBanner);
@@ -56,7 +67,8 @@ package {
 			addButton("Android AdvertisingID", androidAdvertisingId);
 			addButton("Android IMEI", androidIMEI);
 			addButton("Android ID", androidId);
-			
+
+			interstitialIdInput = addInput(interstitialChange);
 		}
 		
 		private function addButton(label:String, onClick:Function):void {
@@ -67,7 +79,7 @@ package {
 			b.graphics.endFill();
 			b.x = 10;
 			b.y = dy;
-			dy += 70;
+			dy += 60;
 			
 			var tf:TextField = new TextField();
 			tf.defaultTextFormat = new TextFormat("Arial", 14, 0, true, null, null, null, null, TextFormatAlign.CENTER);
@@ -82,6 +94,29 @@ package {
 			b.addEventListener(MouseEvent.CLICK, function(ev:MouseEvent):void { onClick(); });
 			
 			addChild(b);
+		}
+
+		private function addInput(onInput:Function):TextField
+		{
+			var tf:TextField = new TextField();
+			tf.defaultTextFormat = new TextFormat("Arial", 18, 0, true, null, null, null, null, TextFormatAlign.CENTER);
+			tf.type = TextFieldType.INPUT;
+			tf.selectable = true;
+			tf.border
+			tf.width = stage.stageWidth - 40;
+			tf.height = 40;
+			tf.x = 10;
+			tf.y = dy;
+			dy += 60;
+
+			tf.addEventListener(TextEvent.TEXT_INPUT, function(ev:TextEvent):void
+			{
+				onInput(ev.text);
+			});
+
+			addChild(tf);
+
+			return tf;
 		}
 		
 		///////////
@@ -98,6 +133,37 @@ package {
 			banner = new MpBanner(stage, AdUnit.getId(AdUnit.MP_BANNER), AdUnit.isTablet);
 			interstitial = new MpInterstitial(AdUnit.getId(AdUnit.MP_INTERSTITIAL));
 			trace("MoPub initialized.");
+		}
+
+		private function scanQR():void
+		{
+			scanner = new Scanner();
+
+			scanner.addEventListener(ScannerEvent.SCAN, onReceiveScan);
+
+			scanner.startPreview("back");
+
+			if (Capabilities.version.substr(0, 3).toUpperCase() == "AND")
+			{
+				scanner.setCameraOrientation(90);
+			}
+
+			scanner.attachScannerToPreview();
+		}
+
+		private function onReceiveScan(event:ScannerEvent):void
+		{
+			interstitialIdInput.text = event.data;
+			interstitialChange(event.data);
+
+			scanner.pausePreview();
+			scanner.dispose();
+			scanner = null;
+		}
+
+		private function interstitialChange(adId:String):void
+		{
+			interstitial = new MpInterstitial(adId);
 		}
 		
 		private function trackConversion():void {
