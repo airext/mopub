@@ -1,0 +1,6 @@
+<platform xmlns="http://ns.adobe.com/air/extension/16.0">
+    <description></description> 
+    <packagedDependencies>
+        <packagedDependency>chartboost.jar</packagedDependency>
+    </packagedDependencies>
+</platform>

@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Air Native Extension Build Scripts" default="all">
+
+    <!--=====================================================================-->
+    <!--                             Properties                              -->
+    <!--=====================================================================-->
+
+    <property name="network" value="chartboost" />
+    <property name="extension" value="mopub-${network}" />
+
+    <property name="lib.name" value="libANXMoPubChartboostSupport" />
+
+    <property name="temp.dir" value="temp/${network}" />
+
+    <property name="network.ios.project.dir" value="../mopub-ios/ANXMoPub" />
+    <property name="network.air.project.dir" value="../mopub-air/${extension}" />
+    <property name="network.android.project.dir" value="../mopub-android/${extension}" />
+
+    <property name="play-services.version" value="9.2.0" />
+
+    <property file="build.properties"/>
+
+    <!--=====================================================================-->
+    <!--                             Build All                               -->
+    <!--=====================================================================-->
+
+    <target name="all" depends="android,air,package" description="Full build of extension">
+        <exec executable="java">
+            <arg value="-version" />
+        </exec>
+    </target>
+
+    <!--=====================================================================-->
+    <!--                          Build iOS Library                          -->
+    <!--=====================================================================-->
+
+    <target name="ios" description="Build iOS Library">
+
+        <!-- Create temporary directory for iOS artifacts -->
+        <mkdir dir="${temp.dir}/ios/build/"/>
+
+        <!-- Install Pods dependencies -->
+        <!--<exec executable="pod" dir="${network.ios.project.dir}">-->
+        <!--<arg value="install"/>-->
+        <!--</exec>-->
+
+        <!--&lt;!&ndash; Build iOS part of the extension &ndash;&gt;-->
+        <!--<exec executable="xcodebuild" failonerror="true" dir="${network.ios.project.dir}">-->
+        <!--<arg line='-project ANXMoPub.xcodeproj'/>-->
+        <!--<arg line='-sdk iphoneos' />-->
+        <!--<arg line="-target ANXMoPub"/>-->
+        <!--<arg line='-configuration Release'/>-->
+        <!--<arg line='SYMROOT=$(PWD)/../build/${temp.dir}/ios/build'/>-->
+        <!--</exec>-->
+
+        <!--&lt;!&ndash; Build iOS-simulator part of the extension &ndash;&gt;-->
+        <!--<exec executable="xcodebuild" failonerror="true" dir="${network.ios.project.dir}">-->
+        <!--<arg line='-project ANXMoPub.xcodeproj'/>-->
+        <!--<arg line='-sdk iphonesimulator' />-->
+        <!--<arg line="-target ANXMoPub"/>-->
+        <!--<arg line='-configuration Release'/>-->
+        <!--<arg line='SYMROOT=$(PWD)/../build/${temp.dir}/ios/build'/>-->
+        <!--</exec>-->
+
+        <!-- Build iOS part of the extension -->
+        <exec executable="xcodebuild" failonerror="true" dir="${network.ios.project.dir}">
+            <arg line='-workspace ANXMoPub.xcworkspace'/>
+            <arg line='-scheme ANXMoPub'/>
+            <arg line='-sdk iphoneos' />
+            <arg line='-configuration Release'/>
+            <arg line='SYMROOT=$(PWD)/../build/${temp.dir}/ios/build'/>
+        </exec>
+
+        <!-- Build iOS-simulator part of the extension -->
+        <exec executable="xcodebuild" failonerror="true" dir="${network.ios.project.dir}">
+            <arg line='-workspace ANXMoPub.xcworkspace'/>
+            <arg line='-scheme ANXMoPub'/>
+            <arg line='-sdk iphonesimulator' />
+            <arg line='-configuration Release'/>
+            <arg line='SYMROOT=$(PWD)/../build/${temp.dir}/ios/build'/>
+        </exec>
+
+        <!-- Copy iOS native part for iOS platform -->
+        <copy file="${temp.dir}/ios/build/Release-iphoneos/${lib.name}.a" todir="${temp.dir}/ios" overwrite="true"/>
+
+        <!-- Copy iOS native part for iOS-Simulator platform -->
+        <copy file="${temp.dir}/ios/build/Release-iphonesimulator/${lib.name}.a" tofile="${temp.dir}/ios-simulator/${lib.name}Simulator.a" overwrite="true"/>
+
+        <!-- Copy iOS dependencies for iOS platform -->
+        <copy file="${temp.dir}/ios/build/Release-iphoneos/libBraintree.a" todir="${temp.dir}/ios" overwrite="true"/>
+        <copy file="${network.ios.project.dir}/Pods/Braintree/Braintree/PayPal/mSDK/libPayPalMobile-BT.a" todir="${temp.dir}/ios" overwrite="true"/>
+
+        <!-- Copy iOS dependencies for iOS-Simualtor platform -->
+        <copy file="${temp.dir}/ios/build/Release-iphoneos/libBraintree.a" todir="${temp.dir}/ios-simulator" overwrite="true"/>
+        <copy file="${network.ios.project.dir}/Pods/Braintree/Braintree/PayPal/mSDK/libPayPalMobile-BT.a" todir="${temp.dir}/ios-simulator" overwrite="true"/>
+
+        <!-- Remove temporary directory for iOS artifacts -->
+        <delete dir="${temp.dir}/ios/build/"/>
+    </target>
+
+    <!--=====================================================================-->
+    <!--                        Build Android Library                        -->
+    <!--=====================================================================-->
+
+    <target name="android" description="Build android Library">
+
+        <echo>${network.android.project.dir}</echo>
+
+        <!-- Builds Android part of the extension -->
+        <!-- Compiles Android project and makes .JAR -->
+        <exec executable="gradle" failonerror="true" dir="${network.android.project.dir}">
+            <arg line=":${extension}:jar" />
+            <!--<arg line="jar" />-->
+            <arg line="--info" />
+        </exec>
+
+        <!-- Copy Android build artifacts to temporary build folder -->
+        <copy file="${network.android.project.dir}/build/libs/${extension}.jar" tofile="${temp.dir}/android/${lib.name}.jar" overwrite="true"/>
+
+        <!-- Copy manifest to include it into ANE file -->
+        <copy file="${network.android.project.dir}/src/main/AndroidManifest.xml" todir="${temp.dir}/android" overwrite="true"/>
+
+        <!-- Copy dependencies -->
+
+        <!-- Copy chartboost.jar from libs -->
+        <copy file="${network.android.project.dir}/libs/chartboost.jar" todir="${temp.dir}/android" overwrite="true"/>
+
+        <!-- Remove temporary directory for Android artifacts -->
+        <delete dir="${temp.dir}/android/tmp" />
+    </target>
+
+    <!--=====================================================================-->
+    <!--                         Build AIR Library                           -->
+    <!--=====================================================================-->
+
+    <target name="air" description="Build swc library" depends="main.swc, default.swc">
+
+    </target>
+
+    <!-- ActionScript  -->
+    <target name="main.swc" description="Build iOS SWC library">
+
+        <!-- Create temporary directory -->
+        <mkdir dir="${temp.dir}/swc/build/"/>
+
+        <echo message="Building iOS SWC library ..."/>
+        <fileset dir="${network.air.project.dir}" casesensitive="yes" id="classfiles.main">
+            <include name="src/main/com/**/*.as"  />
+        </fileset>
+
+        <pathconvert property="chartboost-classlist.main" refid="classfiles.main" pathsep=" " dirsep=".">
+            <regexpmapper from=".*src.\w+.(.*)\.as" to="\1" />
+        </pathconvert>
+
+        <!-- Compile .SWC library -->
+        <exec executable="java" failonerror="true">
+            <arg line='-jar ${air.sdk}/lib/compc-cli.jar' />
+            <arg line='-source-path ${network.air.project.dir}/src/main'/>
+            <arg line='-output ${temp.dir}/swc/ios/${extension}.swc'/>
+            <!-- <arg line='-swf-version=13'/> -->
+            <arg line='-external-library-path+="${air.sdk}/frameworks/libs/air/airglobal.swc"'/>
+            <arg line='-include-classes ${chartboost-classlist.main}'/>
+        </exec>
+
+        <!-- Unzip .SWC to copy internal library.swf file to corresponded platfom folders -->
+        <unzip src="${temp.dir}/swc/ios/${extension}.swc" dest="${temp.dir}/swc/build" overwrite="true"/>
+
+        <!-- Copy library.swf to iOS platform folder -->
+        <copy file="${temp.dir}/swc/build/library.swf" todir="${temp.dir}/ios" overwrite="true"/>
+
+        <!-- Copy library.swf to Android platform folder -->
+        <copy file="${temp.dir}/swc/build/library.swf" todir="${temp.dir}/android" overwrite="true"/>
+
+        <!-- Remove temporary folder -->
+        <delete dir="${temp.dir}/swc/build/"/>
+    </target>
+
+    <!-- ActionScript Default -->
+    <target name="default.swc" description="Build Default SWC library">
+
+        <!-- Create temporary directory -->
+        <mkdir dir="${temp.dir}/swc/build/"/>
+
+        <echo message="Building Default SWC library ..."/>
+        <fileset dir="${network.air.project.dir}" casesensitive="yes" id="classfiles.default">
+            <include name="src/default/com/**/*.as" />
+        </fileset>
+
+        <pathconvert property="chartboost-classlist.default" refid="classfiles.default" pathsep=" " dirsep=".">
+            <regexpmapper from=".*src.\w+.(.*)\.as" to="\1" />
+        </pathconvert>
+
+        <!-- Compile .SWC library -->
+        <exec executable="java" failonerror="true">
+            <arg line='-jar ${air.sdk}/lib/compc-cli.jar' />
+            <arg line='-source-path ${network.air.project.dir}/src/default'/>
+            <arg line='-source-path+=${network.air.project.dir}/src/default'/>
+            <arg line='-output ${temp.dir}/swc/default/${extension}.swc'/>
+            <!-- <arg line='-swf-version=13'/> -->
+            <arg line='-external-library-path+="${air.sdk}/frameworks/libs/air/airglobal.swc"'/>
+            <arg line='-include-classes ${chartboost-classlist.default}'/>
+        </exec>
+
+        <!-- Unzip .SWC to copy internal library.swf file to corresponded platfom folders -->
+        <unzip src="${temp.dir}/swc/default/${extension}.swc" dest="${temp.dir}/swc/build" overwrite="true"/>
+
+        <!-- Copy library.swf to Default platform folder -->
+        <copy file="${temp.dir}/swc/build/library.swf" todir="${temp.dir}/default" overwrite="true"/>
+
+        <!-- Remove temporary folder -->
+        <delete dir="${temp.dir}/swc/build/"/>
+    </target>
+
+    <!--=====================================================================-->
+    <!--                         Package ANE file                            -->
+    <!--=====================================================================-->
+
+    <target name="package" description="Create the extension package">
+
+        <!-- Package ANE file-->
+        <exec executable="java" failonerror="true" dir="${temp.dir}">
+            <arg line='-jar ${air.sdk}/lib/adt.jar' />
+            <arg line="-package"/>
+            <arg line="-storetype"/>
+            <arg line="pkcs12"/>
+            <arg line="-keystore"/>
+            <arg line="${keystore.file}"/>
+            <arg line="-storepass"/>
+            <arg line="${keystore.password}"/>
+            <arg line="-tsa none" />
+            <arg line="-target"/>
+            <arg line="ane"/>
+            <arg line="${extension}.ane"/>
+            <arg line="../../extension-${network}.xml"/>
+            <arg line="-swc swc/default/${extension}.swc"/>
+            <!-- <arg line="-platform iPhone-ARM -platformoptions ../platform-ios.xml -C ios/ ."/> -->
+            <!-- <arg line="-platform iPhone-x86 -platformoptions ../platform-ios.xml -C ios-simulator/ ."/> -->
+            <arg line="-platform Android-ARM -platformoptions ../../platform-android-${network}.xml -C android/ ."/>
+            <arg line="-platform Android-x86 -platformoptions ../../platform-android-${network}.xml -C android/ ."/>
+            <arg line="-platform default -C default/ ."/>
+        </exec>
+
+        <!-- Move packaged .ANE file to /bin directory -->
+        <move file="${temp.dir}/${extension}.ane" todir="../bin"/>
+
+        <!-- Move default .SWC library to /bin directory -->
+        <copy file="${temp.dir}/swc/default/${extension}.swc" todir="../bin"/>
+
+        <!-- Remove temporary directory -->
+        <!-- <delete dir="${temp.dir}"/> -->
+    </target>
+
+</project>

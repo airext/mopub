@@ -383,6 +383,13 @@
                             android:configChanges="keyboardHidden|orientation|screenSize"
                             android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
 
+                    <!-- MoPub: Chartboost -->
+                    <activity android:name="com.chartboost.sdk.CBImpressionActivity"
+                            android:excludeFromRecents="true"
+                            android:hardwareAccelerated="true"
+                            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"
+                            android:configChanges="keyboardHidden|orientation|screenSize" />
+
 			    </application>
 			    
 			</manifest>

@@ -51,9 +51,11 @@ public class MainActivity extends AppCompatActivity implements MoPubInterstitial
 
 //        mInterstitial = new MoPubInterstitial(this, "541b4aa543cc483388d2573a763c2c21");
 //        mInterstitial = new MoPubInterstitial(this, "089b926b2209400099455b0b33143e5a"); // Vungle
-        mInterstitial = new MoPubInterstitial(this, "b5f1df18ca4b4fa9a71074ae92c55d40"); // AdColony
+//        mInterstitial = new MoPubInterstitial(this, "b5f1df18ca4b4fa9a71074ae92c55d40"); // AdColony
 //        mInterstitial = new MoPubInterstitial(this, "cc1cad7724f44ce1abbf9bec3854eb4c"); // Facebook Audience
 //        mInterstitial = new MoPubInterstitial(this, "2a7f6223fbdd41179b6124fcabeefeb8"); // Unity Ads
+//        mInterstitial = new MoPubInterstitial(this, "ffc7c7e60fe34732afa8d506e4dabf62"); // Chartboost
+        mInterstitial = new MoPubInterstitial(this, "3f27815f7b754ccd9fbd83d6cb9d3408");
         mInterstitial.setInterstitialAdListener(this);
 
         // Vungle
