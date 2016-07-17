@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<application xmlns="http://ns.adobe.com/air/application/19.0">
+<application xmlns="http://ns.adobe.com/air/application/20.0">
 
 <!-- Adobe AIR Application Descriptor File Template.
 
@@ -123,6 +123,7 @@
         <extensionID>com.sticksports.nativeExtensions.mopub.facebook</extensionID>
         <extensionID>com.sticksports.nativeExtensions.mopub.unity</extensionID>
         <extensionID>com.sticksports.nativeExtensions.mopub.adcolony</extensionID>
+        <extensionID>com.sticksports.nativeExtensions.mopub.chartboost</extensionID>
 
         <extensionID>com.sbhave.nativeExtensions.zbar</extensionID>
     </extensions>

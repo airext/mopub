@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!--
+  Created by max on 7/16/16.
+-->
+<s:View xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:s="library://ns.adobe.com/flex/spark">
+
+    <s:layout>
+        <s:VerticalLayout padding="40" paddingLeft="40" paddingRight="40" horizontalAlign="justify" />
+    </s:layout>
+
+    <s:Button label="AdColony" click="navigator.pushView(AdColonyView)" />
+    <s:Button label="AdMob" click="navigator.pushView(AdMobView)" />
+    <s:Button label="Chartboost" click="navigator.pushView(ChartboostView)" />
+    <s:Button label="Facebook Audience" click="navigator.pushView(FacebookView)" />
+    <s:Button label="Unity Ads" click="navigator.pushView(UnityView)" />
+    <s:Button label="Vungle" click="navigator.pushView(VungleView)" />
+
+</s:View>

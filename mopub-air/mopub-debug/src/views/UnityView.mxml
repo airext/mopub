@@ -1,0 +1,112 @@
+<?xml version="1.0"?>
+<!--
+  Created by max on 7/16/16.
+-->
+<s:View xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:s="library://ns.adobe.com/flex/spark">
+
+    <fx:Script>
+        <![CDATA[
+        import com.sticksports.nativeExtensions.mopub.unity.MoPubUnitySupport;
+
+        import data.AdId;
+
+        import spark.components.Alert;
+
+        import utils.DeviceCapabilities;
+        import utils.Log;
+        import utils.Scanner;
+
+        // banner
+
+        [Bindable]
+        private var bannerId:String = AdId.ANDROID_PHONE_BANNER_UNITY;
+
+        private var banner:MpBanner;
+
+        private function setBannerId(value:String):void
+        {
+            bannerId = value;
+        }
+
+        private function showBanner():void
+        {
+            if (banner != null)
+            {
+                removeBanner();
+            }
+
+            banner = new MpBanner(stage, bannerId, DeviceCapabilities.isTablet(stage));
+
+            Log.info("Showing banner ...");
+            banner.display(
+                    function ():void { Log.info("Banner displayed."); },
+                    function ():void { Log.info("Banner removed."); }
+            );
+        }
+
+        private function removeBanner():void
+        {
+            Log.info("Removing banner ...");
+            banner.remove();
+            Log.info("Banner removed.");
+        }
+
+        // interstitial
+
+        [Bindable]
+        private var interstitialId:String = AdId.ANDROID_PHONE_INTERSTITIAL_UNITY;
+
+        private var interstitial:MpInterstitial;
+
+        private function setInterstitialId(value:String):void
+        {
+            interstitialId = value;
+        }
+
+        private function fetchInterstitial():void
+        {
+            if (interstitial != null)
+            {
+                interstitial.dispose();
+                interstitial = null;
+            }
+
+            interstitial = new MpInterstitial(interstitialId);
+
+            Log.info("Fetching an interstitial ...");
+            interstitial.fetch(function ():void { Log.info("Interstitial fetched."); });
+        }
+
+        private function isInterstitialFetched():void
+        {
+            Alert.show(String(interstitial.isFetched));
+        }
+
+        private function showInterstitial():void
+        {
+            Log.info("Showing interstitial ...");
+            interstitial.show(function ():void { Log.info("Interstitial shown."); });
+        }
+        ]]>
+    </fx:Script>
+
+    <s:title>Unity Ads</s:title>
+
+    <s:Scroller left="0" top="0" right="0" bottom="60">
+        <s:VGroup padding="20" horizontalAlign="justify">
+            <s:Button label="Is Supported" click="Alert.show(String(MoPubUnitySupport.isSupported()))" />
+            <s:Button label="Version" click="" />
+            <s:Spacer />
+            <s:TextInput text="{bannerId}" focusIn="Scanner.scanAndFill(event.target)" change="setBannerId(event.target.text)" />
+            <s:Button label="Show Banner" click="showBanner()" />
+            <s:Button label="Remove Banner" click="removeBanner()" />
+            <s:Spacer />
+            <s:TextInput text="{interstitialId}" textInput="Scanner.scanAndFill(event.target)" change="setInterstitialId(event.target.text)" />
+            <s:Button label="Fetch Interstitial" click="fetchInterstitial()" />
+            <s:Button label="Is Interstitial Fetched" click="isInterstitialFetched()" />
+            <s:Button label="Show Interstitial" click="showInterstitial()" />
+        </s:VGroup>
+    </s:Scroller>
+
+</s:View>

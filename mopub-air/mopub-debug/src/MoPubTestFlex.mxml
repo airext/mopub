@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!--
+  Created by max on 7/16/16.
+-->
+<s:ViewNavigatorApplication
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:s="library://ns.adobe.com/flex/spark">
+
+    <fx:Script>
+        <![CDATA[
+        import views.LogsView;
+        ]]>
+    </fx:Script>
+
+    <s:firstView>views.FirstView</s:firstView>
+
+    <s:navigationContent>
+        <s:Button label="Home" click="navigator.popToFirstView()"/>
+    </s:navigationContent>
+
+    <s:actionContent>
+        <s:Button label="Logs" click="navigator.pushView(LogsView)"/>
+    </s:actionContent>
+
+</s:ViewNavigatorApplication>
