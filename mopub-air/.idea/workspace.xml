@@ -136,8 +136,8 @@
       <file leaf-file-name="MoPubTest-app.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mopub-debug/src/MoPubTest-app.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-13">
-              <caret line="306" column="67" selection-start-line="306" selection-start-column="64" selection-end-line="306" selection-end-column="67" />
+            <state relative-caret-position="164">
+              <caret line="304" column="117" selection-start-line="304" selection-start-column="117" selection-end-line="304" selection-end-column="117" />
               <folding />
             </state>
           </provider>
@@ -1034,12 +1034,12 @@
       <workItem from="1467915277489" duration="59985000" />
       <workItem from="1468518313794" duration="26000" />
       <workItem from="1468563951904" duration="6807000" />
-      <workItem from="1468690253396" duration="12989000" />
+      <workItem from="1468690253396" duration="14757000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97383000" />
+    <option name="totallyTimeSpent" value="99151000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="988" extended-state="6" />
@@ -1229,7 +1229,7 @@
         <state relative-caret-position="180">
           <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
           <folding>
-            <element signature="e#54#81#0" expanded="true" />
+            <element signature="e#54#81#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1263,7 +1263,7 @@
         <state relative-caret-position="678">
           <caret line="57" column="82" selection-start-line="57" selection-start-column="50" selection-end-line="57" selection-end-column="82" />
           <folding>
-            <element signature="e#10#86#0" expanded="true" />
+            <element signature="e#10#86#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1297,7 +1297,7 @@
         <state relative-caret-position="705">
           <caret line="47" column="5" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1347,7 +1347,7 @@
         <state relative-caret-position="435">
           <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1586,8 +1586,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mopub-debug/src/MoPubTest-app.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-13">
-          <caret line="306" column="67" selection-start-line="306" selection-start-column="64" selection-end-line="306" selection-end-column="67" />
+        <state relative-caret-position="164">
+          <caret line="304" column="117" selection-start-line="304" selection-start-column="117" selection-end-line="304" selection-end-column="117" />
           <folding />
         </state>
       </provider>

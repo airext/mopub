@@ -1,8 +1,6 @@
 package com.sticksports.nativeExtensions.mopub.admob.functions;
 
-import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
-import android.os.Bundle;
 import com.adobe.fre.FREContext;
 import com.adobe.fre.FREFunction;
 import com.adobe.fre.FREObject;
@@ -18,10 +16,12 @@ public class GetVersionFunction implements FREFunction
     {
         try
         {
-            ApplicationInfo ai = context.getActivity().getPackageManager().getApplicationInfo(context.getActivity().getPackageName(), PackageManager.GET_META_DATA);
-            Bundle bundle = ai.metaData;
+//            ApplicationInfo ai = context.getActivity().getPackageManager().getApplicationInfo(context.getActivity().getPackageName(), PackageManager.GET_META_DATA);
+//            Bundle bundle = ai.metaData;
+//
+//            String version = bundle.getString("com.google.android.gms.version");
 
-            String version = bundle.getString("com.google.android.gms.version");
+            String version = context.getActivity().getPackageManager().getPackageInfo("com.google.android.gms", 0).versionName;
 
             return FREObject.newObject(version);
         }
