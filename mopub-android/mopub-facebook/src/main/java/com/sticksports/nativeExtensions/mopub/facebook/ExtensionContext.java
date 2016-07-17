@@ -3,6 +3,7 @@ package com.sticksports.nativeExtensions.mopub.facebook;
 import com.adobe.fre.FREContext;
 import com.adobe.fre.FREFunction;
 import com.sticksports.nativeExtensions.mopub.facebook.functions.AddTestDeviceFunction;
+import com.sticksports.nativeExtensions.mopub.facebook.functions.GetVersionFunction;
 import com.sticksports.nativeExtensions.mopub.facebook.functions.IsSupportedFunction;
 
 import java.util.HashMap;
@@ -19,6 +20,7 @@ public class ExtensionContext extends FREContext
         Map<String, FREFunction> functions = new HashMap<String, FREFunction>();
         functions.put("isSupported", new IsSupportedFunction());
         functions.put("addTestDevice", new AddTestDeviceFunction());
+        functions.put("getVersion", new GetVersionFunction());
 
         return functions;
     }

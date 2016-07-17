@@ -103,7 +103,8 @@
         <!-- Builds Android part of the extension -->
 		<!-- Compiles Android project and makes .JAR -->
 		<exec executable="gradle" failonerror="true" dir="${android.project.dir}">
-			<arg line=":${name}:jar" />
+			<arg line="jar -b build.gradle" />
+			<!--<arg line=":${name}:jar" />-->
 			<arg line="--info" />
 		</exec>
 
@@ -304,11 +305,12 @@
     <!--=====================================================================-->
 
     <target name="networks">
-        <ant antfile="build-vungle.xml" />
+        <ant antfile="build-adcolony.xml" />
         <ant antfile="build-admob.xml" />
+        <ant antfile="build-chartboost.xml" />
         <ant antfile="build-facebook.xml" />
         <ant antfile="build-unity.xml" />
-        <ant antfile="build-chartboost.xml" />
+        <ant antfile="build-vungle.xml" />
     </target>
 
 </project>

@@ -2,6 +2,7 @@ package com.sticksports.nativeExtensions.mopub.unity;
 
 import com.adobe.fre.FREContext;
 import com.adobe.fre.FREFunction;
+import com.sticksports.nativeExtensions.mopub.unity.functions.GetVersionFunction;
 import com.sticksports.nativeExtensions.mopub.unity.functions.IsSupportedFunction;
 import com.sticksports.nativeExtensions.mopub.unity.functions.SetDebugModeFunction;
 import com.sticksports.nativeExtensions.mopub.unity.functions.SetTestModeFunction;
@@ -21,6 +22,7 @@ public class ExtensionContext extends FREContext
         functions.put("isSupported", new IsSupportedFunction());
         functions.put("setTestMode", new SetTestModeFunction());
         functions.put("setDebugMode", new SetDebugModeFunction());
+        functions.put("getVersion", new GetVersionFunction());
 
         return functions;
     }

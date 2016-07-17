@@ -21,28 +21,139 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="FacebookView.mxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mopub-debug/src/views/FacebookView.mxml">
+      <file leaf-file-name="QR.as" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mopub-debug/src/utils/QR.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="89" column="0" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
+            <state relative-caret-position="180">
+              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding>
-                <marker date="1468751618000" expanded="true" signature="212:446" ph="..." />
-                <marker date="1468751618000" expanded="true" signature="778:819" ph="{...}" />
-                <marker date="1468751618000" expanded="true" signature="872:1287" ph="{...}" />
-                <marker date="1468751618000" expanded="true" signature="918:965" ph="{...}" />
-                <marker date="1468751618000" expanded="true" signature="1342:1468" ph="{...}" />
-                <marker date="1468751618000" expanded="true" signature="1721:1768" ph="{...}" />
-                <marker date="1468751618000" expanded="true" signature="1828:2189" ph="{...}" />
-                <marker date="1468751618000" expanded="true" signature="1880:1972" ph="{...}" />
-                <marker date="1468751618000" expanded="true" signature="2253:2320" ph="{...}" />
-                <marker date="1468751618000" expanded="true" signature="2379:2525" ph="{...}" />
+                <element signature="e#54#102#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LogsView.mxml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AdColonyView.mxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mopub-debug/src/views/AdColonyView.mxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="642">
+              <caret line="57" column="9" selection-start-line="57" selection-start-column="9" selection-end-line="57" selection-end-column="9" />
+              <folding>
+                <marker date="1468756369000" expanded="true" signature="212:491" ph="..." />
+                <marker date="1468756369000" expanded="true" signature="708:749" ph="{...}" />
+                <marker date="1468756369000" expanded="true" signature="802:1225" ph="{...}" />
+                <marker date="1468756369000" expanded="true" signature="848:895" ph="{...}" />
+                <marker date="1468756369000" expanded="true" signature="1280:1478" ph="{...}" />
+                <marker date="1468756369000" expanded="true" signature="1326:1468" ph="{...}" />
+                <marker date="1468756369000" expanded="true" signature="1731:1778" ph="{...}" />
+                <marker date="1468756369000" expanded="true" signature="1838:2200" ph="{...}" />
+                <marker date="1468756369000" expanded="true" signature="1890:1982" ph="{...}" />
+                <marker date="1468756369000" expanded="true" signature="2264:2401" ph="{...}" />
+                <marker date="1468756369000" expanded="true" signature="2316:2391" ph="{...}" />
+                <marker date="1468756369000" expanded="true" signature="2460:2681" ph="{...}" />
+                <marker date="1468756369000" expanded="true" signature="2512:2671" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdMobView.mxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mopub-debug/src/views/AdMobView.mxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="372">
+              <caret line="57" column="9" selection-start-line="57" selection-start-column="9" selection-end-line="57" selection-end-column="9" />
+              <folding>
+                <marker date="1468756369000" expanded="true" signature="212:485" ph="..." />
+                <marker date="1468756369000" expanded="true" signature="699:740" ph="{...}" />
+                <marker date="1468756369000" expanded="true" signature="785:1207" ph="{...}" />
+                <marker date="1468756369000" expanded="true" signature="839:886" ph="{...}" />
+                <marker date="1468756369000" expanded="true" signature="1263:1460" ph="{...}" />
+                <marker date="1468756369000" expanded="true" signature="1317:1459" ph="{...}" />
+                <marker date="1468756369000" expanded="true" signature="1719:1766" ph="{...}" />
+                <marker date="1468756369000" expanded="true" signature="1818:2036" ph="{...}" />
+                <marker date="1468756369000" expanded="true" signature="1878:1970" ph="{...}" />
+                <marker date="1468756369000" expanded="true" signature="2244:2254" ph="{...}" />
+                <marker date="1468756369000" expanded="true" signature="2304:2379" ph="{...}" />
+                <marker date="1468756369000" expanded="true" signature="2448:2669" ph="{...}" />
+                <marker date="1468756369000" expanded="true" signature="2500:2659" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ChartboostView.mxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mopub-debug/src/views/ChartboostView.mxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="417">
+              <caret line="57" column="9" selection-start-line="57" selection-start-column="9" selection-end-line="57" selection-end-column="9" />
+              <folding>
+                <marker date="1468756369000" expanded="true" signature="212:495" ph="..." />
+                <marker date="1468756369000" expanded="true" signature="714:755" ph="{...}" />
+                <marker date="1468756369000" expanded="true" signature="808:1231" ph="{...}" />
+                <marker date="1468756369000" expanded="true" signature="854:901" ph="{...}" />
+                <marker date="1468756369000" expanded="true" signature="1286:1484" ph="{...}" />
+                <marker date="1468756369000" expanded="true" signature="1332:1474" ph="{...}" />
+                <marker date="1468756369000" expanded="true" signature="1739:1786" ph="{...}" />
+                <marker date="1468756369000" expanded="true" signature="1846:2208" ph="{...}" />
+                <marker date="1468756369000" expanded="true" signature="1898:1990" ph="{...}" />
+                <marker date="1468756369000" expanded="true" signature="2272:2286" ph="{...}" />
+                <marker date="1468756369000" expanded="true" signature="2272:2409" ph="{...}" />
+                <marker date="1468756369000" expanded="true" signature="2324:2399" ph="{...}" />
+                <marker date="1468756369000" expanded="true" signature="2468:2689" ph="{...}" />
+                <marker date="1468756369000" expanded="true" signature="2520:2679" ph="{...}" />
+                <marker date="1468756369000" expanded="true" signature="2679:2689" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FacebookView.mxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mopub-debug/src/views/FacebookView.mxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="387">
+              <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+              <folding>
+                <marker date="1468756369000" expanded="true" signature="212:516" ph="..." />
+                <marker date="1468756369000" expanded="true" signature="848:889" ph="{...}" />
+                <marker date="1468756369000" expanded="true" signature="942:1365" ph="{...}" />
+                <marker date="1468756369000" expanded="true" signature="988:1035" ph="{...}" />
+                <marker date="1468756369000" expanded="true" signature="1420:1618" ph="{...}" />
+                <marker date="1468756369000" expanded="true" signature="1466:1608" ph="{...}" />
+                <marker date="1468756369000" expanded="true" signature="1871:1918" ph="{...}" />
+                <marker date="1468756369000" expanded="true" signature="1978:2340" ph="{...}" />
+                <marker date="1468756369000" expanded="true" signature="2030:2122" ph="{...}" />
+                <marker date="1468756369000" expanded="true" signature="2404:2418" ph="{...}" />
+                <marker date="1468756369000" expanded="true" signature="2404:2541" ph="{...}" />
+                <marker date="1468756369000" expanded="true" signature="2456:2531" ph="{...}" />
+                <marker date="1468756369000" expanded="true" signature="2600:2821" ph="{...}" />
+                <marker date="1468756369000" expanded="true" signature="2652:2811" ph="{...}" />
+                <marker date="1468756369000" expanded="true" signature="2811:2821" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MoPubTest-app.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mopub-debug/src/MoPubTest-app.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-13">
+              <caret line="306" column="67" selection-start-line="306" selection-start-column="64" selection-end-line="306" selection-end-column="67" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mopub-debug.iml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mopub-debug/mopub-debug.iml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LogsView.mxml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mopub-debug/src/views/LogsView.mxml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="225">
@@ -52,106 +163,54 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MoPubTestFlex.mxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mopub-debug/src/MoPubTestFlex.mxml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="60" selection-start-line="21" selection-start-column="60" selection-end-line="21" selection-end-column="60" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AdUnit.as" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mopub-debug/src/AdUnit.as">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="678">
-              <caret line="57" column="82" selection-start-line="57" selection-start-column="50" selection-end-line="57" selection-end-column="82" />
-              <folding>
-                <element signature="e#10#86#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MoPubTest.as" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mopub-debug/src/MoPubTest.as">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="163" column="61" selection-start-line="163" selection-start-column="61" selection-end-line="163" selection-end-column="61" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ChartboostView.mxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mopub-debug/src/views/ChartboostView.mxml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="75" selection-start-line="22" selection-start-column="75" selection-end-line="22" selection-end-column="75" />
-              <folding>
-                <marker date="1468751221000" expanded="true" signature="212:450" ph="..." />
-                <marker date="1468751221000" expanded="true" signature="669:710" ph="{...}" />
-                <marker date="1468751221000" expanded="true" signature="763:1186" ph="{...}" />
-                <marker date="1468751221000" expanded="true" signature="809:856" ph="{...}" />
-                <marker date="1468751221000" expanded="true" signature="1241:1367" ph="{...}" />
-                <marker date="1468751221000" expanded="true" signature="1622:1669" ph="{...}" />
-                <marker date="1468751221000" expanded="true" signature="1729:2091" ph="{...}" />
-                <marker date="1468751221000" expanded="true" signature="1781:1873" ph="{...}" />
-                <marker date="1468751221000" expanded="true" signature="2155:2222" ph="{...}" />
-                <marker date="1468751221000" expanded="true" signature="2281:2428" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="library.swf" pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/../bin/mopub-facebook.swc!/library.swf">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AdId.as" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mopub-debug/src/data/AdId.as">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="UnityView.mxml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mopub-debug/src/views/UnityView.mxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-48">
-              <caret line="57" column="46" selection-start-line="57" selection-start-column="44" selection-end-line="57" selection-end-column="46" />
+            <state relative-caret-position="432">
+              <caret line="57" column="9" selection-start-line="57" selection-start-column="9" selection-end-line="57" selection-end-column="9" />
               <folding>
-                <marker date="1468751221000" expanded="true" signature="212:440" ph="..." />
-                <marker date="1468751221000" expanded="true" signature="654:695" ph="{...}" />
-                <marker date="1468751221000" expanded="true" signature="748:1171" ph="{...}" />
-                <marker date="1468751221000" expanded="true" signature="794:841" ph="{...}" />
-                <marker date="1468751221000" expanded="true" signature="1226:1352" ph="{...}" />
-                <marker date="1468751221000" expanded="true" signature="1602:1649" ph="{...}" />
-                <marker date="1468751221000" expanded="true" signature="1709:2071" ph="{...}" />
-                <marker date="1468751221000" expanded="true" signature="1761:1853" ph="{...}" />
-                <marker date="1468751221000" expanded="true" signature="2135:2202" ph="{...}" />
-                <marker date="1468751221000" expanded="true" signature="2261:2408" ph="{...}" />
+                <marker date="1468756369000" expanded="true" signature="212:485" ph="..." />
+                <marker date="1468756369000" expanded="true" signature="699:740" ph="{...}" />
+                <marker date="1468756369000" expanded="true" signature="793:1216" ph="{...}" />
+                <marker date="1468756369000" expanded="true" signature="839:886" ph="{...}" />
+                <marker date="1468756369000" expanded="true" signature="1271:1469" ph="{...}" />
+                <marker date="1468756369000" expanded="true" signature="1317:1459" ph="{...}" />
+                <marker date="1468756369000" expanded="true" signature="1719:1766" ph="{...}" />
+                <marker date="1468756369000" expanded="true" signature="1826:2188" ph="{...}" />
+                <marker date="1468756369000" expanded="true" signature="1878:1970" ph="{...}" />
+                <marker date="1468756369000" expanded="true" signature="2252:2266" ph="{...}" />
+                <marker date="1468756369000" expanded="true" signature="2252:2389" ph="{...}" />
+                <marker date="1468756369000" expanded="true" signature="2304:2379" ph="{...}" />
+                <marker date="1468756369000" expanded="true" signature="2448:2669" ph="{...}" />
+                <marker date="1468756369000" expanded="true" signature="2500:2659" ph="{...}" />
+                <marker date="1468756369000" expanded="true" signature="2659:2669" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FirstView.mxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mopub-debug/src/views/FirstView.mxml">
+      <file leaf-file-name="VungleView.mxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mopub-debug/src/views/VungleView.mxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="74" selection-start-line="11" selection-start-column="74" selection-end-line="11" selection-end-column="74" />
-              <folding />
+            <state relative-caret-position="267">
+              <caret line="50" column="9" selection-start-line="50" selection-start-column="9" selection-end-line="50" selection-end-column="9" />
+              <folding>
+                <marker date="1468756369000" expanded="true" signature="212:487" ph="..." />
+                <marker date="1468756369000" expanded="true" signature="702:743" ph="{...}" />
+                <marker date="1468756369000" expanded="true" signature="796:1219" ph="{...}" />
+                <marker date="1468756369000" expanded="true" signature="842:889" ph="{...}" />
+                <marker date="1468756369000" expanded="true" signature="1274:1472" ph="{...}" />
+                <marker date="1468756369000" expanded="true" signature="1320:1462" ph="{...}" />
+                <marker date="1468756369000" expanded="true" signature="1723:1770" ph="{...}" />
+                <marker date="1468756369000" expanded="true" signature="1830:2192" ph="{...}" />
+                <marker date="1468756369000" expanded="true" signature="1882:1974" ph="{...}" />
+                <marker date="1468756369000" expanded="true" signature="2256:2270" ph="{...}" />
+                <marker date="1468756369000" expanded="true" signature="2256:2393" ph="{...}" />
+                <marker date="1468756369000" expanded="true" signature="2308:2383" ph="{...}" />
+                <marker date="1468756369000" expanded="true" signature="2452:2673" ph="{...}" />
+                <marker date="1468756369000" expanded="true" signature="2504:2663" ph="{...}" />
+                <marker date="1468756369000" expanded="true" signature="2663:2673" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -169,57 +228,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../build/extension-vungle.xml" />
         <option value="$PROJECT_DIR$/../build/platform-vungle-android.xml" />
         <option value="$PROJECT_DIR$/../build/admob-platform-android.xml" />
         <option value="$PROJECT_DIR$/mopub-admob/src/main/com/sticksports/nativeExtensions/mopub/vungle/MoPubAdMobSupport.as" />
-        <option value="$PROJECT_DIR$/mopub-admob/src/main/com/sticksports/nativeExtensions/mopub/admob/MoPubAdMobSupport.as" />
-        <option value="$PROJECT_DIR$/mopub-admob/src/default/com/sticksports/nativeExtensions/mopub/admob/MoPubAdMobSupport.as" />
         <option value="$PROJECT_DIR$/../build/platform-android.xml" />
-        <option value="$PROJECT_DIR$/mopub-vungle/src/default/com/sticksports/nativeExtensions/mopub/vungle/MoPubVungleSupport.as" />
-        <option value="$PROJECT_DIR$/mopub-vungle/src/main/com/sticksports/nativeExtensions/mopub/vungle/MoPubVungleSupport.as" />
         <option value="$PROJECT_DIR$/../build/extension-admob.xml" />
         <option value="$PROJECT_DIR$/../build/extension-facebook.xml" />
         <option value="$PROJECT_DIR$/../build/platform-android-facebook.xml" />
-        <option value="$PROJECT_DIR$/mopub-facebook/src/main/com/sticksports/nativeExtensions/mopub/facebook/MoPubFacebookSupport.as" />
-        <option value="$PROJECT_DIR$/mopub-facebook/src/default/com/sticksports/nativeExtensions/mopub/facebook/MoPubFacebookSupport.as" />
         <option value="$PROJECT_DIR$/../build/build-vungle.xml" />
         <option value="$PROJECT_DIR$/../build/build-facebook.xml" />
         <option value="$PROJECT_DIR$/../build/build-admob.xml" />
-        <option value="$PROJECT_DIR$/mopub-unity/src/default/com/sticksports/nativeExtensions/mopub/unity/MoPubUnitySupport.as" />
-        <option value="$PROJECT_DIR$/mopub-unity/src/main/com/sticksports/nativeExtensions/mopub/unity/MoPubUnitySupport.as" />
         <option value="$PROJECT_DIR$/../build/extension-unity.xml" />
         <option value="$PROJECT_DIR$/../build/build-unity.xml" />
         <option value="$PROJECT_DIR$/../build/platform-android-unity.xml" />
         <option value="$PROJECT_DIR$/../build/build-adcolony.xml" />
         <option value="$PROJECT_DIR$/../build/extension-adcolony.xml" />
         <option value="$PROJECT_DIR$/../build/platform-android-adcolony.xml" />
-        <option value="$PROJECT_DIR$/mopub-adcolony/src/main/com/sticksports/nativeExtensions/mopub/adcolony/MoPubAdColonySupport.as" />
-        <option value="$PROJECT_DIR$/mopub-adcolony/src/default/com/sticksports/nativeExtensions/mopub/adcolony/MoPubAdColonySupport.as" />
-        <option value="$PROJECT_DIR$/mopub-chartboost/src/main/com/sticksports/nativeExtensions/mopub/chartboost/MoPubChartboostSupport.as" />
-        <option value="$PROJECT_DIR$/mopub-chartboost/src/default/com/sticksports/nativeExtensions/mopub/chartboost/MoPubChartboostSupport.as" />
         <option value="$PROJECT_DIR$/../build/platform-android-chartboost.xml" />
         <option value="$PROJECT_DIR$/../build/extension-chartboost.xml" />
-        <option value="$PROJECT_DIR$/../build/build.xml" />
         <option value="$PROJECT_DIR$/../build/build.properties" />
         <option value="$PROJECT_DIR$/../build/build-chartboost.xml" />
         <option value="$PROJECT_DIR$/mopub-debug/src/MoPubTest-app.xml" />
         <option value="$PROJECT_DIR$/mopub-debug/src/utils/Log.as" />
         <option value="$PROJECT_DIR$/mopub-debug/src/utils/reveal.as" />
-        <option value="$PROJECT_DIR$/mopub-debug/src/utils/Scanner.as" />
         <option value="$PROJECT_DIR$/mopub-debug/src/MoPubTest.as" />
         <option value="$PROJECT_DIR$/mopub-debug/src/AdUnit.as" />
         <option value="$PROJECT_DIR$/mopub-debug/src/utils/DeviceCapabilities.as" />
-        <option value="$PROJECT_DIR$/mopub-debug/src/views/AdMobView.mxml" />
-        <option value="$PROJECT_DIR$/mopub-debug/src/views/AdColonyView.mxml" />
         <option value="$PROJECT_DIR$/mopub-debug/src/data/AdId.as" />
-        <option value="$PROJECT_DIR$/mopub-debug/src/views/VungleView.mxml" />
-        <option value="$PROJECT_DIR$/mopub-debug/src/views/ChartboostView.mxml" />
-        <option value="$PROJECT_DIR$/mopub-debug/src/views/UnityView.mxml" />
         <option value="$PROJECT_DIR$/mopub-debug/src/views/FirstView.mxml" />
-        <option value="$PROJECT_DIR$/mopub-debug/src/views/FacebookView.mxml" />
         <option value="$PROJECT_DIR$/mopub-debug/src/MoPubTestFlex.mxml" />
         <option value="$PROJECT_DIR$/mopub-debug/src/views/LogsView.mxml" />
+        <option value="$PROJECT_DIR$/mopub-adcolony/src/main/com/sticksports/nativeExtensions/mopub/adcolony/MoPubAdColonySupport.as" />
+        <option value="$PROJECT_DIR$/mopub-admob/src/main/com/sticksports/nativeExtensions/mopub/admob/MoPubAdMobSupport.as" />
+        <option value="$PROJECT_DIR$/mopub-chartboost/src/main/com/sticksports/nativeExtensions/mopub/chartboost/MoPubChartboostSupport.as" />
+        <option value="$PROJECT_DIR$/mopub-facebook/src/main/com/sticksports/nativeExtensions/mopub/facebook/MoPubFacebookSupport.as" />
+        <option value="$PROJECT_DIR$/mopub-unity/src/main/com/sticksports/nativeExtensions/mopub/unity/MoPubUnitySupport.as" />
+        <option value="$PROJECT_DIR$/mopub-vungle/src/main/com/sticksports/nativeExtensions/mopub/vungle/MoPubVungleSupport.as" />
+        <option value="$PROJECT_DIR$/mopub-adcolony/src/default/com/sticksports/nativeExtensions/mopub/adcolony/MoPubAdColonySupport.as" />
+        <option value="$PROJECT_DIR$/mopub-admob/src/default/com/sticksports/nativeExtensions/mopub/admob/MoPubAdMobSupport.as" />
+        <option value="$PROJECT_DIR$/mopub-chartboost/src/default/com/sticksports/nativeExtensions/mopub/chartboost/MoPubChartboostSupport.as" />
+        <option value="$PROJECT_DIR$/mopub-facebook/src/default/com/sticksports/nativeExtensions/mopub/facebook/MoPubFacebookSupport.as" />
+        <option value="$PROJECT_DIR$/mopub-unity/src/default/com/sticksports/nativeExtensions/mopub/unity/MoPubUnitySupport.as" />
+        <option value="$PROJECT_DIR$/mopub-vungle/src/default/com/sticksports/nativeExtensions/mopub/vungle/MoPubVungleSupport.as" />
+        <option value="$PROJECT_DIR$/../build/build.xml" />
+        <option value="$PROJECT_DIR$/mopub-debug/src/utils/Scanner.as" />
+        <option value="$PROJECT_DIR$/mopub-debug/src/utils/QR.as" />
+        <option value="$PROJECT_DIR$/mopub-debug/src/views/VungleView.mxml" />
+        <option value="$PROJECT_DIR$/mopub-debug/src/views/AdColonyView.mxml" />
+        <option value="$PROJECT_DIR$/mopub-debug/src/views/AdMobView.mxml" />
+        <option value="$PROJECT_DIR$/mopub-debug/src/views/ChartboostView.mxml" />
+        <option value="$PROJECT_DIR$/mopub-debug/src/views/FacebookView.mxml" />
+        <option value="$PROJECT_DIR$/mopub-debug/src/views/UnityView.mxml" />
       </list>
     </option>
   </component>
@@ -259,8 +318,8 @@
       <showLibraryContents />
       <hideEmptyPackages />
       <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
+      <autoscrollToSource ProjectPane="true" />
+      <autoscrollFromSource ProjectPane="true" />
       <sortByType />
       <manualOrder />
       <foldersAlwaysOnTop value="true" />
@@ -273,6 +332,168 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="mopub" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mopub" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mopub-vungle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mopub" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mopub-vungle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vungle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mopub" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mopub-vungle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="default" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vungle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mopub" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mopub-unity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mopub" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mopub-unity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="unity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mopub" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mopub-unity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="default" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="unity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mopub" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mopub-facebook" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mopub" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mopub-facebook" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="facebook" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mopub" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mopub-facebook" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="default" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="facebook" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -341,7 +562,17 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="mopub-debug" />
+              <option name="myItemId" value="mopub-chartboost" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mopub" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mopub-chartboost" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -349,7 +580,141 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="data" />
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chartboost" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mopub" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mopub-chartboost" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="default" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chartboost" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mopub" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mopub-admob" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mopub" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mopub-admob" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admob" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mopub" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mopub-admob" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="default" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admob" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mopub" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mopub-adcolony" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mopub" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mopub-adcolony" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="adcolony" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mopub" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mopub-adcolony" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="default" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="adcolony" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -391,7 +756,7 @@
       <recent name="$PROJECT_DIR$/mopub/src/common" />
     </key>
   </component>
-  <component name="RunManager" selected="Flash App.mopub-test:emulator">
+  <component name="RunManager" selected="Flash App.mopub-debug:android">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
@@ -669,12 +1034,12 @@
       <workItem from="1467915277489" duration="59985000" />
       <workItem from="1468518313794" duration="26000" />
       <workItem from="1468563951904" duration="6807000" />
-      <workItem from="1468690253396" duration="9449000" />
+      <workItem from="1468690253396" duration="12989000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93843000" />
+    <option name="totallyTimeSpent" value="97383000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="988" extended-state="6" />
@@ -717,7 +1082,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="15" />
+      <option name="time" value="16" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -726,59 +1091,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../build/extension-facebook.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../build/platform-android-facebook.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="49" selection-start-line="3" selection-start-column="49" selection-end-line="3" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mopub-facebook/src/default/com/sticksports/nativeExtensions/mopub/facebook/MoPubFacebookSupport.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../build/build-admob.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mopub-unity/src/default/com/sticksports/nativeExtensions/mopub/unity/MoPubUnitySupport.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="50" column="5" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../build/extension-unity.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="66" selection-start-line="13" selection-start-column="66" selection-end-line="13" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/../bin/mopub-unity.ane!/library.swf">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mopub-unity/src/main/com/sticksports/nativeExtensions/mopub/unity/MoPubUnitySupport.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="46" column="30" selection-start-line="46" selection-start-column="30" selection-end-line="46" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -831,59 +1147,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mopub-facebook/src/main/com/sticksports/nativeExtensions/mopub/facebook/MoPubFacebookSupport.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="792">
-          <caret line="61" column="0" selection-start-line="8" selection-start-column="1" selection-end-line="61" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mopub-adcolony/src/main/com/sticksports/nativeExtensions/mopub/adcolony/MoPubAdColonySupport.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="41" column="43" selection-start-line="41" selection-start-column="43" selection-end-line="41" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mopub-adcolony/src/default/com/sticksports/nativeExtensions/mopub/adcolony/MoPubAdColonySupport.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../build/build-adcolony.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="177" column="0" selection-start-line="177" selection-start-column="0" selection-end-line="177" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mopub-chartboost/src/main/com/sticksports/nativeExtensions/mopub/chartboost/MoPubChartboostSupport.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="41" column="43" selection-start-line="41" selection-start-column="43" selection-end-line="41" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mopub-vungle/src/main/com/sticksports/nativeExtensions/mopub/vungle/MoPubVungleSupport.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="3" column="53" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../build/build.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4635">
-          <caret line="309" column="41" selection-start-line="309" selection-start-column="41" selection-end-line="309" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../build/build.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -891,13 +1159,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3435">
           <caret line="229" column="36" selection-start-line="229" selection-start-column="36" selection-end-line="229" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mopub-chartboost/src/default/com/sticksports/nativeExtensions/mopub/chartboost/MoPubChartboostSupport.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -912,14 +1173,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="38" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mopub-debug/src/MoPubTest-app.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="58" selection-start-line="1" selection-start-column="58" selection-end-line="1" selection-end-column="58" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -989,71 +1242,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mopub-debug/src/views/AdMobView.mxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="97" column="105" selection-start-line="97" selection-start-column="105" selection-end-line="97" selection-end-column="105" />
-          <folding>
-            <marker date="1468749285000" expanded="true" signature="212:440" ph="..." />
-            <marker date="1468749285000" expanded="true" signature="654:695" ph="{...}" />
-            <marker date="1468749285000" expanded="true" signature="740:1154" ph="{...}" />
-            <marker date="1468749285000" expanded="true" signature="794:841" ph="{...}" />
-            <marker date="1468749285000" expanded="true" signature="1210:1335" ph="{...}" />
-            <marker date="1468749285000" expanded="true" signature="1594:1641" ph="{...}" />
-            <marker date="1468749285000" expanded="true" signature="1693:1911" ph="{...}" />
-            <marker date="1468749285000" expanded="true" signature="1753:1845" ph="{...}" />
-            <marker date="1468749285000" expanded="true" signature="2118:2128" ph="{...}" />
-            <marker date="1468749285000" expanded="true" signature="2244:2266" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mopub-debug/src/utils/Scanner.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mopub-debug/src/views/AdColonyView.mxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-90">
-          <caret line="22" column="73" selection-start-line="22" selection-start-column="73" selection-end-line="22" selection-end-column="73" />
-          <folding>
-            <marker date="1468750931000" expanded="true" signature="212:446" ph="..." />
-            <marker date="1468750931000" expanded="true" signature="663:704" ph="{...}" />
-            <marker date="1468750931000" expanded="true" signature="757:1172" ph="{...}" />
-            <marker date="1468750931000" expanded="true" signature="803:850" ph="{...}" />
-            <marker date="1468750931000" expanded="true" signature="1227:1353" ph="{...}" />
-            <marker date="1468750931000" expanded="true" signature="1606:1653" ph="{...}" />
-            <marker date="1468750931000" expanded="true" signature="1713:2074" ph="{...}" />
-            <marker date="1468750931000" expanded="true" signature="1765:1857" ph="{...}" />
-            <marker date="1468750931000" expanded="true" signature="2138:2205" ph="{...}" />
-            <marker date="1468750931000" expanded="true" signature="2264:2410" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mopub-debug/src/views/VungleView.mxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-822">
-          <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
-          <folding>
-            <marker date="1468751038000" expanded="true" signature="212:442" ph="..." />
-            <marker date="1468751038000" expanded="true" signature="657:698" ph="{...}" />
-            <marker date="1468751038000" expanded="true" signature="751:1166" ph="{...}" />
-            <marker date="1468751038000" expanded="true" signature="797:844" ph="{...}" />
-            <marker date="1468751038000" expanded="true" signature="1221:1347" ph="{...}" />
-            <marker date="1468751038000" expanded="true" signature="1598:1645" ph="{...}" />
-            <marker date="1468751038000" expanded="true" signature="1705:2066" ph="{...}" />
-            <marker date="1468751038000" expanded="true" signature="1757:1849" ph="{...}" />
-            <marker date="1468751038000" expanded="true" signature="2130:2197" ph="{...}" />
-            <marker date="1468751038000" expanded="true" signature="2256:2402" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/../bin/mopub-facebook.swc!/library.swf">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -1070,85 +1258,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mopub-debug/src/views/UnityView.mxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-48">
-          <caret line="57" column="46" selection-start-line="57" selection-start-column="44" selection-end-line="57" selection-end-column="46" />
-          <folding>
-            <marker date="1468751221000" expanded="true" signature="212:440" ph="..." />
-            <marker date="1468751221000" expanded="true" signature="654:695" ph="{...}" />
-            <marker date="1468751221000" expanded="true" signature="748:1171" ph="{...}" />
-            <marker date="1468751221000" expanded="true" signature="794:841" ph="{...}" />
-            <marker date="1468751221000" expanded="true" signature="1226:1352" ph="{...}" />
-            <marker date="1468751221000" expanded="true" signature="1602:1649" ph="{...}" />
-            <marker date="1468751221000" expanded="true" signature="1709:2071" ph="{...}" />
-            <marker date="1468751221000" expanded="true" signature="1761:1853" ph="{...}" />
-            <marker date="1468751221000" expanded="true" signature="2135:2202" ph="{...}" />
-            <marker date="1468751221000" expanded="true" signature="2261:2408" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mopub-debug/src/views/FirstView.mxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="74" selection-start-line="11" selection-start-column="74" selection-end-line="11" selection-end-column="74" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mopub-debug/src/views/ChartboostView.mxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="75" selection-start-line="22" selection-start-column="75" selection-end-line="22" selection-end-column="75" />
-          <folding>
-            <marker date="1468751221000" expanded="true" signature="212:450" ph="..." />
-            <marker date="1468751221000" expanded="true" signature="669:710" ph="{...}" />
-            <marker date="1468751221000" expanded="true" signature="763:1186" ph="{...}" />
-            <marker date="1468751221000" expanded="true" signature="809:856" ph="{...}" />
-            <marker date="1468751221000" expanded="true" signature="1241:1367" ph="{...}" />
-            <marker date="1468751221000" expanded="true" signature="1622:1669" ph="{...}" />
-            <marker date="1468751221000" expanded="true" signature="1729:2091" ph="{...}" />
-            <marker date="1468751221000" expanded="true" signature="1781:1873" ph="{...}" />
-            <marker date="1468751221000" expanded="true" signature="2155:2222" ph="{...}" />
-            <marker date="1468751221000" expanded="true" signature="2281:2428" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mopub-debug/src/MoPubTest.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="163" column="61" selection-start-line="163" selection-start-column="61" selection-end-line="163" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mopub-debug/src/AdUnit.as">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="678">
           <caret line="57" column="82" selection-start-line="57" selection-start-column="50" selection-end-line="57" selection-end-column="82" />
           <folding>
             <element signature="e#10#86#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mopub-debug/src/views/FacebookView.mxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="89" column="0" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
-          <folding>
-            <marker date="1468751618000" expanded="true" signature="212:446" ph="..." />
-            <marker date="1468751618000" expanded="true" signature="778:819" ph="{...}" />
-            <marker date="1468751618000" expanded="true" signature="872:1287" ph="{...}" />
-            <marker date="1468751618000" expanded="true" signature="918:965" ph="{...}" />
-            <marker date="1468751618000" expanded="true" signature="1342:1468" ph="{...}" />
-            <marker date="1468751618000" expanded="true" signature="1721:1768" ph="{...}" />
-            <marker date="1468751618000" expanded="true" signature="1828:2189" ph="{...}" />
-            <marker date="1468751618000" expanded="true" signature="1880:1972" ph="{...}" />
-            <marker date="1468751618000" expanded="true" signature="2253:2320" ph="{...}" />
-            <marker date="1468751618000" expanded="true" signature="2379:2525" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1169,10 +1284,310 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/mopub-adcolony/src/main/com/sticksports/nativeExtensions/mopub/adcolony/MoPubAdColonySupport.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="591">
+          <caret line="47" column="5" selection-start-line="33" selection-start-column="4" selection-end-line="47" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mopub-admob/src/main/com/sticksports/nativeExtensions/mopub/admob/MoPubAdMobSupport.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="705">
+          <caret line="47" column="5" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mopub-chartboost/src/main/com/sticksports/nativeExtensions/mopub/chartboost/MoPubChartboostSupport.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="47" column="5" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mopub-facebook/src/main/com/sticksports/nativeExtensions/mopub/facebook/MoPubFacebookSupport.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="591">
+          <caret line="47" column="5" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mopub-unity/src/main/com/sticksports/nativeExtensions/mopub/unity/MoPubUnitySupport.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="516">
+          <caret line="47" column="5" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mopub-vungle/src/main/com/sticksports/nativeExtensions/mopub/vungle/MoPubVungleSupport.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="591">
+          <caret line="47" column="5" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mopub-adcolony/src/default/com/sticksports/nativeExtensions/mopub/adcolony/MoPubAdColonySupport.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="27" column="5" selection-start-line="13" selection-start-column="4" selection-end-line="27" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mopub-admob/src/default/com/sticksports/nativeExtensions/mopub/admob/MoPubAdMobSupport.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mopub-chartboost/src/default/com/sticksports/nativeExtensions/mopub/chartboost/MoPubChartboostSupport.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mopub-facebook/src/default/com/sticksports/nativeExtensions/mopub/facebook/MoPubFacebookSupport.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mopub-unity/src/default/com/sticksports/nativeExtensions/mopub/unity/MoPubUnitySupport.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="47" column="5" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mopub-vungle/src/default/com/sticksports/nativeExtensions/mopub/vungle/MoPubVungleSupport.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="6" selection-start-line="34" selection-start-column="6" selection-end-line="34" selection-end-column="6" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../build/build-adcolony.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="837">
+          <caret line="110" column="90" selection-start-line="110" selection-start-column="90" selection-end-line="110" selection-end-column="90" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../build/build.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="97" column="9" selection-start-line="97" selection-start-column="9" selection-end-line="97" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mopub-debug/src/MoPubTest.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="160" column="27" selection-start-line="160" selection-start-column="27" selection-end-line="160" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mopub-debug/src/views/FirstView.mxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="74" selection-start-line="11" selection-start-column="74" selection-end-line="11" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/mopub-debug/src/views/LogsView.mxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mopub-debug/src/utils/QR.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <element signature="e#54#102#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mopub-debug/src/views/AdColonyView.mxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="642">
+          <caret line="57" column="9" selection-start-line="57" selection-start-column="9" selection-end-line="57" selection-end-column="9" />
+          <folding>
+            <marker date="1468756369000" expanded="true" signature="212:491" ph="..." />
+            <marker date="1468756369000" expanded="true" signature="708:749" ph="{...}" />
+            <marker date="1468756369000" expanded="true" signature="802:1225" ph="{...}" />
+            <marker date="1468756369000" expanded="true" signature="848:895" ph="{...}" />
+            <marker date="1468756369000" expanded="true" signature="1280:1478" ph="{...}" />
+            <marker date="1468756369000" expanded="true" signature="1326:1468" ph="{...}" />
+            <marker date="1468756369000" expanded="true" signature="1731:1778" ph="{...}" />
+            <marker date="1468756369000" expanded="true" signature="1838:2200" ph="{...}" />
+            <marker date="1468756369000" expanded="true" signature="1890:1982" ph="{...}" />
+            <marker date="1468756369000" expanded="true" signature="2264:2401" ph="{...}" />
+            <marker date="1468756369000" expanded="true" signature="2316:2391" ph="{...}" />
+            <marker date="1468756369000" expanded="true" signature="2460:2681" ph="{...}" />
+            <marker date="1468756369000" expanded="true" signature="2512:2671" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mopub-debug/src/views/AdMobView.mxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="57" column="9" selection-start-line="57" selection-start-column="9" selection-end-line="57" selection-end-column="9" />
+          <folding>
+            <marker date="1468756369000" expanded="true" signature="212:485" ph="..." />
+            <marker date="1468756369000" expanded="true" signature="699:740" ph="{...}" />
+            <marker date="1468756369000" expanded="true" signature="785:1207" ph="{...}" />
+            <marker date="1468756369000" expanded="true" signature="839:886" ph="{...}" />
+            <marker date="1468756369000" expanded="true" signature="1263:1460" ph="{...}" />
+            <marker date="1468756369000" expanded="true" signature="1317:1459" ph="{...}" />
+            <marker date="1468756369000" expanded="true" signature="1719:1766" ph="{...}" />
+            <marker date="1468756369000" expanded="true" signature="1818:2036" ph="{...}" />
+            <marker date="1468756369000" expanded="true" signature="1878:1970" ph="{...}" />
+            <marker date="1468756369000" expanded="true" signature="2244:2254" ph="{...}" />
+            <marker date="1468756369000" expanded="true" signature="2304:2379" ph="{...}" />
+            <marker date="1468756369000" expanded="true" signature="2448:2669" ph="{...}" />
+            <marker date="1468756369000" expanded="true" signature="2500:2659" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mopub-debug/src/views/ChartboostView.mxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="417">
+          <caret line="57" column="9" selection-start-line="57" selection-start-column="9" selection-end-line="57" selection-end-column="9" />
+          <folding>
+            <marker date="1468756369000" expanded="true" signature="212:495" ph="..." />
+            <marker date="1468756369000" expanded="true" signature="714:755" ph="{...}" />
+            <marker date="1468756369000" expanded="true" signature="808:1231" ph="{...}" />
+            <marker date="1468756369000" expanded="true" signature="854:901" ph="{...}" />
+            <marker date="1468756369000" expanded="true" signature="1286:1484" ph="{...}" />
+            <marker date="1468756369000" expanded="true" signature="1332:1474" ph="{...}" />
+            <marker date="1468756369000" expanded="true" signature="1739:1786" ph="{...}" />
+            <marker date="1468756369000" expanded="true" signature="1846:2208" ph="{...}" />
+            <marker date="1468756369000" expanded="true" signature="1898:1990" ph="{...}" />
+            <marker date="1468756369000" expanded="true" signature="2272:2286" ph="{...}" />
+            <marker date="1468756369000" expanded="true" signature="2272:2409" ph="{...}" />
+            <marker date="1468756369000" expanded="true" signature="2324:2399" ph="{...}" />
+            <marker date="1468756369000" expanded="true" signature="2468:2689" ph="{...}" />
+            <marker date="1468756369000" expanded="true" signature="2520:2679" ph="{...}" />
+            <marker date="1468756369000" expanded="true" signature="2679:2689" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mopub-debug/src/views/FacebookView.mxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+          <folding>
+            <marker date="1468756369000" expanded="true" signature="212:516" ph="..." />
+            <marker date="1468756369000" expanded="true" signature="848:889" ph="{...}" />
+            <marker date="1468756369000" expanded="true" signature="942:1365" ph="{...}" />
+            <marker date="1468756369000" expanded="true" signature="988:1035" ph="{...}" />
+            <marker date="1468756369000" expanded="true" signature="1420:1618" ph="{...}" />
+            <marker date="1468756369000" expanded="true" signature="1466:1608" ph="{...}" />
+            <marker date="1468756369000" expanded="true" signature="1871:1918" ph="{...}" />
+            <marker date="1468756369000" expanded="true" signature="1978:2340" ph="{...}" />
+            <marker date="1468756369000" expanded="true" signature="2030:2122" ph="{...}" />
+            <marker date="1468756369000" expanded="true" signature="2404:2418" ph="{...}" />
+            <marker date="1468756369000" expanded="true" signature="2404:2541" ph="{...}" />
+            <marker date="1468756369000" expanded="true" signature="2456:2531" ph="{...}" />
+            <marker date="1468756369000" expanded="true" signature="2600:2821" ph="{...}" />
+            <marker date="1468756369000" expanded="true" signature="2652:2811" ph="{...}" />
+            <marker date="1468756369000" expanded="true" signature="2811:2821" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mopub-debug/src/views/UnityView.mxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="57" column="9" selection-start-line="57" selection-start-column="9" selection-end-line="57" selection-end-column="9" />
+          <folding>
+            <marker date="1468756369000" expanded="true" signature="212:485" ph="..." />
+            <marker date="1468756369000" expanded="true" signature="699:740" ph="{...}" />
+            <marker date="1468756369000" expanded="true" signature="793:1216" ph="{...}" />
+            <marker date="1468756369000" expanded="true" signature="839:886" ph="{...}" />
+            <marker date="1468756369000" expanded="true" signature="1271:1469" ph="{...}" />
+            <marker date="1468756369000" expanded="true" signature="1317:1459" ph="{...}" />
+            <marker date="1468756369000" expanded="true" signature="1719:1766" ph="{...}" />
+            <marker date="1468756369000" expanded="true" signature="1826:2188" ph="{...}" />
+            <marker date="1468756369000" expanded="true" signature="1878:1970" ph="{...}" />
+            <marker date="1468756369000" expanded="true" signature="2252:2266" ph="{...}" />
+            <marker date="1468756369000" expanded="true" signature="2252:2389" ph="{...}" />
+            <marker date="1468756369000" expanded="true" signature="2304:2379" ph="{...}" />
+            <marker date="1468756369000" expanded="true" signature="2448:2669" ph="{...}" />
+            <marker date="1468756369000" expanded="true" signature="2500:2659" ph="{...}" />
+            <marker date="1468756369000" expanded="true" signature="2659:2669" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mopub-debug/src/views/VungleView.mxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="50" column="9" selection-start-line="50" selection-start-column="9" selection-end-line="50" selection-end-column="9" />
+          <folding>
+            <marker date="1468756369000" expanded="true" signature="212:487" ph="..." />
+            <marker date="1468756369000" expanded="true" signature="702:743" ph="{...}" />
+            <marker date="1468756369000" expanded="true" signature="796:1219" ph="{...}" />
+            <marker date="1468756369000" expanded="true" signature="842:889" ph="{...}" />
+            <marker date="1468756369000" expanded="true" signature="1274:1472" ph="{...}" />
+            <marker date="1468756369000" expanded="true" signature="1320:1462" ph="{...}" />
+            <marker date="1468756369000" expanded="true" signature="1723:1770" ph="{...}" />
+            <marker date="1468756369000" expanded="true" signature="1830:2192" ph="{...}" />
+            <marker date="1468756369000" expanded="true" signature="1882:1974" ph="{...}" />
+            <marker date="1468756369000" expanded="true" signature="2256:2270" ph="{...}" />
+            <marker date="1468756369000" expanded="true" signature="2256:2393" ph="{...}" />
+            <marker date="1468756369000" expanded="true" signature="2308:2383" ph="{...}" />
+            <marker date="1468756369000" expanded="true" signature="2452:2673" ph="{...}" />
+            <marker date="1468756369000" expanded="true" signature="2504:2663" ph="{...}" />
+            <marker date="1468756369000" expanded="true" signature="2663:2673" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mopub-debug/mopub-debug.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mopub-debug/src/MoPubTest-app.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-13">
+          <caret line="306" column="67" selection-start-line="306" selection-start-column="64" selection-end-line="306" selection-end-column="67" />
           <folding />
         </state>
       </provider>

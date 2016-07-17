@@ -2,6 +2,7 @@ package com.sticksports.nativeExtensions.mopub.chartboost;
 
 import com.adobe.fre.FREContext;
 import com.adobe.fre.FREFunction;
+import com.sticksports.nativeExtensions.mopub.chartboost.functions.GetVersionFunction;
 import com.sticksports.nativeExtensions.mopub.chartboost.functions.IsSupportedFunction;
 
 import java.util.HashMap;
@@ -17,6 +18,7 @@ public class ExtensionContext extends FREContext
     {
         Map<String, FREFunction> functions = new HashMap<String, FREFunction>();
         functions.put("isSupported", new IsSupportedFunction());
+        functions.put("getVersion", new GetVersionFunction());
 
         return functions;
     }

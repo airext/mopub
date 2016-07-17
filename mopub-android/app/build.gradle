@@ -42,5 +42,5 @@ dependencies {
     compile 'com.android.support:design:24.0.0'
     compile 'com.android.support:recyclerview-v7:24.0.0'
     compile 'com.google.android.gms:play-services-ads:9.2.0'
-    compile 'com.facebook.android:audience-network-sdk:4.+'
+    compile 'com.facebook.android:audience-network-sdk:4.13.0'
 }

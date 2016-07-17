@@ -15,7 +15,9 @@
 
         import utils.DeviceCapabilities;
         import utils.Log;
-        import utils.Scanner;
+        import utils.QR;
+        import utils.QR;
+        import utils.QR;
 
         // banner
 
@@ -40,16 +42,19 @@
 
             Log.info("Showing banner ...");
             banner.display(
-                function ():void { Log.info("Banner displayed."); },
-                function ():void { Log.info("Banner removed."); }
+                    function ():void { Log.info("Banner displayed."); },
+                    function ():void { Log.info("Banner removed."); }
             );
         }
 
         private function removeBanner():void
         {
-            Log.info("Removing banner ...");
-            banner.remove();
-            Log.info("Banner removed.");
+            if (banner != null)
+            {
+                Log.info("Removing banner ...");
+                banner.remove();
+                Log.info("Banner removed.");
+            }
         }
 
         // interstitial
@@ -75,18 +80,24 @@
             interstitial = new MpInterstitial(interstitialId);
 
             Log.info("Fetching an interstitial ...");
-            interstitial.fetch(function():void { Log.info("Interstitial fetched."); });
+            interstitial.fetch(function ():void { Log.info("Interstitial fetched."); });
         }
 
         private function isInterstitialFetched():void
         {
-            Alert.show(String(interstitial.isFetched));
+            if (interstitial != null)
+            {
+                Alert.show(String(interstitial.isFetched));
+            }
         }
 
         private function showInterstitial():void
         {
-            Log.info("Showing interstitial ...");
-            interstitial.show(function():void { Log.info("Interstitial shown."); });
+            if (interstitial != null)
+            {
+                Log.info("Showing interstitial ...");
+                interstitial.show(function ():void { Log.info("Interstitial shown."); });
+            }
         }
         ]]>
     </fx:Script>
@@ -96,13 +107,13 @@
     <s:Scroller left="0" top="0" right="0" bottom="60">
         <s:VGroup padding="20" horizontalAlign="justify">
             <s:Button label="Is Supported" click="Alert.show(String(MoPubAdColonySupport.isSupported()))" />
-            <s:Button label="Version" click="" />
+            <s:Button label="Version" click="Alert.show(MoPubAdColonySupport.getVersion())" />
             <s:Spacer />
-            <s:TextInput text="{bannerId}" focusIn="Scanner.scanAndFill(event.target)" change="setBannerId(event.target.text)" />
+            <s:TextInput text="{bannerId}" focusIn="QR.scanAndFill(event.target)" change="setBannerId(event.target.text)" />
             <s:Button label="Show Banner" click="showBanner()" />
             <s:Button label="Remove Banner" click="removeBanner()" />
             <s:Spacer />
-            <s:TextInput text="{interstitialId}" textInput="Scanner.scanAndFill(event.target)" change="setInterstitialId(event.target.text)" />
+            <s:TextInput text="{interstitialId}" focusIn="QR.scanAndFill(event.target)" change="setInterstitialId(event.target.text)" />
             <s:Button label="Fetch Interstitial" click="fetchInterstitial()" />
             <s:Button label="Is Interstitial Fetched" click="isInterstitialFetched()" />
             <s:Button label="Show Interstitial" click="showInterstitial()" />
