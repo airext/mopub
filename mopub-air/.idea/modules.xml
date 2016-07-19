@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$USER_HOME$/Downloads/AdobeAir-Plugin-master/Sample/Vungle-Sample.iml" filepath="$USER_HOME$/Downloads/AdobeAir-Plugin-master/Sample/Vungle-Sample.iml" />
       <module fileurl="file://$PROJECT_DIR$/mopub/mopub.iml" filepath="$PROJECT_DIR$/mopub/mopub.iml" />
       <module fileurl="file://$PROJECT_DIR$/mopub-adcolony/mopub-adcolony.iml" filepath="$PROJECT_DIR$/mopub-adcolony/mopub-adcolony.iml" />
       <module fileurl="file://$PROJECT_DIR$/mopub-admob/mopub-admob.iml" filepath="$PROJECT_DIR$/mopub-admob/mopub-admob.iml" />
