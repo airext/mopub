@@ -4,9 +4,12 @@
         <packagedDependency>dagger-2.1.jar</packagedDependency>
         <packagedDependency>javax.inject-1.jar</packagedDependency>
         <packagedDependency>vungle-publisher-adaptive-id-3.3.5.jar</packagedDependency>
-
     </packagedDependencies>
 
-    <packagedResources>
-    </packagedResources>
+    <!--<packagedResources>-->
+        <!--<packagedResource>-->
+            <!--<packageName>com.vungle</packageName>-->
+            <!--<folderName>res</folderName>-->
+        <!--</packagedResource>-->
+    <!--</packagedResources>-->
 </platform>
