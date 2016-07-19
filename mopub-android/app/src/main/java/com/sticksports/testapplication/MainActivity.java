@@ -63,8 +63,8 @@ public class MainActivity extends AppCompatActivity implements MoPubInterstitial
         // get your App ID from the app's main page on the Vungle Dashboard after setting up your app
         final String app_id = "577ccccf7cdf422131000050";
 
-        // initialize the Publisher SDK
-//        vunglePub.init(this, app_id);
+//         initialize the Publisher SDK
+        vunglePub.init(this, app_id);
 
         // Facebook
 

@@ -35,7 +35,7 @@
         <activity android:name="com.mopub.common.MoPubBrowser" android:configChanges="keyboardHidden|orientation|screenSize"/>
         <activity android:name="com.mopub.mobileads.MraidVideoPlayerActivity" android:configChanges="keyboardHidden|orientation|screenSize"/>
 
-        <!-- Required Activity for playback of Vungle video ads -->
+        <!-- Vungle -->
         <activity
                 android:name="com.vungle.publisher.FullScreenAdActivity"
                 android:configChanges="keyboardHidden|orientation|screenSize"

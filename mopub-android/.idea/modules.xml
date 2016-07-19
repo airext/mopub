@@ -10,6 +10,7 @@
       <module fileurl="file://$PROJECT_DIR$/mopub-chartboost/mopub-chartboost.iml" filepath="$PROJECT_DIR$/mopub-chartboost/mopub-chartboost.iml" />
       <module fileurl="file://$PROJECT_DIR$/mopub-facebook/mopub-facebook.iml" filepath="$PROJECT_DIR$/mopub-facebook/mopub-facebook.iml" />
       <module fileurl="file://$PROJECT_DIR$/mopub-unity/mopub-unity.iml" filepath="$PROJECT_DIR$/mopub-unity/mopub-unity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mopub-vungle/mopub-vungle.iml" filepath="$PROJECT_DIR$/mopub-vungle/mopub-vungle.iml" />
       <module fileurl="file://$PROJECT_DIR$/mopub-vungle/mopub-vungle-support.iml" filepath="$PROJECT_DIR$/mopub-vungle/mopub-vungle-support.iml" />
     </modules>
   </component>

@@ -1,0 +1,164 @@
+<?xml version="1.0"?>
+<!--
+  Created by max on 7/16/16.
+-->
+<s:View xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:s="library://ns.adobe.com/flex/spark">
+
+    <fx:Script>
+        <![CDATA[
+        import com.sticksports.nativeExtensions.mopub.MoPub;
+        import com.sticksports.nativeExtensions.mopub.MoPubKeywords;
+
+        import data.AdId;
+
+        import spark.components.Alert;
+
+        import utils.DeviceCapabilities;
+        import utils.Log;
+        import utils.QR;
+
+        // common
+
+        private function trackConversion():void
+        {
+            Log.info("Tracking install conversion for MoPub ...");
+            MoPub.trackConversion();
+            Log.info("Done.");
+        }
+
+        private function setKeywords():void {
+            const keywords:MoPubKeywords = new MoPubKeywords();
+            keywords.age = int(Math.random() * 50 + 10);
+            keywords.dateOfBirth = new Date(2000, 0, 1);
+            keywords.gender = Math.random() > .5 ? MoPubKeywords.GENDER_F : MoPubKeywords.GENDER_M;
+            keywords.language = Math.random() > .5 ? "eng" : "fre";
+            keywords.setAdditionalKeywords({property1:"Value1", property2:"Value2", property3:"Value3"});
+            keywords.setInMobiInterests("Business", "Travel", "Business", "InvalidInterest");
+            Log.info("Setting keywords : " + keywords + " ...");
+            MoPub.setKeywords(keywords);
+            Log.info("Done.");
+        }
+
+        private function appleIDFA():void {
+            Alert.show("Apple IDFA : " + MoPub.getAppleIDFA());
+        }
+
+        private function androidAdvertisingId():void {
+            Alert.show("Android Advertising ID : " + MoPub.getAndroidAdvertisingId());
+        }
+
+        private function androidIMEI():void {
+            Alert.show("Android IMEI : " + MoPub.getAndroidIMEI());
+        }
+
+        private function androidId():void {
+            Alert.show("Android ID : " + MoPub.getAndroidId());
+        }
+
+        // banner
+
+        [Bindable]
+        private var bannerId:String = AdId.ANDROID_PHONE_BANNER_MOPUB;
+
+        private var banner:MpBanner;
+
+        private function setBannerId(value:String):void
+        {
+            bannerId = value;
+        }
+
+        private function showBanner():void
+        {
+            if (banner != null)
+            {
+                removeBanner();
+            }
+
+            banner = new MpBanner(stage, bannerId, DeviceCapabilities.isTablet(stage));
+
+            Log.info("Showing banner ...");
+            banner.display(
+                    function ():void { Log.info("Banner displayed."); },
+                    function ():void { Log.info("Banner removed."); }
+            );
+        }
+
+        private function removeBanner():void
+        {
+            if (banner != null)
+            {
+                Log.info("Removing banner ...");
+                banner.remove();
+                Log.info("Banner removed.");
+            }
+        }
+
+        // interstitial
+
+        [Bindable]
+        private var interstitialId:String = AdId.ANDROID_PHONE_INTERSTITIAL_MOPUB;
+
+        private var interstitial:MpInterstitial;
+
+        private function setInterstitialId(value:String):void
+        {
+            interstitialId = value;
+        }
+
+        private function fetchInterstitial():void
+        {
+            if (interstitial != null)
+            {
+                interstitial.dispose();
+                interstitial = null;
+            }
+
+            interstitial = new MpInterstitial(interstitialId);
+
+            Log.info("Fetching an interstitial ...");
+            interstitial.fetch(function ():void { Log.info("Interstitial fetched."); });
+        }
+
+        private function isInterstitialFetched():void
+        {
+            if (interstitial != null)
+            {
+                Alert.show(String(interstitial.isFetched));
+            }
+        }
+
+        private function showInterstitial():void
+        {
+            if (interstitial != null)
+            {
+                Log.info("Showing interstitial ...");
+                interstitial.show(function ():void { Log.info("Interstitial shown."); });
+            }
+        }
+        ]]>
+    </fx:Script>
+
+    <s:title>MoPub</s:title>
+
+    <s:Scroller left="0" top="0" right="0" bottom="60">
+        <s:VGroup padding="20" horizontalAlign="justify">
+            <s:Button label="Track Conversion" click="trackConversion()" />
+            <s:Button label="Set Keywords" click="setKeywords()" />
+            <s:Button label="Apple IDFA" click="appleIDFA()" />
+            <s:Button label="Android AdvertisingID" click="androidAdvertisingId()" />
+            <s:Button label="Android IMEI" click="androidIMEI()" />
+            <s:Button label="Android ID" click="androidId()" />
+            <s:Spacer />
+            <s:TextInput text="{bannerId}" focusIn="QR.scanAndFill(event.target)" change="setBannerId(event.target.text)" />
+            <s:Button label="Show Banner" click="showBanner()" />
+            <s:Button label="Remove Banner" click="removeBanner()" />
+            <s:Spacer />
+            <s:TextInput text="{interstitialId}" focusIn="QR.scanAndFill(event.target)" change="setInterstitialId(event.target.text)" />
+            <s:Button label="Fetch Interstitial" click="fetchInterstitial()" />
+            <s:Button label="Is Interstitial Fetched" click="isInterstitialFetched()" />
+            <s:Button label="Show Interstitial" click="showInterstitial()" />
+        </s:VGroup>
+    </s:Scroller>
+
+</s:View>
