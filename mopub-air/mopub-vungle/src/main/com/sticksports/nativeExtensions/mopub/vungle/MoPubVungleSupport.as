@@ -47,6 +47,11 @@ public class MoPubVungleSupport
         return context.call("getVersion") as String
     }
 
+    public static function init():void
+    {
+        context.call("init");
+    }
+
     //--------------------------------------------------------------------------
     //
     //  Constructor

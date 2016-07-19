@@ -119,11 +119,13 @@
     <extensions>
         <extensionID>com.sticksports.nativeExtensions.MoPub</extensionID>
         <extensionID>com.sticksports.nativeExtensions.mopub.admob</extensionID>
-        <extensionID>com.sticksports.nativeExtensions.mopub.vungle</extensionID>
         <extensionID>com.sticksports.nativeExtensions.mopub.facebook</extensionID>
         <extensionID>com.sticksports.nativeExtensions.mopub.unity</extensionID>
         <extensionID>com.sticksports.nativeExtensions.mopub.adcolony</extensionID>
         <extensionID>com.sticksports.nativeExtensions.mopub.chartboost</extensionID>
+        <extensionID>com.sticksports.nativeExtensions.mopub.vungle</extensionID>
+        <!--<extensionID>com.vungle.extensions.Vungle</extensionID>-->
+        <!--<extensionID>com.vungle.extensions.android.GooglePlayServices</extensionID>-->
 
         <extensionID>com.sbhave.nativeExtensions.zbar</extensionID>
     </extensions>

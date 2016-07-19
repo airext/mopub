@@ -29,6 +29,11 @@ public class MoPubVungleSupport
         return null;
     }
 
+    public static function init():void
+    {
+
+    }
+
     //--------------------------------------------------------------------------
     //
     //  Constructor

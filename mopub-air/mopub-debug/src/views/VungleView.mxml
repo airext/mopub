@@ -60,7 +60,7 @@
         // interstitial
 
         [Bindable]
-        private var interstitialId:String = AdId.ANDROID_PHONE_INTERSTITIAL_VUNGLE;
+        private var interstitialId:String = AdId.ANDROID_PHONE_INTERSTITIAL_VUNGLE_TEST;
 
         private var interstitial:MpInterstitial;
 
@@ -108,6 +108,7 @@
         <s:VGroup padding="20" horizontalAlign="justify">
             <s:Button label="Is Supported" click="Alert.show(String(MoPubVungleSupport.isSupported()))" />
             <s:Button label="Version" click="Alert.show(MoPubVungleSupport.getVersion())" />
+            <s:Button label="Init" click="MoPubVungleSupport.init()" />
             <s:Spacer />
             <s:TextInput text="{bannerId}" focusIn="QR.scanAndFill(event.target)" change="setBannerId(event.target.text)" />
             <s:Button label="Show Banner" click="showBanner()" />
