@@ -39,13 +39,6 @@ static FREContext staticContext;
     return self;
 }
 
-- (void)dealloc
-{
-    self.interstitial.delegate = nil;
-    self.interstitial = nil;
-    [super dealloc];
-}
-
 - (BOOL) getIsReady
 {
     return self.interstitial.ready;
@@ -79,42 +72,42 @@ static FREContext staticContext;
 
 - (void)interstitialDidLoadAd:(MPInterstitialAdController *)interstitial
 {
-    FREDispatchStatusEventAsync( context, "", interstitialLoaded );
+    FREDispatchStatusEventAsync( context, (const uint8_t*) "", interstitialLoaded );
 }
 
 - (void)interstitialDidFailToLoadAd:(MPInterstitialAdController *)interstitial
 {
-    FREDispatchStatusEventAsync( context, "", interstitialFailedToLoad );
+    FREDispatchStatusEventAsync( context, (const uint8_t*) "", interstitialFailedToLoad );
 }
 
 - (void)interstitialDidAppear:(MPInterstitialAdController *)interstitial
 {
-    FREDispatchStatusEventAsync( context, "", interstitialShown );
+    FREDispatchStatusEventAsync( context, (const uint8_t*) "", interstitialShown );
 }
 
 - (void)interstitialWillDisappear:(MPInterstitialAdController *)interstitial
 {
-    FREDispatchStatusEventAsync( context, "", interstitialWillClosed );
+    FREDispatchStatusEventAsync( context, (const uint8_t*) "", interstitialWillClosed );
 }
 
 - (void)interstitialDidDisappear:(MPInterstitialAdController *)interstitial
 {
-    FREDispatchStatusEventAsync( context, "", interstitialClosed );
+    FREDispatchStatusEventAsync( context, (const uint8_t*) "", interstitialClosed );
 }
 
 - (void)interstitialDidExpire:(MPInterstitialAdController *)interstitial
 {
-    FREDispatchStatusEventAsync( context, "", interstitialExpired );
+    FREDispatchStatusEventAsync( context, (const uint8_t*) "", interstitialExpired );
 }
 
 - (void)interstitialDidReceiveTapEvent:(MPInterstitialAdController *)interstitial {
-    FREDispatchStatusEventAsync( context, "", interstitialClicked );
+    FREDispatchStatusEventAsync( context, (const uint8_t*) "", interstitialClicked );
 }
 
 + (void)interstitialDidCancel:(MPInterstitialAdController *)interstitial
 {
     if (staticContext)
-        FREDispatchStatusEventAsync( staticContext, "", interstitialCancelled );
+        FREDispatchStatusEventAsync( staticContext, (const uint8_t*) "", interstitialCancelled );
 }
 
 @end

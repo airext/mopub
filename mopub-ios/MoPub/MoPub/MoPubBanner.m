@@ -34,12 +34,6 @@
     return self;
 }
 
-- (void)dealloc
-{
-    self.delegate = nil;
-    [super dealloc];
-}
-
 - (float) getDisplayDensity
 {
     return [UIScreen mainScreen].scale;
@@ -62,14 +56,16 @@
     }
 }
 
-- (BOOL) getAutorefresh
-{
-    return !self.ignoresAutorefresh;
-}
-
 - (void) setAutorefresh:(BOOL)value
 {
-    self.ignoresAutorefresh = !value;
+    if (value)
+    {
+        [self startAutomaticallyRefreshingContents];
+    }
+    else
+    {
+        [self stopAutomaticallyRefreshingContents];
+    }
 }
 
 - (int) getPositionX
@@ -167,17 +163,17 @@
         return;
     
     self.didDispatchAdClicked = true;
-    FREDispatchStatusEventAsync( context, "", bannerAdClicked );
+    FREDispatchStatusEventAsync( context, (const uint8_t*) "", bannerAdClicked );
 }
 
 - (void)adViewDidLoadAd:(MPAdView*)view
 {
-    FREDispatchStatusEventAsync( context, "", bannerLoaded );
+    FREDispatchStatusEventAsync( context, (const uint8_t*) "", bannerLoaded );
 }
 
 - (void)adViewDidFailToLoadAd:(MPAdView*)view
 {
-    FREDispatchStatusEventAsync( context, "", bannerFailedToLoad );
+    FREDispatchStatusEventAsync( context, (const uint8_t*) "", bannerFailedToLoad );
 }
 
 - (void)willPresentModalViewForAd:(MPAdView *)view
@@ -187,7 +183,7 @@
 
 - (void)didDismissModalViewForAd:(MPAdView *)view
 {
-    FREDispatchStatusEventAsync( context, "", bannerAdClosed );
+    FREDispatchStatusEventAsync( context, (const uint8_t*) "", bannerAdClosed );
 }
 
 - (void)willLeaveApplicationFromAd:(MPAdView *)view

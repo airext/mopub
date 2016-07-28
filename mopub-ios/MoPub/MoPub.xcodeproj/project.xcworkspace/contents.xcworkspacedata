@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:MoPub.xcodeproj">
+      location = "self:/Users/max/dev/mahesh/MoPub/mopub-ios/MoPub/MoPub.xcodeproj">
    </FileRef>
 </Workspace>
