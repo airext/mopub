@@ -34,7 +34,7 @@
 /* Begin PBXFileReference section */
 		1B0534233F13A579833EC5A2 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		36B3EFBEFC824E487C1CC06B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		50B6B1F81D49D3C000586C33 /* libMoPub.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMoPub.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		50B6B1F81D49D3C000586C33 /* libANXMoPub.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libANXMoPub.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		50B6B1FB1D49D3C000586C33 /* MoPub.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoPub.h; sourceTree = "<group>"; };
 		50B6B1FD1D49D3C000586C33 /* MoPub.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoPub.m; sourceTree = "<group>"; };
 		50B6B2041D49D44C00586C33 /* FlashRuntimeExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlashRuntimeExtensions.h; sourceTree = "<group>"; };
@@ -78,7 +78,7 @@
 		50B6B1F91D49D3C000586C33 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				50B6B1F81D49D3C000586C33 /* libMoPub.a */,
+				50B6B1F81D49D3C000586C33 /* libANXMoPub.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -133,9 +133,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		50B6B1F71D49D3C000586C33 /* MoPub */ = {
+		50B6B1F71D49D3C000586C33 /* ANXMoPub */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 50B6B2011D49D3C000586C33 /* Build configuration list for PBXNativeTarget "MoPub" */;
+			buildConfigurationList = 50B6B2011D49D3C000586C33 /* Build configuration list for PBXNativeTarget "ANXMoPub" */;
 			buildPhases = (
 				21DC964839FB8BB0E38FE730 /* Check Pods Manifest.lock */,
 				50B6B1F41D49D3C000586C33 /* Sources */,
@@ -147,9 +147,9 @@
 			);
 			dependencies = (
 			);
-			name = MoPub;
+			name = ANXMoPub;
 			productName = MoPub;
-			productReference = 50B6B1F81D49D3C000586C33 /* libMoPub.a */;
+			productReference = 50B6B1F81D49D3C000586C33 /* libANXMoPub.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -178,7 +178,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				50B6B1F71D49D3C000586C33 /* MoPub */,
+				50B6B1F71D49D3C000586C33 /* ANXMoPub */,
 			);
 		};
 /* End PBXProject section */
@@ -348,7 +348,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		50B6B2011D49D3C000586C33 /* Build configuration list for PBXNativeTarget "MoPub" */ = {
+		50B6B2011D49D3C000586C33 /* Build configuration list for PBXNativeTarget "ANXMoPub" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				50B6B2021D49D3C000586C33 /* Debug */,

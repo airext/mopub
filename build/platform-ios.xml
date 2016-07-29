@@ -1,17 +1,51 @@
-<platform xmlns="http://ns.adobe.com/air/extension/4.0">
+<platform xmlns="http://ns.adobe.com/air/extension/16.0">
     <description></description> 
-    <sdkVersion>7.0</sdkVersion>
+    <sdkVersion>6.0</sdkVersion>
+
     <linkerOptions>
-        <option>-ios_version_min 7.0</option>
-        <!--<option>-weak_framework Contacts</option>-->
-        <option>-framework Accelerate</option>
+
+        <option>-ios_version_min 6.0</option>
+
+        <option>-weak_framework AdSupport</option>
+        <option>-framework CoreGraphics</option>
+        <option>-framework CoreLocation</option>
+        <option>-framework CoreMedia</option>
+        <option>-framework CoreTelephony</option>
+        <option>-framework EventKit</option>
+        <option>-framework EventKitUI</option>
+        <option>-framework Foundation</option>
+        <option>-framework MediaPlayer</option>
+        <option>-framework QuartzCore</option>
+        <option>-weak_framework StoreKit</option>
+        <option>-framework SystemConfiguration</option>
+        <option>-framework UIKit</option>
+
+        <option>-framework AudioToolbox</option>
+        <option>-framework AVFoundation</option>
+        <option>-weak_framework iAd</option>
+        <option>-libxml2</option>
+        <option>-weak_framework CoreBluetooth</option>
         <option>-framework MessageUI</option>
         <option>-framework MobileCoreServices</option>
+        <option>-weak_framework PassKit</option>
+        <option>-weak_framework Social</option>
+
+        <option>-framework Accelerate</option>
+        <option>-framework AddressBook</option>
+        <option>-framework AddressBookUI</option>
+        <option>-weak_framework CoreMotion</option>
+        <option>-weak_framework WebKit</option>
+        <!---->
+        <!--<option>-framework AdColony</option>-->
+        <!--<option>-framework GoogleMobileAds</option>-->
+        <!--<option>-framework Chartboost</option>-->
+
+        <option>-lsqlite3</option>
+        <option>-lz</option>
+
     </linkerOptions>
+
     <packagedDependencies>
-        <packagedDependency>libBraintree.a</packagedDependency>
-        <packagedDependency>libPayPalMobile-BT.a</packagedDependency>
-        <!--<packagedDependency>libBraintree.a</packagedDependency>-->
-        <!--<packagedDependency>libPods.a</packagedDependency>-->
+        <packagedDependency>libANXMoPub.a</packagedDependency>
     </packagedDependencies>
 </platform>

@@ -7,7 +7,7 @@
 
     <property name="name" value="mopub" />
 
-    <property name="ios.project.dir" value="../${name}-ios/ANXMoPub" />
+    <property name="ios.project.dir" value="../${name}-ios/MoPub" />
     <property name="air.project.dir" value="../${name}-air/${name}" />
     <property name="air-debug.project.dir" value="../${name}-air/${name}-debug" />
     <property name="android.project.dir" value="../${name}-android/${name}" />
@@ -20,7 +20,7 @@
     <!--                             Build All                               -->
     <!--=====================================================================-->
 
-    <target name="all" depends="android,air,package,networks" description="Full build of extension">
+    <target name="all" depends="ios,android,air,package,networks" description="Full build of extension">
         <exec executable="java">
             <arg value="-version" />
         </exec>
@@ -60,7 +60,7 @@
 
         <!-- Build iOS part of the extension -->
         <exec executable="xcodebuild" failonerror="true" dir="${ios.project.dir}">
-            <arg line='-workspace ANXMoPub.xcworkspace'/>
+            <arg line='-workspace MoPub.xcworkspace'/>
             <arg line='-scheme ANXMoPub'/>
             <arg line='-sdk iphoneos' />
             <arg line='-configuration Release'/>
@@ -69,7 +69,7 @@
 
         <!-- Build iOS-simulator part of the extension -->
         <exec executable="xcodebuild" failonerror="true" dir="${ios.project.dir}">
-            <arg line='-workspace ANXMoPub.xcworkspace'/>
+            <arg line='-workspace MoPub.xcworkspace'/>
             <arg line='-scheme ANXMoPub'/>
             <arg line='-sdk iphonesimulator' />
             <arg line='-configuration Release'/>
@@ -81,14 +81,6 @@
 
         <!-- Copy iOS native part for iOS-Simulator platform -->
         <copy file="temp/ios/build/Release-iphonesimulator/libANXMoPub.a" tofile="temp/ios-simulator/libANXMoPubSimulator.a" overwrite="true"/>
-
-        <!-- Copy iOS dependencies for iOS platform -->
-        <copy file="temp/ios/build/Release-iphoneos/libBraintree.a" todir="temp/ios" overwrite="true"/>
-        <copy file="${ios.project.dir}/Pods/Braintree/Braintree/PayPal/mSDK/libPayPalMobile-BT.a" todir="temp/ios" overwrite="true"/>
-
-        <!-- Copy iOS dependencies for iOS-Simualtor platform -->
-        <copy file="temp/ios/build/Release-iphoneos/libBraintree.a" todir="temp/ios-simulator" overwrite="true"/>
-        <copy file="${ios.project.dir}/Pods/Braintree/Braintree/PayPal/mSDK/libPayPalMobile-BT.a" todir="temp/ios-simulator" overwrite="true"/>
 
         <!-- Remove temporary directory for iOS artifacts -->
 		<delete dir="temp/ios/build/"/>
