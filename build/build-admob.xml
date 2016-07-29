@@ -162,6 +162,20 @@
             <fileset dir="${temp.dir}/android/tmp/play-services-clearcut-${play-services.version}/res" includes="**/**.**" />
         </copy>
 
+        <!-- Extract play-services-drive.aar file and copy .jar file and resources from it -->
+        <unzip src="${network.android.project.dir}/dependencies/play-services-drive-${play-services.version}.aar" dest="${temp.dir}/android/tmp/play-services-drive-${play-services.version}" />
+        <copy file="${temp.dir}/android/tmp/play-services-drive-${play-services.version}/classes.jar" tofile="${temp.dir}/android/play-services-drive-${play-services.version}.jar" overwrite="true"/>
+        <copy todir="${temp.dir}/android/google-play-services-drive-res" overwrite="true">
+            <fileset dir="${temp.dir}/android/tmp/play-services-drive-${play-services.version}/res" includes="**/**.**" />
+        </copy>
+
+        <!-- Extract play-services-games.aar file and copy .jar file and resources from it -->
+        <unzip src="${network.android.project.dir}/dependencies/play-services-games-${play-services.version}.aar" dest="${temp.dir}/android/tmp/play-services-games-${play-services.version}" />
+        <copy file="${temp.dir}/android/tmp/play-services-games-${play-services.version}/classes.jar" tofile="${temp.dir}/android/play-services-games-${play-services.version}.jar" overwrite="true"/>
+        <copy todir="${temp.dir}/android/google-play-services-games-res" overwrite="true">
+            <fileset dir="${temp.dir}/android/tmp/play-services-games-${play-services.version}/res" includes="**/**.**" />
+        </copy>
+
         <!-- Extract play-services-gass.aar file and copy .jar file and resources from it -->
         <unzip src="${network.android.project.dir}/dependencies/play-services-gass-${play-services.version}.aar" dest="${temp.dir}/android/tmp/play-services-gass-${play-services.version}" />
         <copy file="${temp.dir}/android/tmp/play-services-gass-${play-services.version}/classes.jar" tofile="${temp.dir}/android/play-services-gass-${play-services.version}.jar" overwrite="true"/>
