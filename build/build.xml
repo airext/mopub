@@ -20,7 +20,7 @@
     <!--                             Build All                               -->
     <!--=====================================================================-->
 
-    <target name="all" depends="ios,android,air,package,networks" description="Full build of extension">
+    <target name="all" depends="android,air,package,networks" description="Full build of extension">
         <exec executable="java">
             <arg value="-version" />
         </exec>
@@ -275,8 +275,8 @@
             <arg line="${name}.ane"/>
             <arg line="../extension.xml"/>
             <arg line="-swc swc/default/${name}.swc"/>
-            <arg line="-platform iPhone-ARM -platformoptions ../platform-ios.xml -C ios/ ."/>
-            <arg line="-platform iPhone-x86 -platformoptions ../platform-ios.xml -C ios-simulator/ ."/>
+            <!-- <arg line="-platform iPhone-ARM -platformoptions ../platform-ios.xml -C ios/ ."/> -->
+            <!-- <arg line="-platform iPhone-x86 -platformoptions ../platform-ios.xml -C ios-simulator/ ."/> -->
             <arg line="-platform Android-ARM -platformoptions ../platform-android.xml -C android/ ."/>
             <arg line="-platform Android-x86 -platformoptions ../platform-android.xml -C android/ ."/>
             <arg line="-platform default -C default/ ."/>
