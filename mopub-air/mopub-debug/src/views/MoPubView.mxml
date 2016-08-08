@@ -59,7 +59,7 @@
         // banner
 
         [Bindable]
-        private var bannerId:String = AdId.ANDROID_PHONE_BANNER_MOPUB;
+        private var bannerId:String = AdId.ANDROID_PHONE_BANNER_MULTIPLE;
 
         private var banner:MpBanner;
 

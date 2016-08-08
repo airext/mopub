@@ -5,6 +5,7 @@ package data
 {
 public class AdId
 {
+    public static const ANDROID_PHONE_BANNER_MULTIPLE:String = "2fce07f9105e4cb48e3dd88c1d607184";
     public static const ANDROID_PHONE_BANNER_MOPUB:String = "5663bb9010164d7cb435d2e6be6b3e6c";
     public static const ANDROID_PHONE_BANNER_ADMOB:String = "2ab8ae5afc104ae990aa2033227925d7";
     public static const ANDROID_PHONE_BANNER_ADCOLONY:String = "TBA";
