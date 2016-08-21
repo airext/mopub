@@ -1,6 +1,7 @@
 package com.sticksports.nativeExtensions.mopub
 {
-	import flash.external.ExtensionContext;
+import flash.desktop.NativeApplication;
+import flash.external.ExtensionContext;
 	import flash.display.Stage;
 	
 	public class MoPub {
@@ -64,6 +65,22 @@ package com.sticksports.nativeExtensions.mopub
 			}
 			
 			return _nativeScreenHeight;
+		}
+
+		public static function getVersion():String
+		{
+			var descriptor:XML = NativeApplication.nativeApplication.applicationDescriptor;
+			var ns:Namespace = descriptor.namespace();
+			var versionNumber:String = descriptor.ns::versionNumber.toString();
+
+			return versionNumber;
+		}
+
+		public static function getSDKVersion():String
+		{
+			createExtensionContextIfNull();
+
+			return extensionContext.call("mopub_version") as String;
 		}
 		
 		public static function trackConversion():void {

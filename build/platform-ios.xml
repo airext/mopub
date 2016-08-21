@@ -23,7 +23,7 @@
         <option>-framework AudioToolbox</option>
         <option>-framework AVFoundation</option>
         <option>-weak_framework iAd</option>
-        <option>-libxml2</option>
+        <!--<option>-xml2</option>--> <!--ld: unknown option: -xml2-->
         <option>-weak_framework CoreBluetooth</option>
         <option>-framework MessageUI</option>
         <option>-framework MobileCoreServices</option>
@@ -46,6 +46,6 @@
     </linkerOptions>
 
     <packagedDependencies>
-        <packagedDependency>libANXMoPub.a</packagedDependency>
+        <packagedDependency>libmopub-ios-sdk.a</packagedDependency>
     </packagedDependencies>
 </platform>

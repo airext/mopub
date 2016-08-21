@@ -20,7 +20,7 @@
     <!--                             Build All                               -->
     <!--=====================================================================-->
 
-    <target name="all" depends="android,air,package,networks" description="Full build of extension">
+    <target name="all" depends="android,ios,air,package,networks" description="Full build of extension">
         <exec executable="java">
             <arg value="-version" />
         </exec>
@@ -78,12 +78,14 @@
 
         <!-- Copy iOS native part for iOS platform -->
 		<copy file="temp/ios/build/Release-iphoneos/libANXMoPub.a" todir="temp/ios" overwrite="true"/>
+		<copy file="temp/ios/build/Release-iphoneos/libmopub-ios-sdk.a" todir="temp/ios" overwrite="true"/>
 
         <!-- Copy iOS native part for iOS-Simulator platform -->
         <copy file="temp/ios/build/Release-iphonesimulator/libANXMoPub.a" tofile="temp/ios-simulator/libANXMoPubSimulator.a" overwrite="true"/>
+        <copy file="temp/ios/build/Release-iphonesimulator/libmopub-ios-sdk.a" todir="temp/ios-simulator" overwrite="true"/>
 
         <!-- Remove temporary directory for iOS artifacts -->
-		<delete dir="temp/ios/build/"/>
+		<!--<delete dir="temp/ios/build/"/>-->
 	</target>
 
     <!--=====================================================================-->
@@ -175,6 +177,9 @@
 
         <!-- Copy library.swf to iOS platform folder -->
         <copy file="temp/swc/build/library.swf" todir="temp/ios" overwrite="true"/>
+
+        <!-- Copy library.swf to iOS-Simulator platform folder -->
+        <copy file="temp/swc/build/library.swf" todir="temp/ios-simulator" overwrite="true"/>
 
         <!-- Remove temporary folder -->
         <delete dir="temp/swc/build/"/>
@@ -275,8 +280,8 @@
             <arg line="${name}.ane"/>
             <arg line="../extension.xml"/>
             <arg line="-swc swc/default/${name}.swc"/>
-            <!-- <arg line="-platform iPhone-ARM -platformoptions ../platform-ios.xml -C ios/ ."/> -->
-            <!-- <arg line="-platform iPhone-x86 -platformoptions ../platform-ios.xml -C ios-simulator/ ."/> -->
+            <arg line="-platform iPhone-ARM -platformoptions ../platform-ios.xml -C ios/ ."/>
+            <arg line="-platform iPhone-x86 -platformoptions ../platform-ios.xml -C ios-simulator/ ."/>
             <arg line="-platform Android-ARM -platformoptions ../platform-android.xml -C android/ ."/>
             <arg line="-platform Android-x86 -platformoptions ../platform-android.xml -C android/ ."/>
             <arg line="-platform default -C default/ ."/>

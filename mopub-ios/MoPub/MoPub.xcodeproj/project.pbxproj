@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		3A1961DCAAC8FBC0AC35120E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 36B3EFBEFC824E487C1CC06B /* libPods.a */; };
-		50B6B1FC1D49D3C000586C33 /* MoPub.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 50B6B1FB1D49D3C000586C33 /* MoPub.h */; };
-		50B6B1FE1D49D3C000586C33 /* MoPub.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B6B1FD1D49D3C000586C33 /* MoPub.m */; };
 		50B6B2111D49D44C00586C33 /* MoPubBanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B6B2061D49D44C00586C33 /* MoPubBanner.m */; };
 		50B6B2121D49D44C00586C33 /* MoPubCustomEventClassData.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B6B2081D49D44C00586C33 /* MoPubCustomEventClassData.m */; };
 		50B6B2131D49D44C00586C33 /* MoPubInterstitial.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B6B20B1D49D44C00586C33 /* MoPubInterstitial.m */; };
@@ -25,7 +23,6 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				50B6B1FC1D49D3C000586C33 /* MoPub.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -35,8 +32,6 @@
 		1B0534233F13A579833EC5A2 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		36B3EFBEFC824E487C1CC06B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		50B6B1F81D49D3C000586C33 /* libANXMoPub.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libANXMoPub.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		50B6B1FB1D49D3C000586C33 /* MoPub.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoPub.h; sourceTree = "<group>"; };
-		50B6B1FD1D49D3C000586C33 /* MoPub.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoPub.m; sourceTree = "<group>"; };
 		50B6B2041D49D44C00586C33 /* FlashRuntimeExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlashRuntimeExtensions.h; sourceTree = "<group>"; };
 		50B6B2051D49D44C00586C33 /* MoPubBanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoPubBanner.h; sourceTree = "<group>"; };
 		50B6B2061D49D44C00586C33 /* MoPubBanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoPubBanner.m; sourceTree = "<group>"; };
@@ -99,8 +94,6 @@
 				50B6B20E1D49D44C00586C33 /* MoPubKeywords.m */,
 				50B6B20F1D49D44C00586C33 /* MoPubTypeConversion.h */,
 				50B6B2101D49D44C00586C33 /* MoPubTypeConversion.m */,
-				50B6B1FB1D49D3C000586C33 /* MoPub.h */,
-				50B6B1FD1D49D3C000586C33 /* MoPub.m */,
 			);
 			path = MoPub;
 			sourceTree = "<group>";
@@ -224,7 +217,6 @@
 				50B6B2141D49D44C00586C33 /* MoPubIosExtension.m in Sources */,
 				50B6B2121D49D44C00586C33 /* MoPubCustomEventClassData.m in Sources */,
 				50B6B2131D49D44C00586C33 /* MoPubInterstitial.m in Sources */,
-				50B6B1FE1D49D3C000586C33 /* MoPub.m in Sources */,
 				50B6B2111D49D44C00586C33 /* MoPubBanner.m in Sources */,
 				50B6B2161D49D44C00586C33 /* MoPubTypeConversion.m in Sources */,
 				50B6B2151D49D44C00586C33 /* MoPubKeywords.m in Sources */,
@@ -239,10 +231,6 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
@@ -252,11 +240,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -271,7 +255,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -283,10 +267,6 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
@@ -296,11 +276,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -309,7 +286,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;

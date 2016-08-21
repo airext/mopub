@@ -2,7 +2,7 @@
   <id>com.sticksports.nativeExtensions.MoPub</id>
   <versionNumber>0.7.4</versionNumber>
   <platforms>
-<!--     <platform name="iPhone-ARM">
+    <platform name="iPhone-ARM">
       <applicationDeployment>
         <nativeLibrary>libANXMoPub.a</nativeLibrary>
         <initializer>MoPubExtensionInitializer</initializer>
@@ -16,7 +16,7 @@
         <finalizer>MoPubExtensionFinalizer</finalizer>
       </applicationDeployment>
     </platform>
- -->    <platform name="Android-ARM">
+    <platform name="Android-ARM">
       <applicationDeployment>
         <nativeLibrary>libANXMoPub.jar</nativeLibrary>
         <initializer>com.sticksports.nativeExtensions.mopub.MoPubExtension</initializer>

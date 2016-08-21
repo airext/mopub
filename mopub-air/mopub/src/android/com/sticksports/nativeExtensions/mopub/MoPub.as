@@ -60,7 +60,23 @@ package com.sticksports.nativeExtensions.mopub
 			extensionContext.call("mopub_trackConversion");
 			conversionTracked = true;
 		}
-		
+
+		public static function getVersion():String
+		{
+			var descriptor:XML = NativeApplication.nativeApplication.applicationDescriptor;
+			var ns:Namespace = descriptor.namespace();
+			var versionNumber:String = descriptor.ns::versionNumber.toString();
+
+			return versionNumber;
+		}
+
+		public static function getSDKVersion():String
+		{
+			createExtensionContextIfNull();
+
+			return extensionContext.call("mopub_version") as String;
+		}
+
 		public static function init(stage:Stage = null):void {
 			if(initialized)
 				return;

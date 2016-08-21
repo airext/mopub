@@ -59,7 +59,7 @@
         // banner
 
         [Bindable]
-        private var bannerId:String = AdId.ANDROID_PHONE_BANNER_MULTIPLE;
+        private var bannerId:String = AdId.ANDROID_PHONE_BANNER_MOPUB;
 
         private var banner:MpBanner;
 
@@ -75,6 +75,7 @@
                 removeBanner();
             }
 
+            Log.info("Creating banner ...");
             banner = new MpBanner(stage, bannerId, DeviceCapabilities.isTablet(stage));
 
             Log.info("Showing banner ...");
@@ -143,6 +144,7 @@
 
     <s:Scroller left="0" top="0" right="0" bottom="60">
         <s:VGroup padding="20" horizontalAlign="justify">
+            <s:Button label="Version" click="Alert.show(MoPub.getSDKVersion())" />
             <s:Button label="Track Conversion" click="trackConversion()" />
             <s:Button label="Set Keywords" click="setKeywords()" />
             <s:Button label="Apple IDFA" click="appleIDFA()" />

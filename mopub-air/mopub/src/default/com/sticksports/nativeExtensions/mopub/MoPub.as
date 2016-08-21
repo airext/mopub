@@ -30,7 +30,17 @@ package com.sticksports.nativeExtensions.mopub
 		public static function get nativeScreenHeight():Number {
 			return Capabilities.screenResolutionY;
 		}
-		
+
+		public static function getVersion():String
+		{
+			return null;
+		}
+
+		public static function getSDKVersion():String
+		{
+			return null;
+		}
+
 		public static function init(stage:Stage = null):void {
 			_stage = stage;
 		}
