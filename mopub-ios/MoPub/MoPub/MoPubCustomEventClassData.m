@@ -34,7 +34,10 @@
 }
 
 - (NSString *)getPropertyValue:(NSString *)propertyKey {
-    return [self.mopubWebsiteData objectForKey:propertyKey];
+    NSLog(@"> getPropertyValue");
+    NSString* result = [self.mopubWebsiteData objectForKey:propertyKey];
+    NSLog(@"< getPropertyValue");
+    return result;
 }
 
 @end

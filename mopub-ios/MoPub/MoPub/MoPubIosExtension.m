@@ -41,7 +41,7 @@ DEFINE_ANE_FUNCTION( mopub_version )
         return returnedObject;
     }
     
-    return returnedObject;
+    return NULL;
 }
 
 DEFINE_ANE_FUNCTION( mopub_init )

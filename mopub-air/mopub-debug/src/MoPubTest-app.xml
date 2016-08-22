@@ -416,6 +416,23 @@
 			<key>CFBundleAllowMixedLocalizations</key><true/>
 			<key>MOBVIOUS_SITE_ID</key><string>64713</string>
 			<key>MOBVIOUS_BASE_URL</key><string>http://mobile.smartadserver.com</string>
+
+			<!-- Disable ATS, required by AdColony -->
+
+			<key>NSAppTransportSecurity</key>
+            <dict>
+                <key>NSAllowsArbitraryLoads</key>
+                <true/>
+            </dict>
+
+            <key>LSApplicationQueriesSchemes</key>
+            <array>
+                <string>fb</string>
+                <string>instagram</string>
+                <string>tumblr</string>
+                <string>twitter</string>
+            </array>
+
 		]]></InfoAdditions>
         <requestedDisplayResolution>high</requestedDisplayResolution>
     </iPhone>
