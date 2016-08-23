@@ -36,7 +36,8 @@
         <option>-weak_framework CoreMotion</option>
         <option>-weak_framework WebKit</option>
         <!---->
-        <!--<option>-framework AdColony</option>-->
+
+        <option>-weak_framework AdColony</option>
         <!--<option>-framework GoogleMobileAds</option>-->
         <!--<option>-framework Chartboost</option>-->
 

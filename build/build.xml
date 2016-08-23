@@ -85,7 +85,7 @@
         <copy file="temp/ios/build/Release-iphonesimulator/libmopub-ios-sdk.a" todir="temp/ios-simulator" overwrite="true"/>
 
         <!-- Remove temporary directory for iOS artifacts -->
-		<!--<delete dir="temp/ios/build/"/>-->
+		<delete dir="temp/ios/build/"/>
 	</target>
 
     <!--=====================================================================-->
@@ -294,7 +294,7 @@
         <copy file="temp/swc/default/${name}.swc" todir="../bin"/>
 
         <!-- Remove temporary directory -->
-        <!-- <delete dir="temp"/> -->
+         <delete dir="temp"/>
     </target>
 
     <!--=====================================================================-->

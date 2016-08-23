@@ -82,15 +82,43 @@
 
         <!-- Copy iOS native part for iOS platform -->
         <copy file="${temp.dir}/ios/build/Release-iphoneos/${lib.name}.a" todir="${temp.dir}/ios" overwrite="true"/>
-        <copy todir="${temp.dir}/ios/AdColony.framework">
-            <fileset dir="${network.ios.project.dir}/Pods/AdColony/AdColony.framework"/>
+
+        <!-- Modifies AdColony.framework during copying removing symlinks to avoid ld linker error during ADT packaging when symlinks are handled wrong -->
+        <copy todir="${temp.dir}/ios/AdColony.framework" overwrite="true">
+            <fileset dir="${network.ios.project.dir}/Pods/AdColony/AdColony.framework/Versions/A">
+                <include name="Headers/**" />
+            </fileset>
+            <file file="${network.ios.project.dir}/Pods/AdColony/AdColony.framework/AdColony" />
         </copy>
+
+        <!-- Copy AdColony.framework for iOS respecting symbolic links -->
+        <!--<exec executable="cp">-->
+            <!--<arg line="-R -f ${network.ios.project.dir}/Pods/AdColony/AdColony.framework/ ${temp.dir}/ios/AdColony.framework" />-->
+        <!--</exec>-->
+
+        <!--<copy todir="${temp.dir}/ios/AdColony.framework">-->
+            <!--<fileset dir="${network.ios.project.dir}/Pods/AdColony/AdColony.framework"/>-->
+        <!--</copy>-->
 
         <!-- Copy iOS native part for iOS-Simulator platform -->
         <copy file="${temp.dir}/ios/build/Release-iphonesimulator/${lib.name}.a" tofile="${temp.dir}/ios-simulator/${lib.name}Simulator.a" overwrite="true"/>
-        <copy todir="${temp.dir}/ios-simulator/AdColony.framework">
-            <fileset dir="${network.ios.project.dir}/Pods/AdColony/AdColony.framework"/>
+
+        <!-- Modifies AdColony.framework during copying removing symlinks to avoid ld linker error during ADT packaging when symlinks are handled wrong -->
+        <copy todir="${temp.dir}/ios-simulator/AdColony.framework" overwrite="true">
+            <fileset dir="${network.ios.project.dir}/Pods/AdColony/AdColony.framework/Versions/A">
+                <include name="Headers/**" />
+            </fileset>
+            <file file="${network.ios.project.dir}/Pods/AdColony/AdColony.framework/AdColony" />
         </copy>
+
+        <!-- Copy AdColony.framework for iOS-Simulator respecting symbolic links -->
+        <!--<exec executable="cp">-->
+            <!--<arg line="-R -f ${network.ios.project.dir}/Pods/AdColony/AdColony.framework/ ${temp.dir}/ios-simulator/AdColony.framework" />-->
+        <!--</exec>-->
+
+        <!--<copy todir="${temp.dir}/ios-simulator/AdColony.framework">-->
+            <!--<fileset dir="${network.ios.project.dir}/Pods/AdColony/AdColony.framework"/>-->
+        <!--</copy>-->
 
         <!-- Remove temporary directory for iOS artifacts -->
         <delete dir="${temp.dir}/ios/build/"/>
@@ -255,7 +283,7 @@
         <copy file="${temp.dir}/swc/default/${extension}.swc" todir="../bin"/>
 
         <!-- Remove temporary directory -->
-        <!-- <delete dir="${temp.dir}"/> -->
+         <delete dir="${temp.dir}"/>
     </target>
 
 </project>
