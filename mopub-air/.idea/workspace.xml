@@ -65,12 +65,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="build-adcolony.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="build-adcolony.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../build/build-adcolony.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="87" column="98" selection-start-line="87" selection-start-column="98" selection-end-line="87" selection-end-column="98" />
+            <state relative-caret-position="1335">
+              <caret line="89" column="22" selection-start-line="89" selection-start-column="22" selection-end-line="89" selection-end-column="22" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../build/build.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="465">
+              <caret line="79" column="102" selection-start-line="79" selection-start-column="102" selection-end-line="79" selection-end-column="102" />
+              <folding>
+                <element signature="n#target#2;n#project#0;n#!!top" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -125,7 +137,6 @@
         <option value="$PROJECT_DIR$/../build/extension.xml" />
         <option value="$PROJECT_DIR$/../build/tools/app-package.sh" />
         <option value="$PROJECT_DIR$/../build/tools/package-ipa.sh" />
-        <option value="$PROJECT_DIR$/../build/build.xml" />
         <option value="$PROJECT_DIR$/../build/platform-ios.xml" />
         <option value="$PROJECT_DIR$/mopub-debug/src/utils/Log.as" />
         <option value="$PROJECT_DIR$/mopub/src/ios/com/sticksports/nativeExtensions/mopub/MoPubBanner.as" />
@@ -139,6 +150,7 @@
         <option value="$PROJECT_DIR$/mopub-debug/src/views/AdColonyView.mxml" />
         <option value="$PROJECT_DIR$/mopub-debug/src/MoPubTest-app.xml" />
         <option value="$PROJECT_DIR$/../build/build-adcolony.xml" />
+        <option value="$PROJECT_DIR$/../build/build.xml" />
       </list>
     </option>
   </component>
@@ -158,7 +170,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1920" />
-    <option name="height" value="979" />
+    <option name="height" value="983" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -185,6 +197,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -196,7 +209,6 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -653,12 +665,16 @@
       <workItem from="1471897239610" duration="456000" />
       <workItem from="1471936241188" duration="649000" />
       <workItem from="1471939109526" duration="1670000" />
-      <workItem from="1471941072759" duration="822000" />
+      <workItem from="1471941072759" duration="1419000" />
+      <workItem from="1471945213420" duration="337000" />
+      <workItem from="1471959720165" duration="1060000" />
+      <workItem from="1471961124013" duration="647000" />
+      <workItem from="1471963835510" duration="9000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="220641000" />
+    <option name="totallyTimeSpent" value="223291000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -670,8 +686,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1920" height="979" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1920" height="983" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25346112" sideWeight="0.49429038" order="0" side_tool="false" content_ui="tabs" />
@@ -1028,13 +1044,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../build/build.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1950">
-          <caret line="130" column="15" selection-start-line="128" selection-start-column="8" selection-end-line="130" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mopub-debug/src/AdUnit.as">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1082,9 +1091,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../build/build-adcolony.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="87" column="98" selection-start-line="87" selection-start-column="98" selection-end-line="87" selection-end-column="98" />
+        <state relative-caret-position="1335">
+          <caret line="89" column="22" selection-start-line="89" selection-start-column="22" selection-end-line="89" selection-end-column="22" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../build/build.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="79" column="102" selection-start-line="79" selection-start-column="102" selection-end-line="79" selection-end-column="102" />
+          <folding>
+            <element signature="n#target#2;n#project#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

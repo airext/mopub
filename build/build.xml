@@ -80,6 +80,10 @@
 		<copy file="temp/ios/build/Release-iphoneos/libANXMoPub.a" todir="temp/ios" overwrite="true"/>
 		<copy file="temp/ios/build/Release-iphoneos/libmopub-ios-sdk.a" todir="temp/ios" overwrite="true"/>
 
+        <copy todir="temp/ios" overwrite="true">
+            <fileset dir="${ios.project.dir}/Pods/mopub-ios-sdk/MoPubSDK/Resources" includes="**/**" />
+        </copy>
+
         <!-- Copy iOS native part for iOS-Simulator platform -->
         <copy file="temp/ios/build/Release-iphonesimulator/libANXMoPub.a" tofile="temp/ios-simulator/libANXMoPubSimulator.a" overwrite="true"/>
         <copy file="temp/ios/build/Release-iphonesimulator/libmopub-ios-sdk.a" todir="temp/ios-simulator" overwrite="true"/>
