@@ -12,7 +12,7 @@
 
     <property name="temp.dir" value="temp/${network}" />
 
-    <property name="network.ios.project.dir" value="../mopub-ios/ANXMoPub" />
+    <property name="network.ios.project.dir" value="../mopub-ios/MoPub" />
     <property name="network.air.project.dir" value="../mopub-air/${extension}" />
     <property name="network.android.project.dir" value="../mopub-android/${extension}" />
 
@@ -22,7 +22,7 @@
     <!--                             Build All                               -->
     <!--=====================================================================-->
 
-    <target name="all" depends="android,air,package" description="Full build of extension">
+    <target name="all" depends="ios,android,air,package" description="Full build of extension">
         <exec executable="java">
             <arg value="-version" />
         </exec>
@@ -39,31 +39,31 @@
 
         <!-- Install Pods dependencies -->
         <!--<exec executable="pod" dir="${network.ios.project.dir}">-->
-            <!--<arg value="install"/>-->
+        <!--<arg value="install"/>-->
         <!--</exec>-->
 
         <!--&lt;!&ndash; Build iOS part of the extension &ndash;&gt;-->
         <!--<exec executable="xcodebuild" failonerror="true" dir="${network.ios.project.dir}">-->
-            <!--<arg line='-project ANXMoPub.xcodeproj'/>-->
-            <!--<arg line='-sdk iphoneos' />-->
-            <!--<arg line="-target ANXMoPub"/>-->
-            <!--<arg line='-configuration Release'/>-->
-            <!--<arg line='SYMROOT=$(PWD)/../build/${temp.dir}/ios/build'/>-->
+        <!--<arg line='-project ANXMoPub.xcodeproj'/>-->
+        <!--<arg line='-sdk iphoneos' />-->
+        <!--<arg line="-target ANXMoPub"/>-->
+        <!--<arg line='-configuration Release'/>-->
+        <!--<arg line='SYMROOT=$(PWD)/../build/${temp.dir}/ios/build'/>-->
         <!--</exec>-->
 
         <!--&lt;!&ndash; Build iOS-simulator part of the extension &ndash;&gt;-->
         <!--<exec executable="xcodebuild" failonerror="true" dir="${network.ios.project.dir}">-->
-            <!--<arg line='-project ANXMoPub.xcodeproj'/>-->
-            <!--<arg line='-sdk iphonesimulator' />-->
-            <!--<arg line="-target ANXMoPub"/>-->
-            <!--<arg line='-configuration Release'/>-->
-            <!--<arg line='SYMROOT=$(PWD)/../build/${temp.dir}/ios/build'/>-->
+        <!--<arg line='-project ANXMoPub.xcodeproj'/>-->
+        <!--<arg line='-sdk iphonesimulator' />-->
+        <!--<arg line="-target ANXMoPub"/>-->
+        <!--<arg line='-configuration Release'/>-->
+        <!--<arg line='SYMROOT=$(PWD)/../build/${temp.dir}/ios/build'/>-->
         <!--</exec>-->
 
         <!-- Build iOS part of the extension -->
         <exec executable="xcodebuild" failonerror="true" dir="${network.ios.project.dir}">
-            <arg line='-workspace ANXMoPub.xcworkspace'/>
-            <arg line='-scheme ANXMoPub'/>
+            <arg line='-workspace MoPub.xcworkspace'/>
+            <arg line='-scheme ANXMoPubVungle'/>
             <arg line='-sdk iphoneos' />
             <arg line='-configuration Release'/>
             <arg line='SYMROOT=$(PWD)/../build/${temp.dir}/ios/build'/>
@@ -71,8 +71,8 @@
 
         <!-- Build iOS-simulator part of the extension -->
         <exec executable="xcodebuild" failonerror="true" dir="${network.ios.project.dir}">
-            <arg line='-workspace ANXMoPub.xcworkspace'/>
-            <arg line='-scheme ANXMoPub'/>
+            <arg line='-workspace MoPub.xcworkspace'/>
+            <arg line='-scheme ANXMoPubVungle'/>
             <arg line='-sdk iphonesimulator' />
             <arg line='-configuration Release'/>
             <arg line='SYMROOT=$(PWD)/../build/${temp.dir}/ios/build'/>
@@ -81,16 +81,28 @@
         <!-- Copy iOS native part for iOS platform -->
         <copy file="${temp.dir}/ios/build/Release-iphoneos/${lib.name}.a" todir="${temp.dir}/ios" overwrite="true"/>
 
-        <!-- Copy iOS native part for iOS-Simulator platform -->
-        <copy file="${temp.dir}/ios/build/Release-iphonesimulator/${lib.name}.a" tofile="${temp.dir}/ios-simulator/${lib.name}Simulator.a" overwrite="true"/>
+        <!-- Copy Vungle.framework for iOS-Simulator respecting symbolic links -->
+        <copy todir="${temp.dir}/ios/VungleSDK.framework">
+            <fileset dir="${network.ios.project.dir}/Pods/VungleSDK-iOS/VungleSDK.embeddedframework/VungleSDK.framework"/>
+        </copy>
 
-        <!-- Copy iOS dependencies for iOS platform -->
-        <copy file="${temp.dir}/ios/build/Release-iphoneos/libBraintree.a" todir="${temp.dir}/ios" overwrite="true"/>
-        <copy file="${network.ios.project.dir}/Pods/Braintree/Braintree/PayPal/mSDK/libPayPalMobile-BT.a" todir="${temp.dir}/ios" overwrite="true"/>
+        <!-- Copy resources -->
+        <copy todir="${temp.dir}/ios" overwrite="true">
+            <fileset dir="${network.ios.project.dir}/Pods/VungleSDK-iOS/VungleSDK.embeddedframework/Resources" includes="**/**" />
+        </copy>
 
-        <!-- Copy iOS dependencies for iOS-Simualtor platform -->
-        <copy file="${temp.dir}/ios/build/Release-iphoneos/libBraintree.a" todir="${temp.dir}/ios-simulator" overwrite="true"/>
-        <copy file="${network.ios.project.dir}/Pods/Braintree/Braintree/PayPal/mSDK/libPayPalMobile-BT.a" todir="${temp.dir}/ios-simulator" overwrite="true"/>
+        <!-- Copy iOS native part for iOS platform -->
+        <copy file="${temp.dir}/ios/build/Release-iphoneos/${lib.name}.a" tofile="${temp.dir}/ios-simulator/${lib.name}Simulator.a" overwrite="true"/>
+
+        <!-- Copy Vungle.framework for iOS-Simulator respecting symbolic links -->
+        <copy todir="${temp.dir}/ios-simulator/VungleSDK.framework">
+            <fileset dir="${network.ios.project.dir}/Pods/VungleSDK-iOS/VungleSDK.embeddedframework/VungleSDK.framework"/>
+        </copy>
+
+        <!-- Copy resources -->
+        <copy todir="${temp.dir}/ios-simulator" overwrite="true">
+            <fileset dir="${network.ios.project.dir}/Pods/VungleSDK-iOS/VungleSDK.embeddedframework/Resources" includes="**/**" />
+        </copy>
 
         <!-- Remove temporary directory for iOS artifacts -->
         <delete dir="${temp.dir}/ios/build/"/>
@@ -173,6 +185,9 @@
         <!-- Copy library.swf to iOS platform folder -->
         <copy file="${temp.dir}/swc/build/library.swf" todir="${temp.dir}/ios" overwrite="true"/>
 
+        <!-- Copy library.swf to iOS-Simulator platform folder -->
+        <copy file="${temp.dir}/swc/build/library.swf" todir="${temp.dir}/ios-simulator" overwrite="true"/>
+
         <!-- Copy library.swf to Android platform folder -->
         <copy file="${temp.dir}/swc/build/library.swf" todir="${temp.dir}/android" overwrite="true"/>
 
@@ -231,13 +246,14 @@
             <arg line="${keystore.file}"/>
             <arg line="-storepass"/>
             <arg line="${keystore.password}"/>
+            <arg line="-tsa none"/>
             <arg line="-target"/>
             <arg line="ane"/>
             <arg line="${extension}.ane"/>
             <arg line="../../extension-${network}.xml"/>
             <arg line="-swc swc/default/${extension}.swc"/>
-            <!-- <arg line="-platform iPhone-ARM -platformoptions ../platform-ios.xml -C ios/ ."/> -->
-            <!-- <arg line="-platform iPhone-x86 -platformoptions ../platform-ios.xml -C ios-simulator/ ."/> -->
+            <arg line="-platform iPhone-ARM -platformoptions ../../platform-ios-${network}.xml -C ios/ ."/>
+            <arg line="-platform iPhone-x86 -platformoptions ../../platform-ios-${network}.xml -C ios-simulator/ ."/>
             <arg line="-platform Android-ARM -platformoptions ../../platform-android-${network}.xml -C android/ ."/>
             <arg line="-platform Android-x86 -platformoptions ../../platform-android-${network}.xml -C android/ ."/>
             <arg line="-platform default -C default/ ."/>

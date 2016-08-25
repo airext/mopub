@@ -1,3 +1,4 @@
 pod 'mopub-ios-sdk', '4.7.0'
 
-pod 'AdColony'
+pod 'AdColony', '2.6.2'
+pod "VungleSDK-iOS", 3.2.2

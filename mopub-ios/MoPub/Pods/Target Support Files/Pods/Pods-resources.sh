@@ -58,6 +58,12 @@ install_resource()
   esac
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_resource "VungleSDK-iOS/VungleSDK.embeddedframework/Resources/__vungle.db"
+  install_resource "VungleSDK-iOS/VungleSDK.embeddedframework/Resources/vg_close.png"
+  install_resource "VungleSDK-iOS/VungleSDK.embeddedframework/Resources/vg_cta.png"
+  install_resource "VungleSDK-iOS/VungleSDK.embeddedframework/Resources/vg_mute_off.png"
+  install_resource "VungleSDK-iOS/VungleSDK.embeddedframework/Resources/vg_mute_on.png"
+  install_resource "VungleSDK-iOS/VungleSDK.embeddedframework/Resources/vg_privacy.png"
   install_resource "mopub-ios-sdk/MoPubSDK/Internal/Common/MPAdBrowserController.xib"
   install_resource "mopub-ios-sdk/MoPubSDK/Resources/MPCloseBtn.png"
   install_resource "mopub-ios-sdk/MoPubSDK/Resources/MPCloseBtn@2x.png"
@@ -80,6 +86,12 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_resource "mopub-ios-sdk/MoPubSDK/Resources/MRAID.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_resource "VungleSDK-iOS/VungleSDK.embeddedframework/Resources/__vungle.db"
+  install_resource "VungleSDK-iOS/VungleSDK.embeddedframework/Resources/vg_close.png"
+  install_resource "VungleSDK-iOS/VungleSDK.embeddedframework/Resources/vg_cta.png"
+  install_resource "VungleSDK-iOS/VungleSDK.embeddedframework/Resources/vg_mute_off.png"
+  install_resource "VungleSDK-iOS/VungleSDK.embeddedframework/Resources/vg_mute_on.png"
+  install_resource "VungleSDK-iOS/VungleSDK.embeddedframework/Resources/vg_privacy.png"
   install_resource "mopub-ios-sdk/MoPubSDK/Internal/Common/MPAdBrowserController.xib"
   install_resource "mopub-ios-sdk/MoPubSDK/Resources/MPCloseBtn.png"
   install_resource "mopub-ios-sdk/MoPubSDK/Resources/MPCloseBtn@2x.png"

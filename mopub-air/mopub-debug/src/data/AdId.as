@@ -26,6 +26,8 @@ public class AdId
     public static const ANDROID_PHONE_INTERSTITIAL_FACEBOOK:String = "cc1cad7724f44ce1abbf9bec3854eb4c";
 
     public static const IOS_PHONE_INTERSTITIAL_ADCOLONY:String = "56d50f5b6f0440a9acf2dbeb7c6ab576";
+    public static const IOS_PHONE_INTERSTITIAL_VUNGLE:String = "79105bb39f594e3c94145cdbb57ab334";
+    public static const IOS_PHONE_INTERSTITIAL_VUNGLE_TEST:String = "a44250cea68541ad8688ceaf26451423";
 
     public static function get PHONE_BANNER_MULTIPLE():String
     {
@@ -83,9 +85,13 @@ public class AdId
         {
            return IOS_PHONE_INTERSTITIAL_ADCOLONY;
         }
-        else
+        else if (Capabilities.version.substr(0, 3).toUpperCase() == "AND")
         {
            return ANDROID_PHONE_INTERSTITIAL_ADCOLONY;
+        }
+        else
+        {
+            return null;
         }
     }
 
@@ -96,7 +102,18 @@ public class AdId
 
     public static function get PHONE_INTERSTITIAL_VUNGLE():String
     {
-        return _PHONE_INTERSTITIAL_VUNGLE;
+        if (Capabilities.version.substr(0, 3).toUpperCase() == "IOS")
+        {
+            return IOS_PHONE_INTERSTITIAL_VUNGLE_TEST;
+        }
+        else if (Capabilities.version.substr(0, 3).toUpperCase() == "AND")
+        {
+            return ANDROID_PHONE_INTERSTITIAL_VUNGLE_TEST;
+        }
+        else
+        {
+            return null;
+        }
     }
 
     public static function get PHONE_INTERSTITIAL_VUNGLE_TEST():String
@@ -124,7 +141,6 @@ public class AdId
     private static var _PHONE_INTERSTITIAL_MOPUB:String;
     private static var _PHONE_INTERSTITIAL_ADMOB:String;
     private static var _PHONE_INTERSTITIAL_UNITY:String;
-    private static var _PHONE_INTERSTITIAL_VUNGLE:String;
     private static var _PHONE_INTERSTITIAL_VUNGLE_TEST:String;
     private static var _PHONE_INTERSTITIAL_CHARTBOOST:String;
     private static var _PHONE_INTERSTITIAL_FACEBOOK:String;

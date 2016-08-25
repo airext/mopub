@@ -88,6 +88,10 @@
         <copy file="temp/ios/build/Release-iphonesimulator/libANXMoPub.a" tofile="temp/ios-simulator/libANXMoPubSimulator.a" overwrite="true"/>
         <copy file="temp/ios/build/Release-iphonesimulator/libmopub-ios-sdk.a" todir="temp/ios-simulator" overwrite="true"/>
 
+        <copy todir="temp/ios-simulator" overwrite="true">
+            <fileset dir="${ios.project.dir}/Pods/mopub-ios-sdk/MoPubSDK/Resources" includes="**/**" />
+        </copy>
+
         <!-- Remove temporary directory for iOS artifacts -->
 		<delete dir="temp/ios/build/"/>
 	</target>

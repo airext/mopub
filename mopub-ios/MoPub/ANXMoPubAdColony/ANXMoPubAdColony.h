@@ -16,6 +16,8 @@
 
 #pragma mark API
 
+FREObject ANXMoPubAdColonyIsSupported(FREContext context, void* functionData, uint32_t argc, FREObject argv[]);
+
 FREObject ANXMoPubAdColonyGetVersion(FREContext context, void* functionData, uint32_t argc, FREObject argv[]);
 
 #pragma mark ContextInitialize/ContextFinalizer

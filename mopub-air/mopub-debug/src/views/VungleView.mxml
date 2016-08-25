@@ -60,7 +60,7 @@
         // interstitial
 
         [Bindable]
-        private var interstitialId:String = AdId.ANDROID_PHONE_INTERSTITIAL_VUNGLE_TEST;
+        private var interstitialId:String = AdId.PHONE_INTERSTITIAL_VUNGLE;
 
         private var interstitial:MpInterstitial;
 

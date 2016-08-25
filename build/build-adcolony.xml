@@ -202,7 +202,7 @@
         <!-- Copy library.swf to iOS platform folder -->
         <copy file="${temp.dir}/swc/build/library.swf" todir="${temp.dir}/ios" overwrite="true"/>
 
-        <!-- Copy library.swf to iOS platform folder -->
+        <!-- Copy library.swf to iOS-Simulator platform folder -->
         <copy file="${temp.dir}/swc/build/library.swf" todir="${temp.dir}/ios-simulator" overwrite="true"/>
 
         <!-- Copy library.swf to Android platform folder -->
