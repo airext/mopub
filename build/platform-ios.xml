@@ -39,7 +39,7 @@
 
         <option>-weak_framework AdColony</option>
         <option>-weak_framework VungleSDK</option>
-        <!--<option>-framework GoogleMobileAds</option>-->
+        <option>-weak_framework GoogleMobileAds</option>
         <!--<option>-framework Chartboost</option>-->
 
         <option>-lsqlite3</option>

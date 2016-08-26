@@ -86,10 +86,10 @@
             <fileset dir="${network.ios.project.dir}/Pods/VungleSDK-iOS/VungleSDK.embeddedframework/VungleSDK.framework"/>
         </copy>
 
-        <!-- Copy resources -->
-        <copy todir="${temp.dir}/ios" overwrite="true">
-            <fileset dir="${network.ios.project.dir}/Pods/VungleSDK-iOS/VungleSDK.embeddedframework/Resources" includes="**/**" />
-        </copy>
+        <!--&lt;!&ndash; Copy resources &ndash;&gt;-->
+        <!--<copy todir="${temp.dir}/ios" overwrite="true">-->
+            <!--<fileset dir="${network.ios.project.dir}/Pods/VungleSDK-iOS/VungleSDK.embeddedframework/Resources" includes="**/**" />-->
+        <!--</copy>-->
 
         <!-- Copy iOS native part for iOS platform -->
         <copy file="${temp.dir}/ios/build/Release-iphoneos/${lib.name}.a" tofile="${temp.dir}/ios-simulator/${lib.name}Simulator.a" overwrite="true"/>
@@ -99,10 +99,10 @@
             <fileset dir="${network.ios.project.dir}/Pods/VungleSDK-iOS/VungleSDK.embeddedframework/VungleSDK.framework"/>
         </copy>
 
-        <!-- Copy resources -->
-        <copy todir="${temp.dir}/ios-simulator" overwrite="true">
-            <fileset dir="${network.ios.project.dir}/Pods/VungleSDK-iOS/VungleSDK.embeddedframework/Resources" includes="**/**" />
-        </copy>
+        <!--&lt;!&ndash; Copy resources &ndash;&gt;-->
+        <!--<copy todir="${temp.dir}/ios-simulator" overwrite="true">-->
+            <!--<fileset dir="${network.ios.project.dir}/Pods/VungleSDK-iOS/VungleSDK.embeddedframework/Resources" includes="**/**" />-->
+        <!--</copy>-->
 
         <!-- Remove temporary directory for iOS artifacts -->
         <delete dir="${temp.dir}/ios/build/"/>

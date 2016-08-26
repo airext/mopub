@@ -22,6 +22,14 @@
 		</dict>
 		<dict>
 			<key>FooterText</key>
+			<string>Copyright 2011 Google Inc. All Rights Reserved.</string>
+			<key>Title</key>
+			<string>Google-Mobile-Ads-SDK</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>FooterText</key>
 			<string>   	Vungle SDK License and Publisher Terms
  The Vungle SDK is made available by Vungle, Inc. ("Vungle"). 
  By downloading or using the Vungle SDK, you and any company, entity, or organization on behalf of which you are accepting these Vungle SDK License and Publisher Terms (this "Agreement") hereby agree to be bound by all terms and conditions of this Agreement. If you do not agree to all terms and conditions of this Agreement, do not download or use the Vungle SDK. 
