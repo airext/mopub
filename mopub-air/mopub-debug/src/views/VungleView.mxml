@@ -22,7 +22,7 @@
         // banner
 
         [Bindable]
-        private var bannerId:String = AdId.ANDROID_PHONE_BANNER_VUNGLE;
+        private var bannerId:String = AdId.PHONE_BANNER_VUNGLE;
 
         private var banner:MpBanner;
 

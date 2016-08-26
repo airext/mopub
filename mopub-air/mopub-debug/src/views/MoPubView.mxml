@@ -59,7 +59,7 @@
         // banner
 
         [Bindable]
-        private var bannerId:String = AdId.ANDROID_PHONE_BANNER_MOPUB;
+        private var bannerId:String = AdId.PHONE_BANNER_MOPUB;
 
         private var banner:MpBanner;
 
@@ -98,7 +98,7 @@
         // interstitial
 
         [Bindable]
-        private var interstitialId:String = AdId.ANDROID_PHONE_INTERSTITIAL_MOPUB;
+        private var interstitialId:String = AdId.PHONE_INTERSTITIAL_MOPUB;
 
         private var interstitial:MpInterstitial;
 

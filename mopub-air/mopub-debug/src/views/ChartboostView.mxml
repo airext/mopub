@@ -22,7 +22,7 @@
         // banner
 
         [Bindable]
-        private var bannerId:String = AdId.ANDROID_PHONE_BANNER_CHARTBOOST;
+        private var bannerId:String = AdId.PHONE_BANNER_CHARTBOOST;
 
         private var banner:MpBanner;
 
@@ -60,7 +60,7 @@
         // interstitial
 
         [Bindable]
-        private var interstitialId:String = AdId.ANDROID_PHONE_INTERSTITIAL_CHARTBOOST;
+        private var interstitialId:String = AdId.PHONE_INTERSTITIAL_CHARTBOOST;
 
         private var interstitial:MpInterstitial;
 
