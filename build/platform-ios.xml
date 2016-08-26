@@ -35,15 +35,14 @@
         <option>-framework AddressBookUI</option>
         <option>-weak_framework CoreMotion</option>
         <option>-weak_framework WebKit</option>
-        <!---->
+
+        <option>-lsqlite3</option>
+        <option>-lz</option>
 
         <option>-weak_framework AdColony</option>
         <option>-weak_framework VungleSDK</option>
         <option>-weak_framework GoogleMobileAds</option>
-        <!--<option>-framework Chartboost</option>-->
-
-        <option>-lsqlite3</option>
-        <option>-lz</option>
+        <option>-weak_framework Chartboost</option>
 
     </linkerOptions>
 

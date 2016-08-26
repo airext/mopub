@@ -2,13 +2,20 @@
   <id>com.sticksports.nativeExtensions.mopub.chartboost</id>
   <versionNumber>0.0.1</versionNumber>
   <platforms>
-<!--     <platform name="iPhone-ARM">
+    <platform name="iPhone-ARM">
       <applicationDeployment>
-        <nativeLibrary>libMoPubIosExtension.a</nativeLibrary>
-        <initializer>MoPubExtensionInitializer</initializer>
-        <finalizer>MoPubExtensionFinalizer</finalizer>
+        <nativeLibrary>libANXMoPubChartboostSupport.a</nativeLibrary>
+        <initializer>ANXMoPubChartboostInitializer</initializer>
+        <finalizer>ANXMoPubChartboostFinalizer</finalizer>
       </applicationDeployment>
-    </platform> -->
+    </platform>
+    <platform name="iPhone-x86">
+      <applicationDeployment>
+        <nativeLibrary>libANXMoPubChartboostSupportSimulator.a</nativeLibrary>
+        <initializer>ANXMoPubChartboostInitializer</initializer>
+        <finalizer>ANXMoPubChartboostFinalizer</finalizer>
+      </applicationDeployment>
+    </platform>
     <platform name="Android-ARM">
       <applicationDeployment>
         <nativeLibrary>libANXMoPubChartboostSupport.jar</nativeLibrary>

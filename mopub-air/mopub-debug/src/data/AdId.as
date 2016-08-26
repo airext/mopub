@@ -37,6 +37,7 @@ public class AdId
     private static const IOS_PHONE_INTERSTITIAL_VUNGLE:String = "79105bb39f594e3c94145cdbb57ab334";
     private static const IOS_PHONE_INTERSTITIAL_VUNGLE_TEST:String = "a44250cea68541ad8688ceaf26451423";
     private static const IOS_PHONE_INTERSTITIAL_ADMOB:String = "ee828bbe33fe48dcb75d741915215e12";
+    private static const IOS_PHONE_INTERSTITIAL_CHARTBOOST:String = "43f972d6d4da4db58eae9bdfee5f0b33";
 
     public static function get PHONE_BANNER_MULTIPLE():String
     {
@@ -160,7 +161,18 @@ public class AdId
 
     public static function get PHONE_INTERSTITIAL_CHARTBOOST():String
     {
-        return ANDROID_PHONE_INTERSTITIAL_CHARTBOOST;
+        if (Capabilities.version.substr(0, 3).toUpperCase() == "IOS")
+        {
+            return IOS_PHONE_INTERSTITIAL_CHARTBOOST;
+        }
+        else if (Capabilities.version.substr(0, 3).toUpperCase() == "AND")
+        {
+            return ANDROID_PHONE_INTERSTITIAL_CHARTBOOST;
+        }
+        else
+        {
+            return null;
+        }
     }
 
     public static function get PHONE_INTERSTITIAL_FACEBOOK():String

@@ -1,5 +1,6 @@
 PODS:
   - AdColony (2.6.2)
+  - ChartboostSDK (6.4.7)
   - Google-Mobile-Ads-SDK (7.10.0)
   - mopub-ios-sdk (4.7.0):
     - mopub-ios-sdk/MoPubSDK (= 4.7.0)
@@ -8,12 +9,14 @@ PODS:
 
 DEPENDENCIES:
   - AdColony (= 2.6.2)
-  - Google-Mobile-Ads-SDK
+  - ChartboostSDK
+  - Google-Mobile-Ads-SDK (= 7.10.0)
   - mopub-ios-sdk (= 4.7.0)
   - VungleSDK-iOS (= 3.2.2)
 
 SPEC CHECKSUMS:
   AdColony: c91c627c389e8d26a22c05ce7585d83db0121c25
+  ChartboostSDK: aeff0e21746d8b659c6407b1eda1fe67cdd59cf0
   Google-Mobile-Ads-SDK: a833c38292ffaca727036ece7c691ba0a4a57d39
   mopub-ios-sdk: e46b277cdb77b1745567b419742f77fed6865262
   VungleSDK-iOS: 1c9ac04299476b78e592221fe6cbc8e3fd5b7418
