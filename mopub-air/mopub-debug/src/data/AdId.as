@@ -12,15 +12,12 @@ public class AdId
     private static const ANDROID_PHONE_BANNER_MULTIPLE:String = "2fce07f9105e4cb48e3dd88c1d607184";
     private static const ANDROID_PHONE_BANNER_MOPUB:String = "5663bb9010164d7cb435d2e6be6b3e6c";
     private static const ANDROID_PHONE_BANNER_ADMOB:String = "2ab8ae5afc104ae990aa2033227925d7";
-    private static const ANDROID_PHONE_BANNER_ADCOLONY:String = "N/A";
-    private static const ANDROID_PHONE_BANNER_UNITY:String = "TBA";
-    private static const ANDROID_PHONE_BANNER_VUNGLE:String = "TBA";
-    private static const ANDROID_PHONE_BANNER_CHARTBOOST:String = "TBA";
     private static const ANDROID_PHONE_BANNER_FACEBOOK:String = "TBA";
 
     private static const IOS_PHONE_BANNER_MULTIPLE:String = "60c7401f146c4dc6a85a9061f5ce8ad9";
     private static const IOS_PHONE_BANNER_ADMOB:String = "38fe08b694454109a5735e2f695d6bf8";
     private static const IOS_PHONE_BANNER_ADMOB_DUMMY:String = "6e16d28e34ef426e85be5de3350a6691";
+    private static const IOS_PHONE_BANNER_FACEBOOK:String = "02beb5a061604224a734b54eef0732fd";
 
     // interstitials
 
@@ -38,6 +35,7 @@ public class AdId
     private static const IOS_PHONE_INTERSTITIAL_VUNGLE_TEST:String = "a44250cea68541ad8688ceaf26451423";
     private static const IOS_PHONE_INTERSTITIAL_ADMOB:String = "ee828bbe33fe48dcb75d741915215e12";
     private static const IOS_PHONE_INTERSTITIAL_CHARTBOOST:String = "43f972d6d4da4db58eae9bdfee5f0b33";
+    private static const IOS_PHONE_INTERSTITIAL_FACEBOOK:String = "ae63d66f811b47b1a081f69939307942";
 
     public static function get PHONE_BANNER_MULTIPLE():String
     {
@@ -78,27 +76,38 @@ public class AdId
 
     public static function get PHONE_BANNER_ADCOLONY():String
     {
-        return ANDROID_PHONE_BANNER_ADCOLONY;
+        return "N/A";
     }
 
     public static function get PHONE_BANNER_UNITY():String
     {
-        return ANDROID_PHONE_BANNER_UNITY;
+        return "N/A";
     }
 
     public static function get PHONE_BANNER_VUNGLE():String
     {
-        return ANDROID_PHONE_BANNER_VUNGLE;
+        return "N/A";
     }
 
     public static function get PHONE_BANNER_CHARTBOOST():String
     {
-        return ANDROID_PHONE_BANNER_CHARTBOOST;
+        return "N/A";
     }
 
     public static function get PHONE_BANNER_FACEBOOK():String
     {
-        return ANDROID_PHONE_BANNER_FACEBOOK;
+        if (Capabilities.version.substr(0, 3).toUpperCase() == "IOS")
+        {
+            return IOS_PHONE_BANNER_FACEBOOK;
+        }
+        else if (Capabilities.version.substr(0, 3).toUpperCase() == "AND")
+        {
+            return ANDROID_PHONE_BANNER_FACEBOOK;
+        }
+        else
+        {
+            return null;
+        }
     }
 
     public static function get PHONE_INTERSTITIAL_MOPUB():String
@@ -177,7 +186,18 @@ public class AdId
 
     public static function get PHONE_INTERSTITIAL_FACEBOOK():String
     {
-        return ANDROID_PHONE_INTERSTITIAL_FACEBOOK;
+        if (Capabilities.version.substr(0, 3).toUpperCase() == "IOS")
+        {
+            return IOS_PHONE_INTERSTITIAL_FACEBOOK;
+        }
+        else if (Capabilities.version.substr(0, 3).toUpperCase() == "AND")
+        {
+            return ANDROID_PHONE_INTERSTITIAL_FACEBOOK;
+        }
+        else
+        {
+            return null;
+        }
     }
 
 //    private static var _PHONE_BANNER_MOPUB:String;

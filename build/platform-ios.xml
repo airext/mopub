@@ -43,6 +43,7 @@
         <option>-weak_framework VungleSDK</option>
         <option>-weak_framework GoogleMobileAds</option>
         <option>-weak_framework Chartboost</option>
+        <option>-weak_framework FBAudienceNetwork</option>
 
     </linkerOptions>
 

@@ -2,15 +2,20 @@
   <id>com.sticksports.nativeExtensions.mopub.facebook</id>
   <versionNumber>0.0.1</versionNumber>
   <platforms>
-    <!--
      <platform name="iPhone-ARM">
       <applicationDeployment>
-        <nativeLibrary>libMoPubIosExtension.a</nativeLibrary>
-        <initializer>MoPubExtensionInitializer</initializer>
-        <finalizer>MoPubExtensionFinalizer</finalizer>
+        <nativeLibrary>libANXMoPubFacebookSupport.a</nativeLibrary>
+        <initializer>ANXMoPubFacebookInitializer</initializer>
+        <finalizer>ANXMoPubFacebookFinalizer</finalizer>
       </applicationDeployment>
     </platform>
-    -->
+     <platform name="iPhone-x86">
+      <applicationDeployment>
+        <nativeLibrary>libANXMoPubFacebookSupportSimulator.a</nativeLibrary>
+        <initializer>ANXMoPubFacebookInitializer</initializer>
+        <finalizer>ANXMoPubFacebookFinalizer</finalizer>
+      </applicationDeployment>
+    </platform>
     <platform name="Android-ARM">
       <applicationDeployment>
         <nativeLibrary>libANXMoPubFacebookSupport.jar</nativeLibrary>

@@ -23,7 +23,7 @@
         // Facebook
 
         [Bindable]
-        private var deviceId:String = "ab4eb95b195efc9dc8c5668123147516";
+        private var deviceId:String = Capabilities.version.substr(0, 3).toUpperCase() == "IOS" ? "8a91a25467eb3a9d748dd80774c7c4a9c0be6c02" : "ab4eb95b195efc9dc8c5668123147516";
 
         // banner
 
