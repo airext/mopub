@@ -58,6 +58,7 @@ install_resource()
   esac
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_resource "UnityAds/UnityAds.bundle"
   install_resource "VungleSDK-iOS/VungleSDK.embeddedframework/Resources/__vungle.db"
   install_resource "VungleSDK-iOS/VungleSDK.embeddedframework/Resources/vg_close.png"
   install_resource "VungleSDK-iOS/VungleSDK.embeddedframework/Resources/vg_cta.png"
@@ -86,6 +87,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_resource "mopub-ios-sdk/MoPubSDK/Resources/MRAID.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_resource "UnityAds/UnityAds.bundle"
   install_resource "VungleSDK-iOS/VungleSDK.embeddedframework/Resources/__vungle.db"
   install_resource "VungleSDK-iOS/VungleSDK.embeddedframework/Resources/vg_close.png"
   install_resource "VungleSDK-iOS/VungleSDK.embeddedframework/Resources/vg_cta.png"

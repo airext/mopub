@@ -63,6 +63,14 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 		</dict>
 		<dict>
 			<key>FooterText</key>
+			<string>See http://www.apache.org/licenses/LICENSE-2.0.html</string>
+			<key>Title</key>
+			<string>UnityAds</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>FooterText</key>
 			<string>   	Vungle SDK License and Publisher Terms
  The Vungle SDK is made available by Vungle, Inc. ("Vungle"). 
  By downloading or using the Vungle SDK, you and any company, entity, or organization on behalf of which you are accepting these Vungle SDK License and Publisher Terms (this "Agreement") hereby agree to be bound by all terms and conditions of this Agreement. If you do not agree to all terms and conditions of this Agreement, do not download or use the Vungle SDK. 

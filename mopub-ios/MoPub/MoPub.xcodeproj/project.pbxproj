@@ -44,6 +44,14 @@
 		5054A5AF1D71755100CA6C66 /* FacebookInterstitialCustomEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 5054A5A71D71755100CA6C66 /* FacebookInterstitialCustomEvent.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		5054A5B01D71755100CA6C66 /* FacebookNativeAdAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5054A5A91D71755100CA6C66 /* FacebookNativeAdAdapter.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		5054A5B11D71755100CA6C66 /* FacebookNativeCustomEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 5054A5AB1D71755100CA6C66 /* FacebookNativeCustomEvent.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		5054A5BA1D71842B00CA6C66 /* ANXMoPubUnity.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5054A5B91D71842B00CA6C66 /* ANXMoPubUnity.h */; };
+		5054A5BC1D71842B00CA6C66 /* ANXMoPubUnity.m in Sources */ = {isa = PBXBuildFile; fileRef = 5054A5BB1D71842B00CA6C66 /* ANXMoPubUnity.m */; };
+		5054A5C11D71844C00CA6C66 /* UnityAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5054A5C01D71844C00CA6C66 /* UnityAds.framework */; };
+		5054A5CB1D71853900CA6C66 /* MPInstanceProvider+Unity.m in Sources */ = {isa = PBXBuildFile; fileRef = 5054A5C41D71853900CA6C66 /* MPInstanceProvider+Unity.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		5054A5CC1D71853900CA6C66 /* MPUnityRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5054A5C61D71853900CA6C66 /* MPUnityRouter.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		5054A5CD1D71853900CA6C66 /* UnityAdsInstanceMediationSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 5054A5C81D71853900CA6C66 /* UnityAdsInstanceMediationSettings.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		5054A5CE1D71853900CA6C66 /* UnityAdsRewardedVideoCustomEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 5054A5CA1D71853900CA6C66 /* UnityAdsRewardedVideoCustomEvent.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		5054A5D11D71888800CA6C66 /* UnityAdsMopubEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 5054A5D01D71888800CA6C66 /* UnityAdsMopubEvent.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		50B6B2111D49D44C00586C33 /* MoPubBanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B6B2061D49D44C00586C33 /* MoPubBanner.m */; };
 		50B6B2121D49D44C00586C33 /* MoPubCustomEventClassData.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B6B2081D49D44C00586C33 /* MoPubCustomEventClassData.m */; };
 		50B6B2131D49D44C00586C33 /* MoPubInterstitial.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B6B20B1D49D44C00586C33 /* MoPubInterstitial.m */; };
@@ -100,6 +108,16 @@
 			dstSubfolderSpec = 16;
 			files = (
 				5054A59B1D71733F00CA6C66 /* ANXMoPubFacebook.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5054A5B51D71842B00CA6C66 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				5054A5BA1D71842B00CA6C66 /* ANXMoPubUnity.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,6 +200,20 @@
 		5054A5A91D71755100CA6C66 /* FacebookNativeAdAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacebookNativeAdAdapter.m; sourceTree = "<group>"; };
 		5054A5AA1D71755100CA6C66 /* FacebookNativeCustomEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookNativeCustomEvent.h; sourceTree = "<group>"; };
 		5054A5AB1D71755100CA6C66 /* FacebookNativeCustomEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacebookNativeCustomEvent.m; sourceTree = "<group>"; };
+		5054A5B71D71842B00CA6C66 /* libANXMoPubUnitySupport.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libANXMoPubUnitySupport.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5054A5B91D71842B00CA6C66 /* ANXMoPubUnity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ANXMoPubUnity.h; sourceTree = "<group>"; };
+		5054A5BB1D71842B00CA6C66 /* ANXMoPubUnity.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ANXMoPubUnity.m; sourceTree = "<group>"; };
+		5054A5C01D71844C00CA6C66 /* UnityAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UnityAds.framework; path = Pods/UnityAds/UnityAds.framework; sourceTree = "<group>"; };
+		5054A5C31D71853900CA6C66 /* MPInstanceProvider+Unity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MPInstanceProvider+Unity.h"; sourceTree = "<group>"; };
+		5054A5C41D71853900CA6C66 /* MPInstanceProvider+Unity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MPInstanceProvider+Unity.m"; sourceTree = "<group>"; };
+		5054A5C51D71853900CA6C66 /* MPUnityRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPUnityRouter.h; sourceTree = "<group>"; };
+		5054A5C61D71853900CA6C66 /* MPUnityRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPUnityRouter.m; sourceTree = "<group>"; };
+		5054A5C71D71853900CA6C66 /* UnityAdsInstanceMediationSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnityAdsInstanceMediationSettings.h; sourceTree = "<group>"; };
+		5054A5C81D71853900CA6C66 /* UnityAdsInstanceMediationSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnityAdsInstanceMediationSettings.m; sourceTree = "<group>"; };
+		5054A5C91D71853900CA6C66 /* UnityAdsRewardedVideoCustomEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnityAdsRewardedVideoCustomEvent.h; sourceTree = "<group>"; };
+		5054A5CA1D71853900CA6C66 /* UnityAdsRewardedVideoCustomEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnityAdsRewardedVideoCustomEvent.m; sourceTree = "<group>"; };
+		5054A5CF1D71888800CA6C66 /* UnityAdsMopubEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnityAdsMopubEvent.h; sourceTree = "<group>"; };
+		5054A5D01D71888800CA6C66 /* UnityAdsMopubEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnityAdsMopubEvent.m; sourceTree = "<group>"; };
 		50B6B1F81D49D3C000586C33 /* libANXMoPub.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libANXMoPub.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		50B6B2041D49D44C00586C33 /* FlashRuntimeExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlashRuntimeExtensions.h; sourceTree = "<group>"; };
 		50B6B2051D49D44C00586C33 /* MoPubBanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoPubBanner.h; sourceTree = "<group>"; };
@@ -236,6 +268,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				5054A5A21D7173A400CA6C66 /* FBAudienceNetwork.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5054A5B41D71842B00CA6C66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5054A5C11D71844C00CA6C66 /* UnityAds.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,6 +418,33 @@
 			path = AdNetworkSupport/Facebook;
 			sourceTree = "<group>";
 		};
+		5054A5B81D71842B00CA6C66 /* ANXMoPubUnity */ = {
+			isa = PBXGroup;
+			children = (
+				5054A5B91D71842B00CA6C66 /* ANXMoPubUnity.h */,
+				5054A5BB1D71842B00CA6C66 /* ANXMoPubUnity.m */,
+			);
+			path = ANXMoPubUnity;
+			sourceTree = "<group>";
+		};
+		5054A5C21D71853900CA6C66 /* Unity */ = {
+			isa = PBXGroup;
+			children = (
+				5054A5C31D71853900CA6C66 /* MPInstanceProvider+Unity.h */,
+				5054A5C41D71853900CA6C66 /* MPInstanceProvider+Unity.m */,
+				5054A5C51D71853900CA6C66 /* MPUnityRouter.h */,
+				5054A5C61D71853900CA6C66 /* MPUnityRouter.m */,
+				5054A5C71D71853900CA6C66 /* UnityAdsInstanceMediationSettings.h */,
+				5054A5C81D71853900CA6C66 /* UnityAdsInstanceMediationSettings.m */,
+				5054A5C91D71853900CA6C66 /* UnityAdsRewardedVideoCustomEvent.h */,
+				5054A5CA1D71853900CA6C66 /* UnityAdsRewardedVideoCustomEvent.m */,
+				5054A5CF1D71888800CA6C66 /* UnityAdsMopubEvent.h */,
+				5054A5D01D71888800CA6C66 /* UnityAdsMopubEvent.m */,
+			);
+			name = Unity;
+			path = AdNetworkSupport/Unity;
+			sourceTree = "<group>";
+		};
 		50B6B1EF1D49D3C000586C33 = {
 			isa = PBXGroup;
 			children = (
@@ -387,6 +454,7 @@
 				5054A5611D6F390D00CA6C66 /* ANXMoPubAdMob */,
 				5054A57A1D70892500CA6C66 /* ANXMoPubChartboost */,
 				5054A5991D71733F00CA6C66 /* ANXMoPubFacebook */,
+				5054A5B81D71842B00CA6C66 /* ANXMoPubUnity */,
 				50B6B1F91D49D3C000586C33 /* Products */,
 				B8A46D95E3B0A68C362BF77E /* Pods */,
 				D680079601D6A3CA1AE29449 /* Frameworks */,
@@ -402,6 +470,7 @@
 				5054A5601D6F390D00CA6C66 /* libANXMoPubAdMobSupport.a */,
 				5054A5791D70892500CA6C66 /* libANXMoPubChartboostSupport.a */,
 				5054A5981D71733E00CA6C66 /* libANXMoPubFacebookSupport.a */,
+				5054A5B71D71842B00CA6C66 /* libANXMoPubUnitySupport.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -415,6 +484,7 @@
 				5054A56B1D6F416C00CA6C66 /* GoogleAdMob */,
 				5054A5841D708D1500CA6C66 /* Chartboost */,
 				5054A5A31D71755100CA6C66 /* Facebook */,
+				5054A5C21D71853900CA6C66 /* Unity */,
 				50B6B2051D49D44C00586C33 /* MoPubBanner.h */,
 				50B6B2061D49D44C00586C33 /* MoPubBanner.m */,
 				50B6B2071D49D44C00586C33 /* MoPubCustomEventClassData.h */,
@@ -451,6 +521,7 @@
 		D680079601D6A3CA1AE29449 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5054A5C01D71844C00CA6C66 /* UnityAds.framework */,
 				5054A5A11D7173A400CA6C66 /* FBAudienceNetwork.framework */,
 				5054A5821D708A1500CA6C66 /* Chartboost.framework */,
 				5054A5691D6F3ACF00CA6C66 /* GoogleMobileAds.framework */,
@@ -550,6 +621,23 @@
 			productReference = 5054A5981D71733E00CA6C66 /* libANXMoPubFacebookSupport.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		5054A5B61D71842B00CA6C66 /* ANXMoPubUnity */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5054A5BF1D71842B00CA6C66 /* Build configuration list for PBXNativeTarget "ANXMoPubUnity" */;
+			buildPhases = (
+				5054A5B31D71842B00CA6C66 /* Sources */,
+				5054A5B41D71842B00CA6C66 /* Frameworks */,
+				5054A5B51D71842B00CA6C66 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ANXMoPubUnity;
+			productName = ANXMoPubUnity;
+			productReference = 5054A5B71D71842B00CA6C66 /* libANXMoPubUnitySupport.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		50B6B1F71D49D3C000586C33 /* ANXMoPub */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 50B6B2011D49D3C000586C33 /* Build configuration list for PBXNativeTarget "ANXMoPub" */;
@@ -593,6 +681,9 @@
 					5054A5971D71733E00CA6C66 = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
+					5054A5B61D71842B00CA6C66 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
 					50B6B1F71D49D3C000586C33 = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
@@ -616,6 +707,7 @@
 				5054A55F1D6F390D00CA6C66 /* ANXMoPubAdMob */,
 				5054A5781D70892500CA6C66 /* ANXMoPubChartboost */,
 				5054A5971D71733E00CA6C66 /* ANXMoPubFacebook */,
+				5054A5B61D71842B00CA6C66 /* ANXMoPubUnity */,
 			);
 		};
 /* End PBXProject section */
@@ -694,6 +786,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5054A5B31D71842B00CA6C66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5054A5BC1D71842B00CA6C66 /* ANXMoPubUnity.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		50B6B1F41D49D3C000586C33 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -726,6 +826,11 @@
 				5054A5B01D71755100CA6C66 /* FacebookNativeAdAdapter.m in Sources */,
 				5054A5AF1D71755100CA6C66 /* FacebookInterstitialCustomEvent.m in Sources */,
 				5054A5AE1D71755100CA6C66 /* FacebookBannerCustomEvent.m in Sources */,
+				5054A5CC1D71853900CA6C66 /* MPUnityRouter.m in Sources */,
+				5054A5D11D71888800CA6C66 /* UnityAdsMopubEvent.m in Sources */,
+				5054A5CB1D71853900CA6C66 /* MPInstanceProvider+Unity.m in Sources */,
+				5054A5CE1D71853900CA6C66 /* UnityAdsRewardedVideoCustomEvent.m in Sources */,
+				5054A5CD1D71853900CA6C66 /* UnityAdsInstanceMediationSettings.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -941,6 +1046,49 @@
 			};
 			name = Release;
 		};
+		5054A5BD1D71842B00CA6C66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/UnityAds",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)Support";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		5054A5BE1D71842B00CA6C66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/UnityAds",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)Support";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		50B6B1FF1D49D3C000586C33 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1073,6 +1221,15 @@
 			buildConfigurations = (
 				5054A59E1D71733F00CA6C66 /* Debug */,
 				5054A59F1D71733F00CA6C66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5054A5BF1D71842B00CA6C66 /* Build configuration list for PBXNativeTarget "ANXMoPubUnity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5054A5BD1D71842B00CA6C66 /* Debug */,
+				5054A5BE1D71842B00CA6C66 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

@@ -34,6 +34,10 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 Copyright 2011 Google Inc. All Rights Reserved.
 
+## UnityAds
+
+See http://www.apache.org/licenses/LICENSE-2.0.html
+
 ## VungleSDK-iOS
 
    	Vungle SDK License and Publisher Terms

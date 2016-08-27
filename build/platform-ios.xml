@@ -44,6 +44,7 @@
         <option>-weak_framework GoogleMobileAds</option>
         <option>-weak_framework Chartboost</option>
         <option>-weak_framework FBAudienceNetwork</option>
+        <option>-weak_framework UnityAds</option>
 
     </linkerOptions>
 
