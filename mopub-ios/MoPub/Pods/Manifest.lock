@@ -15,7 +15,7 @@ DEPENDENCIES:
   - FBAudienceNetwork (= 4.5.0)
   - Google-Mobile-Ads-SDK (= 7.10.0)
   - mopub-ios-sdk (= 4.7.0)
-  - UnityAds
+  - UnityAds (= 1.5.6)
   - VungleSDK-iOS (= 3.2.2)
 
 SPEC CHECKSUMS:
@@ -27,4 +27,6 @@ SPEC CHECKSUMS:
   UnityAds: 717325c6fe6133fe83f7fd0f2993481df559637e
   VungleSDK-iOS: 1c9ac04299476b78e592221fe6cbc8e3fd5b7418
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: aa875254512ea6e352f53f9cc976e340f4b9117f
+
+COCOAPODS: 1.0.1
