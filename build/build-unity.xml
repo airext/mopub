@@ -90,10 +90,19 @@
             </fileset>
         </copy>
 
+        <!--<exec executable="cp">-->
+            <!--<arg line="-R -f ${network.ios.project.dir}/Pods/UnityAds/UnityAds.bundle ${temp.dir}/ios/UnityAds.bundle" />-->
+        <!--</exec>-->
+
+        <!--<zip destfile="${temp.dir}/ios/UnityAds.bundle.zip">-->
+            <!--<zipfileset src="${network.ios.project.dir}/Pods/UnityAds" includes="UnityAds.bundle" />-->
+        <!--</zip>-->
+
         <!-- Copies UnityAds.bundle -->
         <copy todir="${temp.dir}/ios/UnityAds.bundle" overwrite="true">
             <fileset dir="${network.ios.project.dir}/Pods/UnityAds/UnityAds.bundle">
                 <include name="**/**" />
+                <exclude name="**/Info.plist" />
             </fileset>
         </copy>
 
@@ -107,10 +116,15 @@
             </fileset>
         </copy>
 
+        <!--<exec executable="cp">-->
+            <!--<arg line="-R -f ${network.ios.project.dir}/Pods/UnityAds/UnityAds.bundle ${temp.dir}/ios-simulator/UnityAds.bundle" />-->
+        <!--</exec>-->
+
         <!-- Copies UnityAds.bundle -->
         <copy todir="${temp.dir}/ios-simulator/UnityAds.bundle" overwrite="true">
             <fileset dir="${network.ios.project.dir}/Pods/UnityAds/UnityAds.bundle">
                 <include name="**/**" />
+                <exclude name="**/Info.plist" />
             </fileset>
         </copy>
 

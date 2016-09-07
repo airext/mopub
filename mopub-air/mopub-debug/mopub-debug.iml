@@ -12,7 +12,7 @@
               <dependency linkage="Merged" />
             </entry>
           </entries>
-          <sdk name="Flex15AIR21" />
+          <sdk name="4.15.0" />
         </dependencies>
         <compiler-options />
         <packaging-air-desktop />
@@ -21,7 +21,29 @@
           <files-to-package>
             <FilePathAndPathInPackage file-path="$MODULE_DIR$/Default-568h@2x.png" path-in-package="Default-568h@2x.png" />
           </files-to-package>
-          <AirSigningOptions sdk="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk" keystore-path="$USER_HOME$/cert/max.rozdobudko.p12" provisioning-profile-path="$USER_HOME$/cert/max.rozdobudko.mobileprovision" />
+          <AirSigningOptions sdk="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk" keystore-path="$USER_HOME$/cert/max.rozdobudko.p12" provisioning-profile-path="$USER_HOME$/cert/rozd/whateverdev.mobileprovision" />
+        </packaging-ios>
+      </configuration>
+      <configuration name="mopub-debug:adhoc" target-platform="Mobile" main-class="MoPubTestFlex" output-file="mopub-debug_adhoc.swf" output-folder="$MODULE_DIR$/bin-debug">
+        <dependencies>
+          <entries>
+            <entry library-id="b7617c38-fb44-470a-8a8f-2e1c796859f1">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-id="73c2a674-6130-4f3d-aa8c-995b78970904">
+              <dependency linkage="Merged" />
+            </entry>
+          </entries>
+          <sdk name="4.15.0" />
+        </dependencies>
+        <compiler-options />
+        <packaging-air-desktop />
+        <packaging-android use-generated-descriptor="false" custom-descriptor-path="$MODULE_DIR$/src/MoPubTest-app-adhoc.xml" package-file-name="mopub-debug_adhoc" />
+        <packaging-ios enabled="true" use-generated-descriptor="false" custom-descriptor-path="$MODULE_DIR$/src/MoPubTest-app-adhoc.xml" package-file-name="mopub-debug_adhoc">
+          <files-to-package>
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/Default-568h@2x.png" path-in-package="Default-568h@2x.png" />
+          </files-to-package>
+          <AirSigningOptions keystore-path="$USER_HOME$/cert/games2win/Certificates_g2w_dist.p12" provisioning-profile-path="$USER_HOME$/cert/games2win/Suprit_Adhoc_Profile_29th_Aug.mobileprovision" />
         </packaging-ios>
       </configuration>
     </configurations>
@@ -32,7 +54,7 @@
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
     </content>
-    <orderEntry type="jdk" jdkName="Flex15AIR21" jdkType="Flex SDK Type (new)" />
+    <orderEntry type="jdk" jdkName="4.15.0" jdkType="Flex SDK Type (new)" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library" exported="">
       <library type="flex">
@@ -48,6 +70,28 @@
     <orderEntry type="module-library" exported="">
       <library type="flex">
         <properties id="3c6b11df-9584-4a7a-880f-e2d5480c2c01" />
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/ane" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/ane" recursive="false" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="b7617c38-fb44-470a-8a8f-2e1c796859f1" />
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../bin" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/../../bin" recursive="false" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="73c2a674-6130-4f3d-aa8c-995b78970904" />
         <CLASSES>
           <root url="file://$MODULE_DIR$/ane" />
         </CLASSES>

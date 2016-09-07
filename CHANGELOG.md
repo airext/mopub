@@ -1,5 +1,9 @@
 ## Changelog
 
+### 0.9.5
+ * iOS: Moves custom event classes from main library to network libraries
+ * iOS: Removes Info.plist from UnityAds.bundle to prevent "A signed resource has been added, modified, or deleted." error.
+
 ### 0.9.0
 First Release Candidate. Containing support for 
  * MoPub 4.7.0 (iOS), 4.7.0 (Android)
