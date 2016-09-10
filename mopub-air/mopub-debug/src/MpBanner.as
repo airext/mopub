@@ -8,7 +8,9 @@ package {
 	
 	import flash.display.InterpolationMethod;
 	import flash.display.Stage;
-	import flash.system.Capabilities;
+import flash.events.Event;
+import flash.events.StageOrientationEvent;
+import flash.system.Capabilities;
 	
 	
 	/**
@@ -51,6 +53,8 @@ package {
 			this.isTablet = isTablet;
 			
 			initNativeScreenScale();
+
+			stage.addEventListener(Event.RESIZE, stage_resizeHandler, false, 0, true);
 		}
 		
 		/**
@@ -139,6 +143,12 @@ package {
 			trace("MoPub banner removed.");
 			if(onRemoved != null)
 				onRemoved();
+		}
+
+		private function stage_resizeHandler(event:Event):void
+		{
+			banner.x = (stage.fullScreenWidth * nativeScreenScaleX - banner.width) / 2;
+			banner.y = stage.fullScreenHeight * nativeScreenScaleY - banner.height;
 		}
 	}
 }
