@@ -76,6 +76,8 @@
             <arg line='SYMROOT=$(PWD)/../build/temp/ios/build'/>
         </exec>
 
+        <!-- iOS -->
+
         <!-- Copy iOS native part for iOS platform -->
 		<copy file="temp/ios/build/Release-iphoneos/libANXMoPub.a" todir="temp/ios" overwrite="true"/>
 		<copy file="temp/ios/build/Release-iphoneos/mopub-ios-sdk-iOS6.0/libmopub-ios-sdk-iOS6.0.a" todir="temp/ios" overwrite="true"/>
@@ -84,8 +86,12 @@
             <fileset dir="${ios.project.dir}/Pods/mopub-ios-sdk/MoPubSDK/Resources" includes="**/**" />
         </copy>
 
-        <!-- Copy MPAdBrowserController.xib for iOS platform -->
-        <copy todir="temp/ios" overwrite="true" file="${ios.project.dir}/Pods/mopub-ios-sdk/MoPubSDK/Internal/Common/MPAdBrowserController.xib" />
+        <!-- Compiles MPAdBrowserController.xib for iOS platform -->
+        <exec command="ibtool">
+            <arg line="--compile temp/ios/MPAdBrowserController.nib ${ios.project.dir}/Pods/mopub-ios-sdk/MoPubSDK/Internal/Common/MPAdBrowserController.xib" />
+        </exec>
+
+        <!-- iOS-Simulator -->
 
         <!-- Copy iOS native part for iOS-Simulator platform -->
         <copy file="temp/ios/build/Release-iphonesimulator/libANXMoPub.a" tofile="temp/ios-simulator/libANXMoPubSimulator.a" overwrite="true"/>
@@ -95,8 +101,10 @@
             <fileset dir="${ios.project.dir}/Pods/mopub-ios-sdk/MoPubSDK/Resources" includes="**/**" />
         </copy>
 
-        <!-- Copy MPAdBrowserController.xib for iOS-Simulator platform -->
-        <copy todir="temp/ios-simulator" overwrite="true" file="${ios.project.dir}/Pods/mopub-ios-sdk/MoPubSDK/Internal/Common/MPAdBrowserController.xib" />
+        <!-- Compiles MPAdBrowserController.xib for iOS platform -->
+        <exec command="ibtool">
+            <arg line="--compile temp/ios-simulator/MPAdBrowserController.nib ${ios.project.dir}/Pods/mopub-ios-sdk/MoPubSDK/Internal/Common/MPAdBrowserController.xib" />
+        </exec>
 
         <!-- Remove temporary directory for iOS artifacts -->
 		<delete dir="temp/ios/build/"/>
