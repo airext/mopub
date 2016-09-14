@@ -3,12 +3,12 @@ AIR Native Extension for MoPub (http://mopub.com) mobile ad network
 
 ### Native Libraries Versions
  * MoPub 4.7.0 (iOS), 4.7.0 (Android)
- * AdColony 2.6.2 (iOS),
- * AdMob 7.10.0 (iOS),
- * Chartboost 6.4.7 (iOS),
- * Facebook Audience Network 4.5.0 (iOS),
- * Unity Ads 1.5.6 (iOS),
- * Vungle 3.2.2 (iOS)
+ * AdColony 2.6.2 (iOS), 2.3.6 (Android)
+ * AdMob 7.10.0 (iOS), 9.2.56 (Android)
+ * Chartboost 6.4.7 (iOS), 6.4.2 (Android)
+ * Facebook Audience Network 4.5.0 (iOS), 4.13.0 (Android)
+ * Unity Ads 1.5.6 (iOS), 1.5.8 (Android)
+ * Vungle 3.2.2 (iOS), 3.3.5 (Android)
  
 ### Project structure
 The main `mopub.ane` and all supported networks are separated into independent 
@@ -160,4 +160,3 @@ and next under `<application>` in manifest:
             android:hardwareAccelerated="true"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
 ```
-
