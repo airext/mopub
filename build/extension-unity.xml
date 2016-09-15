@@ -1,6 +1,6 @@
 <extension xmlns="http://ns.adobe.com/air/extension/16.0">
   <id>com.sticksports.nativeExtensions.mopub.unity</id>
-  <versionNumber>0.9.6</versionNumber>
+  <versionNumber>0.9.7</versionNumber>
   <platforms>
     <platform name="iPhone-ARM">
       <applicationDeployment>

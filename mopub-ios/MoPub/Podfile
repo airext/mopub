@@ -1,12 +1,21 @@
 def shared_pods
-    pod 'mopub-ios-sdk', '4.7.0'
+    pod 'mopub-ios-sdk', '~> 4.9.0'
 
-    pod 'AdColony', '2.6.2'
-    pod 'VungleSDK-iOS', '3.2.2'
-    pod 'Google-Mobile-Ads-SDK', '7.10.0'
-    pod 'ChartboostSDK', '6.4.7'
-    pod 'FBAudienceNetwork', '4.5.0'
-    pod 'UnityAds', '1.5.6'
+    pod 'AdColony', '~> 2.6.2'
+    pod 'VungleSDK-iOS', '~> 3.2.2'
+    pod 'Google-Mobile-Ads-SDK', '~> 7.10.0'
+    pod 'ChartboostSDK', '~> 6.4.0'
+    pod 'FBAudienceNetwork', '~> 4.5.0'
+    pod 'UnityAds', '~> 1.5.6'
+
+    #pod 'mopub-ios-sdk', '4.7.0'
+
+    #pod 'AdColony', '2.6.2'
+    #pod 'VungleSDK-iOS', '3.2.2'
+    #pod 'Google-Mobile-Ads-SDK', '7.10.0'
+    #pod 'ChartboostSDK', '6.4.7'
+    #pod 'FBAudienceNetwork', '4.5.0'
+    #pod 'UnityAds', '1.5.6'
 end
 
 target 'ANXMoPub' do

@@ -1,5 +1,10 @@
 ## Changelog
 
+### 0.9.7
+Added support for iOS 10
+ * Updated MoPub SDK to 4.9.0
+ * Updated test application descriptor with new entitlements for iOS 10
+
 ### 0.9.6
  * iOS: Fixed issues: #1, #2, #3
 

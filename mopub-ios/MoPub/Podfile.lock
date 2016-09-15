@@ -3,30 +3,30 @@ PODS:
   - ChartboostSDK (6.4.7)
   - FBAudienceNetwork (4.5.0)
   - Google-Mobile-Ads-SDK (7.10.0)
-  - mopub-ios-sdk (4.7.0):
-    - mopub-ios-sdk/MoPubSDK (= 4.7.0)
-  - mopub-ios-sdk/MoPubSDK (4.7.0)
+  - mopub-ios-sdk (4.9.0):
+    - mopub-ios-sdk/MoPubSDK (= 4.9.0)
+  - mopub-ios-sdk/MoPubSDK (4.9.0)
   - UnityAds (1.5.6)
   - VungleSDK-iOS (3.2.2)
 
 DEPENDENCIES:
-  - AdColony (= 2.6.2)
-  - ChartboostSDK (= 6.4.7)
-  - FBAudienceNetwork (= 4.5.0)
-  - Google-Mobile-Ads-SDK (= 7.10.0)
-  - mopub-ios-sdk (= 4.7.0)
-  - UnityAds (= 1.5.6)
-  - VungleSDK-iOS (= 3.2.2)
+  - AdColony (~> 2.6.2)
+  - ChartboostSDK (~> 6.4.0)
+  - FBAudienceNetwork (~> 4.5.0)
+  - Google-Mobile-Ads-SDK (~> 7.10.0)
+  - mopub-ios-sdk (~> 4.9.0)
+  - UnityAds (~> 1.5.6)
+  - VungleSDK-iOS (~> 3.2.2)
 
 SPEC CHECKSUMS:
   AdColony: c91c627c389e8d26a22c05ce7585d83db0121c25
   ChartboostSDK: aeff0e21746d8b659c6407b1eda1fe67cdd59cf0
   FBAudienceNetwork: e43e37a65d2f067be97903c93618f948a16c2c96
   Google-Mobile-Ads-SDK: a833c38292ffaca727036ece7c691ba0a4a57d39
-  mopub-ios-sdk: e46b277cdb77b1745567b419742f77fed6865262
+  mopub-ios-sdk: 6d7695ba64649e1676a66e4bd9e10dc3364858eb
   UnityAds: 717325c6fe6133fe83f7fd0f2993481df559637e
   VungleSDK-iOS: 1c9ac04299476b78e592221fe6cbc8e3fd5b7418
 
-PODFILE CHECKSUM: aa875254512ea6e352f53f9cc976e340f4b9117f
+PODFILE CHECKSUM: 4bef87faa08834be7d0ae19c233278f065b5c5ec
 
 COCOAPODS: 1.0.1
