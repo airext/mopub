@@ -21,7 +21,7 @@
           <files-to-package>
             <FilePathAndPathInPackage file-path="$MODULE_DIR$/Default-568h@2x.png" path-in-package="Default-568h@2x.png" />
           </files-to-package>
-          <AirSigningOptions sdk="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk" keystore-path="$USER_HOME$/cert/max.rozdobudko.p12" provisioning-profile-path="$USER_HOME$/cert/rozd/whateverdev.mobileprovision" />
+          <AirSigningOptions keystore-path="$USER_HOME$/cert/max.rozdobudko.p12" provisioning-profile-path="$USER_HOME$/cert/rozd/whateverdev.mobileprovision" />
         </packaging-ios>
       </configuration>
       <configuration name="mopub-debug:adhoc" target-platform="Mobile" main-class="MoPubTestFlex" output-file="mopub-debug_adhoc.swf" output-folder="$MODULE_DIR$/bin-debug">

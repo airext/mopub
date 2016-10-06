@@ -26,69 +26,67 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CHANGELOG.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../CHANGELOG.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="75">
-                <caret line="5" column="71" lean-forward="true" selection-start-line="5" selection-start-column="71" selection-end-line="5" selection-end-column="71" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="60">
-                <caret line="4" column="12" lean-forward="false" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
-                <folding>
-                  <marker date="1473948994000" expanded="true" signature="2255:2427" ph="..." />
-                  <marker date="1473948994000" expanded="true" signature="2741:2811" ph="..." />
-                  <marker date="1473948994000" expanded="true" signature="4966:5093" ph="..." />
-                  <marker date="1473948994000" expanded="true" signature="5264:5427" ph="..." />
-                  <marker date="1473948994000" expanded="true" signature="5500:5657" ph="..." />
-                  <marker date="1473948994000" expanded="true" signature="5727:5884" ph="..." />
-                  <marker date="1473948994000" expanded="true" signature="6064:6264" ph="..." />
-                  <marker date="1473948994000" expanded="true" signature="6471:6621" ph="..." />
-                  <marker date="1473948994000" expanded="true" signature="6812:6879" ph="..." />
-                  <marker date="1473948994000" expanded="true" signature="7079:7369" ph="..." />
-                </folding>
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="extension-adcolony.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../build/extension-adcolony.xml">
+      <file leaf-file-name="MoPubView.mxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mopub-debug/src/views/MoPubView.mxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+            <state relative-caret-position="1590">
+              <caret line="115" column="13" lean-forward="false" selection-start-line="115" selection-start-column="13" selection-end-line="115" selection-end-column="13" />
+              <folding>
+                <marker date="1472202949000" expanded="false" signature="212:486" ph="..." />
+                <marker date="1472202949000" expanded="true" signature="563:709" ph="{...}" />
+                <marker date="1472202949000" expanded="true" signature="755:1449" ph="{...}" />
+                <marker date="1472202949000" expanded="true" signature="1493:1568" ph="{...}" />
+                <marker date="1472202949000" expanded="true" signature="1623:1721" ph="{...}" />
+                <marker date="1472202949000" expanded="true" signature="1767:1846" ph="{...}" />
+                <marker date="1472202949000" expanded="true" signature="1890:1965" ph="{...}" />
+                <marker date="1472202949000" expanded="true" signature="2171:2212" ph="{...}" />
+                <marker date="1472202949000" expanded="true" signature="2265:2733" ph="{...}" />
+                <marker date="1472202949000" expanded="true" signature="2311:2358" ph="{...}" />
+                <marker date="1472202949000" expanded="true" signature="2788:2986" ph="{...}" />
+                <marker date="1472202949000" expanded="true" signature="2834:2976" ph="{...}" />
+                <marker date="1472202949000" expanded="true" signature="3228:3275" ph="{...}" />
+                <marker date="1472202949000" expanded="true" signature="3335:3697" ph="{...}" />
+                <marker date="1472202949000" expanded="true" signature="3387:3479" ph="{...}" />
+                <marker date="1472202949000" expanded="true" signature="3761:3898" ph="{...}" />
+                <marker date="1472202949000" expanded="true" signature="3813:3888" ph="{...}" />
+                <marker date="1472202949000" expanded="true" signature="3957:4178" ph="{...}" />
+                <marker date="1472202949000" expanded="true" signature="4009:4168" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MoPubInterstitial.as" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mopub/src/ios/com/sticksports/nativeExtensions/mopub/MoPubInterstitial.as">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="23" column="25" lean-forward="false" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="extension-admob.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../build/extension-admob.xml">
+      <file leaf-file-name="MpInterstitial.as" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mopub-debug/src/MpInterstitial.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+            <state relative-caret-position="270">
+              <caret line="20" column="8" lean-forward="false" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="extension-chartboost.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../build/extension-chartboost.xml">
+      <file leaf-file-name="VungleExample.as" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Downloads/AdobeAir-Plugin-master/Sample/src/VungleExample.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-              <folding />
+            <state relative-caret-position="1545">
+              <caret line="183" column="11" lean-forward="false" selection-start-line="183" selection-start-column="11" selection-end-line="183" selection-end-column="11" />
+              <folding>
+                <element signature="e#10#41#0" expanded="true" />
+                <element signature="e#4919#4947#0" expanded="true" />
+                <marker date="1475677890000" expanded="true" signature="488:1707" ph="{...}" />
+                <marker date="1475677890000" expanded="true" signature="737:790" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -96,8 +94,28 @@
       <file leaf-file-name="MoPubTest-app.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mopub-debug/src/MoPubTest-app.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" column="24" lean-forward="false" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
+            <state relative-caret-position="417">
+              <caret line="350" column="30" lean-forward="false" selection-start-line="350" selection-start-column="30" selection-end-line="350" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build-vungle.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../build/build-vungle.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="223">
+              <caret line="124" column="15" lean-forward="false" selection-start-line="124" selection-start-column="15" selection-end-line="124" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="platform-android-vungle.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../build/platform-android-vungle.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="62" lean-forward="false" selection-start-line="5" selection-start-column="62" selection-end-line="5" selection-end-column="62" />
               <folding />
             </state>
           </provider>
@@ -113,31 +131,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="extension-facebook.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../build/extension-facebook.xml">
+      <file leaf-file-name="library.swf" pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/Downloads/AdobeAir-Plugin-master/AirExtension/extensions/com.vungle.extensions.Vungle.ane!/library.swf">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+            <state relative-caret-position="327">
+              <caret line="145" column="42" lean-forward="false" selection-start-line="145" selection-start-column="20" selection-end-line="145" selection-end-column="42" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="extension-unity.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../build/extension-unity.xml">
+      <file leaf-file-name="app.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Downloads/AdobeAir-Plugin-master/Sample/app.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="extension-vungle.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../build/extension-vungle.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+            <state relative-caret-position="698">
+              <caret line="62" column="73" lean-forward="false" selection-start-line="62" selection-start-column="73" selection-end-line="62" selection-end-column="73" />
               <folding />
             </state>
           </provider>
@@ -153,13 +161,22 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>onAdFinished</find>
+      <find>trace</find>
+      <find>com.vungle.publisher.VideoFullScreenAdActivity</find>
+      <find>3.3.5</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>4.0.2</replace>
+    </replaceStrings>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/mopub-debug/src/views/FirstView.mxml" />
-        <option value="$PROJECT_DIR$/../build/platform-android-vungle.xml" />
         <option value="$USER_HOME$/Downloads/AdobeAir-Plugin-master/Sample/app.xml" />
-        <option value="$USER_HOME$/Downloads/AdobeAir-Plugin-master/Sample/src/VungleExample.as" />
         <option value="$PROJECT_DIR$/mopub-vungle/src/main/com/sticksports/nativeExtensions/mopub/vungle/MoPubVungleSupport.as" />
         <option value="$PROJECT_DIR$/mopub-vungle/src/default/com/sticksports/nativeExtensions/mopub/vungle/MoPubVungleSupport.as" />
         <option value="$PROJECT_DIR$/../build/platform-android-admob.xml" />
@@ -186,12 +203,10 @@
         <option value="$PROJECT_DIR$/../build/build-facebook.xml" />
         <option value="$PROJECT_DIR$/mopub-debug/src/views/FacebookView.mxml" />
         <option value="$PROJECT_DIR$/../build/platform-ios-unity.xml" />
-        <option value="$PROJECT_DIR$/mopub-debug/src/data/AdId.as" />
         <option value="$PROJECT_DIR$/../build/README.md" />
         <option value="$PROJECT_DIR$/../build/tools/package-ipa.sh" />
         <option value="$PROJECT_DIR$/../build/tools/package-ipa-adhoc.sh" />
         <option value="$PROJECT_DIR$/../build/platform-ios.xml" />
-        <option value="$PROJECT_DIR$/../build/build-vungle.xml" />
         <option value="$PROJECT_DIR$/../build/build-unity.xml" />
         <option value="$PROJECT_DIR$/mopub-debug/src/MoPubTestFlex.mxml" />
         <option value="$PROJECT_DIR$/mopub-debug/src/MpBanner.as" />
@@ -203,10 +218,14 @@
         <option value="$PROJECT_DIR$/../build/extension-chartboost.xml" />
         <option value="$PROJECT_DIR$/../build/extension-admob.xml" />
         <option value="$PROJECT_DIR$/../build/extension-adcolony.xml" />
-        <option value="$PROJECT_DIR$/mopub-debug/src/MoPubTest-app.xml" />
         <option value="$PROJECT_DIR$/mopub-debug/src/MoPubTest-app-adhoc.xml" />
-        <option value="$PROJECT_DIR$/../README.md" />
         <option value="$PROJECT_DIR$/../CHANGELOG.md" />
+        <option value="$PROJECT_DIR$/../README.md" />
+        <option value="$PROJECT_DIR$/mopub-debug/src/data/AdId.as" />
+        <option value="$USER_HOME$/Downloads/AdobeAir-Plugin-master/Sample/src/VungleExample.as" />
+        <option value="$PROJECT_DIR$/../build/build-vungle.xml" />
+        <option value="$PROJECT_DIR$/../build/platform-android-vungle.xml" />
+        <option value="$PROJECT_DIR$/mopub-debug/src/MoPubTest-app.xml" />
       </list>
     </option>
   </component>
@@ -243,9 +262,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -268,8 +284,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="&lt; 4.15.0 &gt;" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+              <option name="myItemId" value="com.vungle.extensions.Vungle.ane" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -282,11 +298,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="&lt; 4.15.0 &gt;" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spark.swc" />
+              <option name="myItemId" value="com.vungle.extensions.Vungle.ane" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -304,11 +316,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="&lt; 4.15.0 &gt;" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spark.swc" />
+              <option name="myItemId" value="com.vungle.extensions.Vungle.ane" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -316,7 +324,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="spark" />
+              <option name="myItemId" value="com.vungle.extensions" />
               <option name="myItemType" value="com.intellij.lang.javascript.flex.presentation.SwfPackageElementNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -330,11 +338,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="&lt; 4.15.0 &gt;" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spark.swc" />
+              <option name="myItemId" value="com.vungle.extensions.Vungle.ane" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -342,11 +346,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="spark" />
+              <option name="myItemId" value="com.vungle.extensions" />
               <option name="myItemType" value="com.intellij.lang.javascript.flex.presentation.SwfPackageElementNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
+              <option name="myItemId" value="events" />
               <option name="myItemType" value="com.intellij.lang.javascript.flex.presentation.SwfPackageElementNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -356,32 +360,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="&lt; 4.15.0 &gt;" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spark.swc" />
+              <option name="myItemId" value="Sample" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="library.swf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spark" />
-              <option name="myItemType" value="com.intellij.lang.javascript.flex.presentation.SwfPackageElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.intellij.lang.javascript.flex.presentation.SwfPackageElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="supportClasses" />
-              <option name="myItemType" value="com.intellij.lang.javascript.flex.presentation.SwfPackageElementNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -390,15 +370,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+              <option name="myItemId" value="Sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="&lt; 4.15.0 &gt;" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spark.swc" />
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -423,57 +399,14 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mopub" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mopub" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mopub" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mopub" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mopub" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mopub" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mopub" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -488,6 +421,8 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/mopub-admob/src/main" />
     <property name="flex.preferred.android.device.id" value="3100bfda6635a243" />
+    <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
+    <property name="js.eslint.eslintPackage" value="" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -508,7 +443,7 @@
       <recent name="$PROJECT_DIR$/mopub-chartboost/src/default/com/sticksports/nativeExtensions/mopub/chartboost" />
     </key>
   </component>
-  <component name="RunManager" selected="Flash App.mopub-debug:ios">
+  <component name="RunManager" selected="Flash App.mopub-debug:android">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
@@ -953,12 +888,21 @@
       <workItem from="1473153674462" duration="1628000" />
       <workItem from="1473158448796" duration="8033000" />
       <workItem from="1473179050611" duration="9942000" />
-      <workItem from="1473416250477" duration="15125000" />
+      <workItem from="1473416250477" duration="17776000" />
+      <workItem from="1474040675667" duration="452000" />
+      <workItem from="1474230413489" duration="1656000" />
+      <workItem from="1474876605128" duration="4383000" />
+      <workItem from="1475243682554" duration="49000" />
+      <workItem from="1475490704758" duration="3822000" />
+      <workItem from="1475507135883" duration="13000" />
+      <workItem from="1475595388694" duration="1845000" />
+      <workItem from="1475669620179" duration="317000" />
+      <workItem from="1475670776993" duration="7862000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="297946000" />
+    <option name="totallyTimeSpent" value="320996000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -970,11 +914,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1920" height="977" extended-state="6" />
+    <frame x="0" y="23" width="1920" height="977" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932165" sideWeight="0.49791667" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31864408" sideWeight="0.57211536" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31751412" sideWeight="0.57211536" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31864408" sideWeight="0.31629393" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -982,20 +926,23 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.66101694" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22790202" sideWeight="0.49429038" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25292864" sideWeight="0.49429038" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32768363" sideWeight="0.49791667" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2484375" sideWeight="0.50570965" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36045197" sideWeight="0.68370605" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35932204" sideWeight="0.68370605" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32733408" sideWeight="0.49791667" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processed" value="true" />
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -1010,7 +957,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="17" />
+      <option name="time" value="18" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1019,102 +966,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/mopub-debug/src/views/VungleView.mxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="24" column="49" lean-forward="false" selection-start-line="24" selection-start-column="49" selection-end-line="24" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../build/platform-ios-chartboost.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="11" lean-forward="false" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mopub-debug/src/views/AdColonyView.mxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="24" column="38" lean-forward="false" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mopub-chartboost/src/main/com/sticksports/nativeExtensions/mopub/chartboost/MoPubChartboostSupport.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mopub-debug/src/views/FacebookView.mxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="25" column="138" lean-forward="false" selection-start-line="25" selection-start-column="138" selection-end-line="25" selection-end-column="138" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mopub-facebook/src/main/com/sticksports/nativeExtensions/mopub/facebook/MoPubFacebookSupport.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="24" column="24" lean-forward="false" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mopub-debug/src/views/UnityView.mxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1410">
-          <caret line="104" column="32" lean-forward="false" selection-start-line="104" selection-start-column="32" selection-end-line="104" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../build/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="1200">
-            <caret line="80" column="89" lean-forward="false" selection-start-line="80" selection-start-column="89" selection-end-line="80" selection-end-column="89" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../potbotics/potbot/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="435">
-            <caret line="29" column="1" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="1" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../yuppablee/braintree/build/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="716">
-            <caret line="79" column="88" lean-forward="false" selection-start-line="13" selection-start-column="1" selection-end-line="79" selection-end-column="88" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../yuppablee/braintree/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-15">
-            <caret line="14" column="16" lean-forward="false" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../build/build-admob.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="829">
-          <caret line="224" column="46" lean-forward="false" selection-start-line="224" selection-start-column="46" selection-end-line="224" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../build/build-chartboost.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="829">
@@ -1213,14 +1064,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1410">
           <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="96" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../build/build-vungle.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="103" column="65" lean-forward="false" selection-start-line="103" selection-start-column="65" selection-end-line="103" selection-end-column="65" />
         </state>
       </provider>
     </entry>
@@ -1228,22 +1071,221 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="401">
           <caret line="122" column="8" lean-forward="false" selection-start-line="122" selection-start-column="8" selection-end-line="122" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../mopub-ios/MoPub/Pods/mopub-ios-sdk/MoPubSDK/Internal/Common/MPAdBrowserController.xib">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mopub/src/android/com/sticksports/nativeExtensions/mopub/MoPubInterstitial.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="57" column="70" lean-forward="true" selection-start-line="57" selection-start-column="70" selection-end-line="57" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mopub-debug/src/views/AdMobView.mxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="43" column="12" lean-forward="false" selection-start-line="43" selection-start-column="12" selection-end-line="43" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mopub-debug/src/MoPubTest.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mopub-debug/src/MoPubTestFlex.mxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="48" lean-forward="false" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/sdks/flex/4.15.0/frameworks/projects/spark/src/spark/components/SkinnableContainer.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="556" column="48" lean-forward="false" selection-start-line="556" selection-start-column="48" selection-end-line="556" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/sdks/flex/4.15.0/frameworks/projects/spark/src/spark/components/supportClasses/GroupBase.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="781" column="24" lean-forward="false" selection-start-line="781" selection-start-column="24" selection-end-line="781" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../build/build.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="80" column="24" lean-forward="false" selection-start-line="80" selection-start-column="24" selection-end-line="80" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../build/extension.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../build/extension-vungle.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../build/extension-unity.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../build/extension-facebook.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../build/extension-chartboost.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../build/extension-admob.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../build/extension-adcolony.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../CHANGELOG.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="75">
+            <caret line="5" column="71" lean-forward="true" selection-start-line="5" selection-start-column="71" selection-end-line="5" selection-end-column="71" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="150">
+            <caret line="10" column="38" lean-forward="true" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mopub/src/common/com/sticksports/nativeExtensions/mopub/InternalMessages.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mopub/src/common/com/sticksports/nativeExtensions/mopub/MoPubEvent.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mopub/src/android/com/sticksports/nativeExtensions/mopub/MoPubBanner.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="930">
+          <caret line="66" column="39" lean-forward="false" selection-start-line="66" selection-start-column="28" selection-end-line="66" selection-end-column="39" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mopub-debug/src/MpBanner.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="49" column="24" lean-forward="false" selection-start-line="49" selection-start-column="24" selection-end-line="49" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/sdks/flex/4.15.0/frameworks/libs/air/airglobal.swc!/library.swf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211725">
+          <caret line="14115" column="25" lean-forward="false" selection-start-line="14115" selection-start-column="25" selection-end-line="14115" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/sdks/flex/4.15.0/frameworks/projects/framework/src/mx/core/MovieClipLoaderAsset.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="453">
+          <caret line="73" column="51" lean-forward="true" selection-start-line="73" selection-start-column="51" selection-end-line="73" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mopub/src/default/com/sticksports/nativeExtensions/mopub/MoPubBanner.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="8" column="28" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mopub-debug/src/views/AdColonyView.mxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="62" column="66" lean-forward="false" selection-start-line="62" selection-start-column="66" selection-end-line="62" selection-end-column="66" />
+          <folding>
+            <marker date="1471816487000" expanded="false" signature="212:491" ph="..." />
+            <marker date="1471816487000" expanded="true" signature="700:741" ph="{...}" />
+            <marker date="1471816487000" expanded="true" signature="794:1217" ph="{...}" />
+            <marker date="1471816487000" expanded="true" signature="840:887" ph="{...}" />
+            <marker date="1471816487000" expanded="true" signature="1272:1470" ph="{...}" />
+            <marker date="1471816487000" expanded="true" signature="1318:1460" ph="{...}" />
+            <marker date="1471816487000" expanded="true" signature="1715:1762" ph="{...}" />
+            <marker date="1471816487000" expanded="true" signature="1822:2184" ph="{...}" />
+            <marker date="1471816487000" expanded="true" signature="1874:1966" ph="{...}" />
+            <marker date="1471816487000" expanded="true" signature="2248:2385" ph="{...}" />
+            <marker date="1471816487000" expanded="true" signature="2300:2375" ph="{...}" />
+            <marker date="1471816487000" expanded="true" signature="2444:2665" ph="{...}" />
+            <marker date="1471816487000" expanded="true" signature="2496:2655" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mopub-debug/src/data/AdId.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="23" column="42" lean-forward="false" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
+        <state relative-caret-position="1680">
+          <caret line="114" column="46" lean-forward="false" selection-start-line="114" selection-start-column="46" selection-end-line="114" selection-end-column="46" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mopub-debug/src/views/MoPubView.mxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="78" column="30" lean-forward="false" selection-start-line="78" selection-start-column="30" selection-end-line="78" selection-end-column="30" />
+        <state relative-caret-position="1590">
+          <caret line="115" column="13" lean-forward="false" selection-start-line="115" selection-start-column="13" selection-end-line="115" selection-end-column="13" />
           <folding>
             <marker date="1472202949000" expanded="false" signature="212:486" ph="..." />
             <marker date="1472202949000" expanded="true" signature="563:709" ph="{...}" />
@@ -1268,165 +1310,55 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../mopub-ios/MoPub/Pods/mopub-ios-sdk/MoPubSDK/Internal/Common/MPAdBrowserController.xib">
+    <entry file="file://$PROJECT_DIR$/mopub/src/ios/com/sticksports/nativeExtensions/mopub/MoPubInterstitial.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mopub/src/android/com/sticksports/nativeExtensions/mopub/MoPubInterstitial.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="57" column="70" lean-forward="true" selection-start-line="57" selection-start-column="70" selection-end-line="57" selection-end-column="70" />
+        <state relative-caret-position="315">
+          <caret line="23" column="25" lean-forward="false" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mopub-debug/src/MpInterstitial.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-73">
-          <caret line="11" column="29" lean-forward="false" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+        <state relative-caret-position="270">
+          <caret line="20" column="8" lean-forward="false" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mopub-debug/src/views/AdMobView.mxml">
+    <entry file="file://$USER_HOME$/Downloads/AdobeAir-Plugin-master/Sample/app.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="43" column="12" lean-forward="false" selection-start-line="43" selection-start-column="12" selection-end-line="43" selection-end-column="12" />
+        <state relative-caret-position="698">
+          <caret line="62" column="73" lean-forward="false" selection-start-line="62" selection-start-column="73" selection-end-line="62" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Downloads/AdobeAir-Plugin-master/AirExtension/extensions/com.vungle.extensions.Vungle.ane!/library.swf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="145" column="42" lean-forward="false" selection-start-line="145" selection-start-column="20" selection-end-line="145" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/AdobeAir-Plugin-master/Sample/src/VungleExample.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1545">
+          <caret line="183" column="11" lean-forward="false" selection-start-line="183" selection-start-column="11" selection-end-line="183" selection-end-column="11" />
           <folding>
-            <marker date="1472202950000" expanded="false" signature="212:485" ph="..." />
-            <marker date="1472202950000" expanded="true" signature="691:732" ph="{...}" />
-            <marker date="1472202950000" expanded="true" signature="785:1208" ph="{...}" />
-            <marker date="1472202950000" expanded="true" signature="831:878" ph="{...}" />
-            <marker date="1472202950000" expanded="true" signature="1263:1461" ph="{...}" />
-            <marker date="1472202950000" expanded="true" signature="1309:1451" ph="{...}" />
-            <marker date="1472202950000" expanded="true" signature="1703:1750" ph="{...}" />
-            <marker date="1472202950000" expanded="true" signature="1810:2172" ph="{...}" />
-            <marker date="1472202950000" expanded="true" signature="1862:1954" ph="{...}" />
-            <marker date="1472202950000" expanded="true" signature="2236:2373" ph="{...}" />
-            <marker date="1472202950000" expanded="true" signature="2288:2363" ph="{...}" />
-            <marker date="1472202950000" expanded="true" signature="2432:2653" ph="{...}" />
-            <marker date="1472202950000" expanded="true" signature="2484:2643" ph="{...}" />
+            <element signature="e#10#41#0" expanded="true" />
+            <element signature="e#4919#4947#0" expanded="true" />
+            <marker date="1475677890000" expanded="true" signature="488:1707" ph="{...}" />
+            <marker date="1475677890000" expanded="true" signature="737:790" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mopub-debug/src/MoPubTest.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mopub-debug/src/MoPubTestFlex.mxml">
+    <entry file="file://$PROJECT_DIR$/../build/platform-android-vungle.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="5" column="48" lean-forward="false" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="48" />
-          <folding>
-            <marker date="1473500740000" expanded="true" signature="26:56" ph="..." />
-            <marker date="1473500740000" expanded="true" signature="205:283" ph="..." />
-            <marker date="1473500740000" expanded="true" signature="358:453" ph="..." />
-            <marker date="1473500740000" expanded="true" signature="476:569" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/sdks/flex/4.15.0/frameworks/projects/spark/src/spark/components/SkinnableContainer.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="556" column="48" lean-forward="false" selection-start-line="556" selection-start-column="48" selection-end-line="556" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/sdks/flex/4.15.0/frameworks/projects/spark/src/spark/components/supportClasses/GroupBase.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="781" column="24" lean-forward="false" selection-start-line="781" selection-start-column="24" selection-end-line="781" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mopub-debug/src/MpBanner.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="22" column="8" lean-forward="false" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../build/build.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="80" column="24" lean-forward="false" selection-start-line="80" selection-start-column="24" selection-end-line="80" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../build/extension.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../build/extension-vungle.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../build/extension-unity.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../build/extension-facebook.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../build/extension-chartboost.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../build/extension-admob.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../build/extension-adcolony.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mopub-debug/src/MoPubTest-app.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="24" lean-forward="false" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
+          <caret line="5" column="62" lean-forward="false" selection-start-line="5" selection-start-column="62" selection-end-line="5" selection-end-column="62" />
           <folding />
         </state>
       </provider>
@@ -1439,36 +1371,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="60">
-            <caret line="4" column="12" lean-forward="false" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
-            <folding>
-              <marker date="1473948994000" expanded="true" signature="2255:2427" ph="..." />
-              <marker date="1473948994000" expanded="true" signature="2741:2811" ph="..." />
-              <marker date="1473948994000" expanded="true" signature="4966:5093" ph="..." />
-              <marker date="1473948994000" expanded="true" signature="5264:5427" ph="..." />
-              <marker date="1473948994000" expanded="true" signature="5500:5657" ph="..." />
-              <marker date="1473948994000" expanded="true" signature="5727:5884" ph="..." />
-              <marker date="1473948994000" expanded="true" signature="6064:6264" ph="..." />
-              <marker date="1473948994000" expanded="true" signature="6471:6621" ph="..." />
-              <marker date="1473948994000" expanded="true" signature="6812:6879" ph="..." />
-              <marker date="1473948994000" expanded="true" signature="7079:7369" ph="..." />
-            </folding>
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/mopub-debug/src/MoPubTest-app.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="417">
+          <caret line="350" column="30" lean-forward="false" selection-start-line="350" selection-start-column="30" selection-end-line="350" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../CHANGELOG.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="75">
-            <caret line="5" column="71" lean-forward="true" selection-start-line="5" selection-start-column="71" selection-end-line="5" selection-end-column="71" />
-            <folding />
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/../build/build-vungle.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="124" column="15" lean-forward="false" selection-start-line="124" selection-start-column="15" selection-end-line="124" selection-end-column="15" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1502,6 +1417,7 @@
       </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
+          <last-edited>Flex 4.15.0</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1525,7 +1441,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>mopub-debug|mopub-debug</last-edited>
+          <last-edited>Vungle-Sample|Vungle-Sample</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

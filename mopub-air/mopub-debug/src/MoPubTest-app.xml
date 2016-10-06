@@ -348,8 +348,7 @@
 							  android:excludeFromRecents="true" />
 
                     <!-- MoPub: Required Activity for playback of Vungle video ads -->
-                    <activity
-                            android:name="com.vungle.publisher.FullScreenAdActivity"
+                    <activity android:name="com.vungle.publisher.FullScreenAdActivity"
                             android:configChanges="keyboardHidden|orientation|screenSize"
                             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
 
