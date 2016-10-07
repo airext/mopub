@@ -26,126 +26,71 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MoPubView.mxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mopub-debug/src/views/MoPubView.mxml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1590">
-              <caret line="115" column="13" lean-forward="false" selection-start-line="115" selection-start-column="13" selection-end-line="115" selection-end-column="13" />
-              <folding>
-                <marker date="1472202949000" expanded="false" signature="212:486" ph="..." />
-                <marker date="1472202949000" expanded="true" signature="563:709" ph="{...}" />
-                <marker date="1472202949000" expanded="true" signature="755:1449" ph="{...}" />
-                <marker date="1472202949000" expanded="true" signature="1493:1568" ph="{...}" />
-                <marker date="1472202949000" expanded="true" signature="1623:1721" ph="{...}" />
-                <marker date="1472202949000" expanded="true" signature="1767:1846" ph="{...}" />
-                <marker date="1472202949000" expanded="true" signature="1890:1965" ph="{...}" />
-                <marker date="1472202949000" expanded="true" signature="2171:2212" ph="{...}" />
-                <marker date="1472202949000" expanded="true" signature="2265:2733" ph="{...}" />
-                <marker date="1472202949000" expanded="true" signature="2311:2358" ph="{...}" />
-                <marker date="1472202949000" expanded="true" signature="2788:2986" ph="{...}" />
-                <marker date="1472202949000" expanded="true" signature="2834:2976" ph="{...}" />
-                <marker date="1472202949000" expanded="true" signature="3228:3275" ph="{...}" />
-                <marker date="1472202949000" expanded="true" signature="3335:3697" ph="{...}" />
-                <marker date="1472202949000" expanded="true" signature="3387:3479" ph="{...}" />
-                <marker date="1472202949000" expanded="true" signature="3761:3898" ph="{...}" />
-                <marker date="1472202949000" expanded="true" signature="3813:3888" ph="{...}" />
-                <marker date="1472202949000" expanded="true" signature="3957:4178" ph="{...}" />
-                <marker date="1472202949000" expanded="true" signature="4009:4168" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MoPubInterstitial.as" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mopub/src/ios/com/sticksports/nativeExtensions/mopub/MoPubInterstitial.as">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="23" column="25" lean-forward="false" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MpInterstitial.as" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mopub-debug/src/MpInterstitial.as">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="20" column="8" lean-forward="false" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="VungleExample.as" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Downloads/AdobeAir-Plugin-master/Sample/src/VungleExample.as">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1545">
-              <caret line="183" column="11" lean-forward="false" selection-start-line="183" selection-start-column="11" selection-end-line="183" selection-end-column="11" />
-              <folding>
-                <element signature="e#10#41#0" expanded="true" />
-                <element signature="e#4919#4947#0" expanded="true" />
-                <marker date="1475677890000" expanded="true" signature="488:1707" ph="{...}" />
-                <marker date="1475677890000" expanded="true" signature="737:790" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MoPubTest-app.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mopub-debug/src/MoPubTest-app.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="417">
-              <caret line="350" column="30" lean-forward="false" selection-start-line="350" selection-start-column="30" selection-end-line="350" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="build-vungle.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="build-vungle.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../build/build-vungle.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
-              <caret line="124" column="15" lean-forward="false" selection-start-line="124" selection-start-column="15" selection-end-line="124" selection-end-column="15" />
+            <state relative-caret-position="15">
+              <caret line="222" column="93" lean-forward="false" selection-start-line="222" selection-start-column="93" selection-end-line="222" selection-end-column="93" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="platform-android-vungle.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../build/platform-android-vungle.xml">
+      <file leaf-file-name="build-adcolony.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../build/build-adcolony.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="62" lean-forward="false" selection-start-line="5" selection-start-column="62" selection-end-line="5" selection-end-column="62" />
+            <state relative-caret-position="413">
+              <caret line="266" column="74" lean-forward="false" selection-start-line="266" selection-start-column="74" selection-end-line="266" selection-end-column="74" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MoPubTest-app-adhoc.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mopub-debug/src/MoPubTest-app-adhoc.xml">
+      <file leaf-file-name="build-admob.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../build/build-admob.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="76" lean-forward="false" selection-start-line="7" selection-start-column="76" selection-end-line="7" selection-end-column="76" />
+            <state relative-caret-position="413">
+              <caret line="289" column="74" lean-forward="false" selection-start-line="289" selection-start-column="74" selection-end-line="289" selection-end-column="74" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="library.swf" pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/Downloads/AdobeAir-Plugin-master/AirExtension/extensions/com.vungle.extensions.Vungle.ane!/library.swf">
+      <file leaf-file-name="build-chartboost.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../build/build-chartboost.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="327">
-              <caret line="145" column="42" lean-forward="false" selection-start-line="145" selection-start-column="20" selection-end-line="145" selection-end-column="42" />
+            <state relative-caret-position="398">
+              <caret line="240" column="36" lean-forward="false" selection-start-line="240" selection-start-column="36" selection-end-line="240" selection-end-column="36" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Downloads/AdobeAir-Plugin-master/Sample/app.xml">
+      <file leaf-file-name="build-facebook.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../build/build-facebook.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="698">
-              <caret line="62" column="73" lean-forward="false" selection-start-line="62" selection-start-column="73" selection-end-line="62" selection-end-column="73" />
+            <state relative-caret-position="413">
+              <caret line="239" column="74" lean-forward="false" selection-start-line="239" selection-start-column="74" selection-end-line="239" selection-end-column="74" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../build/build.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="263">
+              <caret line="300" column="12" lean-forward="false" selection-start-line="300" selection-start-column="12" selection-end-line="300" selection-end-column="74" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build-unity.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../build/build-unity.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="413">
+              <caret line="276" column="74" lean-forward="false" selection-start-line="276" selection-start-column="74" selection-end-line="276" selection-end-column="74" />
               <folding />
             </state>
           </provider>
@@ -189,28 +134,22 @@
         <option value="$PROJECT_DIR$/mopub-debug/src/views/AdColonyView.mxml" />
         <option value="$PROJECT_DIR$/../build/platform-ios-adcolony.xml" />
         <option value="$PROJECT_DIR$/../build/platform-ios-vungle.xml" />
-        <option value="$PROJECT_DIR$/../build/build-adcolony.xml" />
         <option value="$PROJECT_DIR$/../build/platform-ios-admob.xml" />
-        <option value="$PROJECT_DIR$/../build/build-admob.xml" />
         <option value="$PROJECT_DIR$/mopub-debug/src/views/AdMobView.mxml" />
         <option value="$PROJECT_DIR$/mopub-debug/src/views/ChartboostView.mxml" />
         <option value="$PROJECT_DIR$/mopub-debug/src/views/MoPubView.mxml" />
         <option value="$PROJECT_DIR$/mopub-debug/src/views/UnityView.mxml" />
         <option value="$PROJECT_DIR$/mopub-debug/src/views/VungleView.mxml" />
         <option value="$PROJECT_DIR$/../build/platform-ios-chartboost.xml" />
-        <option value="$PROJECT_DIR$/../build/build-chartboost.xml" />
         <option value="$PROJECT_DIR$/../build/platform-ios-facebook.xml" />
-        <option value="$PROJECT_DIR$/../build/build-facebook.xml" />
         <option value="$PROJECT_DIR$/mopub-debug/src/views/FacebookView.mxml" />
         <option value="$PROJECT_DIR$/../build/platform-ios-unity.xml" />
         <option value="$PROJECT_DIR$/../build/README.md" />
         <option value="$PROJECT_DIR$/../build/tools/package-ipa.sh" />
         <option value="$PROJECT_DIR$/../build/tools/package-ipa-adhoc.sh" />
         <option value="$PROJECT_DIR$/../build/platform-ios.xml" />
-        <option value="$PROJECT_DIR$/../build/build-unity.xml" />
         <option value="$PROJECT_DIR$/mopub-debug/src/MoPubTestFlex.mxml" />
         <option value="$PROJECT_DIR$/mopub-debug/src/MpBanner.as" />
-        <option value="$PROJECT_DIR$/../build/build.xml" />
         <option value="$PROJECT_DIR$/../build/extension.xml" />
         <option value="$PROJECT_DIR$/../build/extension-vungle.xml" />
         <option value="$PROJECT_DIR$/../build/extension-unity.xml" />
@@ -223,9 +162,15 @@
         <option value="$PROJECT_DIR$/../README.md" />
         <option value="$PROJECT_DIR$/mopub-debug/src/data/AdId.as" />
         <option value="$USER_HOME$/Downloads/AdobeAir-Plugin-master/Sample/src/VungleExample.as" />
-        <option value="$PROJECT_DIR$/../build/build-vungle.xml" />
         <option value="$PROJECT_DIR$/../build/platform-android-vungle.xml" />
         <option value="$PROJECT_DIR$/mopub-debug/src/MoPubTest-app.xml" />
+        <option value="$PROJECT_DIR$/../build/build.xml" />
+        <option value="$PROJECT_DIR$/../build/build-unity.xml" />
+        <option value="$PROJECT_DIR$/../build/build-vungle.xml" />
+        <option value="$PROJECT_DIR$/../build/build-facebook.xml" />
+        <option value="$PROJECT_DIR$/../build/build-chartboost.xml" />
+        <option value="$PROJECT_DIR$/../build/build-admob.xml" />
+        <option value="$PROJECT_DIR$/../build/build-adcolony.xml" />
       </list>
     </option>
   </component>
@@ -404,9 +349,9 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -898,11 +843,12 @@
       <workItem from="1475595388694" duration="1845000" />
       <workItem from="1475669620179" duration="317000" />
       <workItem from="1475670776993" duration="7862000" />
+      <workItem from="1475827043948" duration="2622000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="320996000" />
+    <option name="totallyTimeSpent" value="323618000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -915,30 +861,30 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="977" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25825346" sideWeight="0.49429038" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932165" sideWeight="0.49791667" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31751412" sideWeight="0.57211536" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31864408" sideWeight="0.31629393" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.66101694" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25292864" sideWeight="0.49429038" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.66101694" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2484375" sideWeight="0.50570965" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35932204" sideWeight="0.68370605" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31751412" sideWeight="0.57211536" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32733408" sideWeight="0.49791667" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35932204" sideWeight="0.68370605" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -966,27 +912,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../build/build-chartboost.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="829">
-          <caret line="65" column="36" lean-forward="false" selection-start-line="65" selection-start-column="26" selection-end-line="65" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../build/build-facebook.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="829">
-          <caret line="99" column="22" lean-forward="false" selection-start-line="99" selection-start-column="22" selection-end-line="99" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../build/build.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../TODO.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -1060,20 +985,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../build/build-adcolony.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1410">
-          <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="96" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../build/build-unity.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="122" column="8" lean-forward="false" selection-start-line="122" selection-start-column="8" selection-end-line="122" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../mopub-ios/MoPub/Pods/mopub-ios-sdk/MoPubSDK/Internal/Common/MPAdBrowserController.xib">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1120,13 +1031,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="359">
           <caret line="781" column="24" lean-forward="false" selection-start-line="781" selection-start-column="24" selection-end-line="781" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../build/build.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="80" column="24" lean-forward="false" selection-start-line="80" selection-start-column="24" selection-end-line="80" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -1217,7 +1121,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="930">
           <caret line="66" column="39" lean-forward="false" selection-start-line="66" selection-start-column="28" selection-end-line="66" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1233,7 +1136,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="211725">
           <caret line="14115" column="25" lean-forward="false" selection-start-line="14115" selection-start-column="25" selection-end-line="14115" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1248,7 +1150,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="8" column="28" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1256,21 +1157,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="780">
           <caret line="62" column="66" lean-forward="false" selection-start-line="62" selection-start-column="66" selection-end-line="62" selection-end-column="66" />
-          <folding>
-            <marker date="1471816487000" expanded="false" signature="212:491" ph="..." />
-            <marker date="1471816487000" expanded="true" signature="700:741" ph="{...}" />
-            <marker date="1471816487000" expanded="true" signature="794:1217" ph="{...}" />
-            <marker date="1471816487000" expanded="true" signature="840:887" ph="{...}" />
-            <marker date="1471816487000" expanded="true" signature="1272:1470" ph="{...}" />
-            <marker date="1471816487000" expanded="true" signature="1318:1460" ph="{...}" />
-            <marker date="1471816487000" expanded="true" signature="1715:1762" ph="{...}" />
-            <marker date="1471816487000" expanded="true" signature="1822:2184" ph="{...}" />
-            <marker date="1471816487000" expanded="true" signature="1874:1966" ph="{...}" />
-            <marker date="1471816487000" expanded="true" signature="2248:2385" ph="{...}" />
-            <marker date="1471816487000" expanded="true" signature="2300:2375" ph="{...}" />
-            <marker date="1471816487000" expanded="true" signature="2444:2665" ph="{...}" />
-            <marker date="1471816487000" expanded="true" signature="2496:2655" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1278,7 +1164,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1680">
           <caret line="114" column="46" lean-forward="false" selection-start-line="114" selection-start-column="46" selection-end-line="114" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1328,7 +1213,7 @@
     </entry>
     <entry file="file://$USER_HOME$/Downloads/AdobeAir-Plugin-master/Sample/app.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="698">
+        <state relative-caret-position="930">
           <caret line="62" column="73" lean-forward="false" selection-start-line="62" selection-start-column="73" selection-end-line="62" selection-end-column="73" />
           <folding />
         </state>
@@ -1336,7 +1221,7 @@
     </entry>
     <entry file="jar://$USER_HOME$/Downloads/AdobeAir-Plugin-master/AirExtension/extensions/com.vungle.extensions.Vungle.ane!/library.swf">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
+        <state relative-caret-position="2175">
           <caret line="145" column="42" lean-forward="false" selection-start-line="145" selection-start-column="20" selection-end-line="145" selection-end-column="42" />
           <folding />
         </state>
@@ -1344,13 +1229,11 @@
     </entry>
     <entry file="file://$USER_HOME$/Downloads/AdobeAir-Plugin-master/Sample/src/VungleExample.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1545">
+        <state relative-caret-position="2745">
           <caret line="183" column="11" lean-forward="false" selection-start-line="183" selection-start-column="11" selection-end-line="183" selection-end-column="11" />
           <folding>
-            <element signature="e#10#41#0" expanded="true" />
-            <element signature="e#4919#4947#0" expanded="true" />
-            <marker date="1475677890000" expanded="true" signature="488:1707" ph="{...}" />
-            <marker date="1475677890000" expanded="true" signature="737:790" ph="{...}" />
+            <element signature="e#10#41#0" expanded="false" />
+            <element signature="e#4919#4947#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1373,7 +1256,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mopub-debug/src/MoPubTest-app.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
+        <state relative-caret-position="5250">
           <caret line="350" column="30" lean-forward="false" selection-start-line="350" selection-start-column="30" selection-end-line="350" selection-end-column="30" />
           <folding />
         </state>
@@ -1381,8 +1264,56 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../build/build-vungle.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="124" column="15" lean-forward="false" selection-start-line="124" selection-start-column="15" selection-end-line="124" selection-end-column="15" />
+        <state relative-caret-position="15">
+          <caret line="222" column="93" lean-forward="false" selection-start-line="222" selection-start-column="93" selection-end-line="222" selection-end-column="93" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../build/build-adcolony.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="266" column="74" lean-forward="false" selection-start-line="266" selection-start-column="74" selection-end-line="266" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../build/build-admob.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="289" column="74" lean-forward="false" selection-start-line="289" selection-start-column="74" selection-end-line="289" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../build/build-chartboost.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="240" column="36" lean-forward="false" selection-start-line="240" selection-start-column="36" selection-end-line="240" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../build/build-facebook.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="239" column="74" lean-forward="false" selection-start-line="239" selection-start-column="74" selection-end-line="239" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../build/build.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="300" column="12" lean-forward="false" selection-start-line="300" selection-start-column="12" selection-end-line="300" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../build/build-unity.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="276" column="74" lean-forward="false" selection-start-line="276" selection-start-column="74" selection-end-line="276" selection-end-column="74" />
           <folding />
         </state>
       </provider>

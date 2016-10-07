@@ -246,7 +246,7 @@
             <arg line="${keystore.file}"/>
             <arg line="-storepass"/>
             <arg line="${keystore.password}"/>
-            <arg line="-tsa none"/>
+            <arg line="-tsa http://timestamp.entrust.net/TSS/JavaHttpTS"/>
             <arg line="-target"/>
             <arg line="ane"/>
             <arg line="${extension}.ane"/>
