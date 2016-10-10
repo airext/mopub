@@ -2,7 +2,7 @@
 AIR Native Extension for MoPub (http://mopub.com) mobile ad network
 
 ### Native Libraries Versions
- * MoPub 4.9.0 (iOS), 4.7.0 (Android)
+ * MoPub 4.9.1 (iOS), 4.7.0 (Android)
  * AdColony 2.6.2 (iOS), 2.3.6 (Android)
  * AdMob 7.10.0 (iOS), 9.2.56 (Android)
  * Chartboost 6.4.7 (iOS), 6.4.2 (Android)
