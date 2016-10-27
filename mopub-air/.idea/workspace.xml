@@ -26,81 +26,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="build-vungle.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../build/build-vungle.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="20" column="81" lean-forward="false" selection-start-line="20" selection-start-column="81" selection-end-line="20" selection-end-column="81" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MoPubTest-app.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/mopub-debug/src/MoPubTest-app.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="415">
-              <caret line="358" column="58" lean-forward="true" selection-start-line="358" selection-start-column="58" selection-end-line="358" selection-end-column="58" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="build-adcolony.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../build/build-adcolony.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4035">
-              <caret line="269" column="29" lean-forward="false" selection-start-line="269" selection-start-column="29" selection-end-line="269" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="build-chartboost.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../build/build-chartboost.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3600">
-              <caret line="240" column="29" lean-forward="false" selection-start-line="240" selection-start-column="29" selection-end-line="240" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="build-facebook.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../build/build-facebook.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3585">
-              <caret line="239" column="74" lean-forward="false" selection-start-line="239" selection-start-column="74" selection-end-line="239" selection-end-column="74" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="build.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="build.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../build/build.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2040">
-              <caret line="14" column="38" lean-forward="false" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="38" />
+            <state relative-caret-position="175">
+              <caret line="128" column="0" lean-forward="true" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="platform-android-vungle.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../build/platform-android-vungle.xml">
+      <file leaf-file-name="platform-android.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../build/platform-android.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="63" lean-forward="false" selection-start-line="3" selection-start-column="63" selection-end-line="3" selection-end-column="63" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../mopub-android/mopub-vungle/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="1" lean-forward="false" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+            <state relative-caret-position="105">
+              <caret line="7" column="49" lean-forward="false" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="49" />
               <folding />
             </state>
           </provider>
@@ -109,18 +49,8 @@
       <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../mopub-android/mopub/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="13" column="17" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="build-unity.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../build/build-unity.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="272" column="35" lean-forward="false" selection-start-line="272" selection-start-column="35" selection-end-line="272" selection-end-column="35" />
+            <state relative-caret-position="-15">
+              <caret line="0" column="35" lean-forward="false" selection-start-line="0" selection-start-column="35" selection-end-line="0" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -144,6 +74,8 @@
       <find>vungle-publisher-adaptive-id-3.3.5</find>
       <find>3.3.5</find>
       <find>Vungl</find>
+      <find>4.7</find>
+      <find>mopub.android.version</find>
     </findStrings>
     <replaceStrings>
       <replace>4.0.2</replace>
@@ -154,7 +86,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/mopub-vungle/src/main/com/sticksports/nativeExtensions/mopub/vungle/MoPubVungleSupport.as" />
         <option value="$PROJECT_DIR$/mopub-vungle/src/default/com/sticksports/nativeExtensions/mopub/vungle/MoPubVungleSupport.as" />
         <option value="$PROJECT_DIR$/../build/platform-android-admob.xml" />
         <option value="$PROJECT_DIR$/../build/tools/app-package.sh" />
@@ -199,12 +130,13 @@
         <option value="$PROJECT_DIR$/../build/build-admob.xml" />
         <option value="$PROJECT_DIR$/../build/build-unity.xml" />
         <option value="$PROJECT_DIR$/../build/build-adcolony.xml" />
-        <option value="$PROJECT_DIR$/../build/build.xml" />
         <option value="$PROJECT_DIR$/../build/platform-android-vungle.xml" />
         <option value="$PROJECT_DIR$/../mopub-android/mopub-vungle/build.gradle" />
-        <option value="$PROJECT_DIR$/../mopub-android/mopub/build.gradle" />
         <option value="$PROJECT_DIR$/../build/build-vungle.xml" />
         <option value="$PROJECT_DIR$/mopub-debug/src/MoPubTest-app.xml" />
+        <option value="$PROJECT_DIR$/../mopub-android/mopub/build.gradle" />
+        <option value="$PROJECT_DIR$/../build/platform-android.xml" />
+        <option value="$PROJECT_DIR$/../build/build.xml" />
       </list>
     </option>
   </component>
@@ -375,6 +307,30 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="mopub-debug" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mopub" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mopub" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mopub" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mopub" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -922,12 +878,12 @@
       <workItem from="1475670776993" duration="7862000" />
       <workItem from="1475827043948" duration="2622000" />
       <workItem from="1475835568832" duration="1137000" />
-      <workItem from="1477584282580" duration="2443000" />
+      <workItem from="1477584282580" duration="7388000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="327198000" />
+    <option name="totallyTimeSpent" value="332143000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -958,7 +914,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2484375" sideWeight="0.50570965" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35932204" sideWeight="0.67838126" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35932204" sideWeight="0.67838126" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -992,13 +948,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/mopub-unity/src/main/com/sticksports/nativeExtensions/mopub/unity/MoPubUnitySupport.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="44" column="46" lean-forward="false" selection-start-line="44" selection-start-column="46" selection-end-line="44" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../build/platform-ios-facebook.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -1326,22 +1275,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../build/build.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2040">
-          <caret line="14" column="38" lean-forward="false" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../mopub-android/mopub/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="13" column="17" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../mopub-android/mopub-vungle/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -1370,6 +1303,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="415">
           <caret line="358" column="58" lean-forward="true" selection-start-line="358" selection-start-column="58" selection-end-line="358" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../build/platform-android.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="49" lean-forward="false" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../mopub-android/mopub/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-15">
+          <caret line="0" column="35" lean-forward="false" selection-start-line="0" selection-start-column="35" selection-end-line="0" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../build/build.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="128" column="0" lean-forward="true" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
           <folding />
         </state>
       </provider>

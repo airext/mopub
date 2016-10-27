@@ -1,7 +1,11 @@
 <platform xmlns="http://ns.adobe.com/air/extension/16.0">
     <description></description> 
     <packagedDependencies>
-        <packagedDependency>mopub-sdk-4.7.0.jar</packagedDependency>
+        <packagedDependency>mopub-sdk-4.10.0.jar</packagedDependency>
+        <packagedDependency>mopub-sdk-banner-4.10.0.jar</packagedDependency>
+        <packagedDependency>mopub-sdk-base-4.10.0.jar</packagedDependency>
+        <packagedDependency>mopub-sdk-interstitial-4.10.0.jar</packagedDependency>
+        <packagedDependency>mopub-sdk-rewardedvideo-4.10.0.jar</packagedDependency>
         <packagedDependency>android-support-v4.jar</packagedDependency>
         <packagedDependency>android-support-v7-recyclerview.jar</packagedDependency>
         <packagedDependency>mopub-volley-1.1.0.jar</packagedDependency>
