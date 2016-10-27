@@ -1,9 +1,9 @@
 <platform xmlns="http://ns.adobe.com/air/extension/16.0">
     <description></description> 
     <packagedDependencies>
-        <packagedDependency>dagger-2.1.jar</packagedDependency>
+        <packagedDependency>dagger-2.7.jar</packagedDependency>
         <packagedDependency>javax.inject-1.jar</packagedDependency>
-        <packagedDependency>vungle-publisher-adaptive-id-3.3.5.jar</packagedDependency>
+        <packagedDependency>vungle-publisher-adaptive-id-4.0.3.jar</packagedDependency>
     </packagedDependencies>
 
     <!--<packagedResources>-->

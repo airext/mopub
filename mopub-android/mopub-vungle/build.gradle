@@ -24,8 +24,9 @@ dependencies {
     compile 'com.android.support:appcompat-v7:23.4.0'
 
     compile files('libs/FlashRuntimeExtensions.jar')
-    compile files('libs/vungle-publisher-adaptive-id-3.3.5.jar')
-    compile files('libs/dagger-2.1.jar')
+
+    compile files('libs/vungle-publisher-adaptive-id-4.0.3.jar')
+    compile files('libs/dagger-2.7.jar')
     compile files('libs/javax.inject-1.jar')
 }
 
