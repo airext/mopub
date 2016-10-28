@@ -8,8 +8,6 @@ import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdSize;
 import com.google.android.gms.ads.AdView;
 import com.mopub.common.util.Views;
-import com.mopub.mobileads.CustomEventBanner;
-import com.mopub.mobileads.MoPubErrorCode;
 
 import java.util.Map;
 
@@ -19,7 +17,7 @@ import static com.google.android.gms.ads.AdSize.LEADERBOARD;
 import static com.google.android.gms.ads.AdSize.MEDIUM_RECTANGLE;
 
 /*
- * Compatible with version 7.8.0 of the Google Play Services SDK.
+ * Compatible with version 9.4.0 of the Google Play Services SDK.
  */
 
 // Note: AdMob ads will now use this class as Google has deprecated the AdMob SDK.

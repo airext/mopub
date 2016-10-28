@@ -16,7 +16,7 @@
     <property name="network.air.project.dir" value="../mopub-air/${extension}" />
     <property name="network.android.project.dir" value="../mopub-android/${extension}" />
 
-    <property name="play-services.version" value="9.2.0" />
+    <property name="play-services.version" value="9.4.0" />
 
     <property file="build.properties"/>
 

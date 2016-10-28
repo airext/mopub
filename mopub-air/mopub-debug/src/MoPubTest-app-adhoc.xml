@@ -347,11 +347,15 @@
 							  android:theme="@android:style/Theme.Translucent.NoTitleBar"
 							  android:excludeFromRecents="true" />
 
-                    <!-- MoPub: Required Activity for playback of Vungle video ads -->
-                    <activity
-                            android:name="com.vungle.publisher.FullScreenAdActivity"
-                            android:configChanges="keyboardHidden|orientation|screenSize"
+                    <!-- MoPub: Vungle integration -->
+                    <activity android:name="com.vungle.publisher.VideoFullScreenAdActivity"
+                            android:configChanges="keyboardHidden|orientation|screenSize|screenLayout|smallestScreenSize"
                             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+
+                    <activity android:name="com.vungle.publisher.MraidFullScreenAdActivity"
+                            android:configChanges="keyboardHidden|orientation|screenSize|screenLayout|smallestScreenSize"
+                            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+
 
                     <!-- MoPub: Chartboost integration -->
                     <activity android:name="com.chartboost.sdk.CBImpressionActivity"

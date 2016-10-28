@@ -270,7 +270,7 @@ public class AdColonyRewardedVideo extends CustomEventRewardedVideo {
         }
 
         @Override
-        public void onAdColonyAdStarted(final com.jirbo.adcolony.AdColonyAd adColonyAd) {
+        public void onAdColonyAdStarted(final AdColonyAd adColonyAd) {
             MoPubRewardedVideoManager.onRewardedVideoStarted(
                     AdColonyRewardedVideo.class,
                     sAdToZoneIdMap.get(adColonyAd));

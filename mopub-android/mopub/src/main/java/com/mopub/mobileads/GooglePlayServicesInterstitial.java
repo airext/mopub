@@ -6,13 +6,11 @@ import android.util.Log;
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.InterstitialAd;
-import com.mopub.mobileads.CustomEventInterstitial;
-import com.mopub.mobileads.MoPubErrorCode;
 
 import java.util.Map;
 
 /*
- * Compatible with version 7.8.0 of the Google Play Services SDK.
+ * Compatible with version 9.4.0 of the Google Play Services SDK.
  */
 
 // Note: AdMob ads will now use this class as Google has deprecated the AdMob SDK.

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application xmlns="http://ns.adobe.com/air/application/19.0">
+  <id>com.vungle.anesample</id>
+  <filename>VungleAirSample</filename>
+  <name>Vungle Air Sample</name>
+  <versionNumber>1.0.0</versionNumber>
+  <initialWindow>
+    <content>Vungle-Sample.swf</content>
+    <autoOrients>true</autoOrients>
+    <aspectRatio>any</aspectRatio>
+    <renderMode>cpu</renderMode>
+    <fullScreen>true</fullScreen>
+    <systemChrome>standard</systemChrome>
+  </initialWindow>
+  <iPhone>
+    <requestedDisplayResolution>high</requestedDisplayResolution>
+    <InfoAdditions><![CDATA[<key>UIDeviceFamily</key>
+                <array>
+                    <string>1</string>
+                    <string>2</string>
+                </array>
+                <key>NSAppTransportSecurity</key>
+                <dict>
+                    <key>NSAllowsArbitraryLoads</key>
+                    <true />
+                </dict>]]></InfoAdditions>
+  </iPhone>
+  <android>
+    <manifestAdditions><![CDATA[<manifest android:installLocation="auto">
+                <uses-permission android:name="android.permission.INTERNET" />
+                <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+                    android:maxSdkVersion="18" />
+                <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+                <application>
+                    <meta-data android:name="com.google.android.gms.version"
+                        android:value="@integer/google_play_services_version" />
+                    <activity
+                        android:name="com.vungle.publisher.FullScreenAdActivity"
+                        android:configChanges="keyboardHidden|orientation|screenSize"
+                        android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+                    />
+                </application>
+            </manifest>]]></manifestAdditions>
+  </android>
+  <extensions>
+    <extensionID>com.vungle.extensions.Vungle</extensionID>
+    <extensionID>com.vungle.extensions.android.GooglePlayServices</extensionID>
+    <extensionID>com.sticksports.nativeExtensions.MoPub</extensionID>
+  </extensions>
+</application>
+

@@ -12,7 +12,7 @@
     <property name="air-debug.project.dir" value="../${name}-air/${name}-debug" />
     <property name="android.project.dir" value="../${name}-android/${name}" />
 
-    <property name="mopub.android.sdk" value="mopub-sdk-4.7.0" />
+    <property name="mopub.android.version" value="4.10.0" />
 
 	<property file="build.properties"/>
 
@@ -130,11 +130,36 @@
         <!-- Copy manifest to include it into ANE file -->
         <copy file="${android.project.dir}/src/main/AndroidManifest.xml" todir="temp/android" overwrite="true"/>
 
-        <!-- Extract mopub.aar file and copy .jar file and resources from it -->
-        <unzip src="${android.project.dir}/dependencies/${mopub.android.sdk}.aar" dest="temp/android/tmp/${mopub.android.sdk}" />
-        <copy file="temp/android/tmp/${mopub.android.sdk}/classes.jar" tofile="temp/android/${mopub.android.sdk}.jar" overwrite="true"/>
+        <!-- Extract mopub-sdk.aar file and copy .jar file and resources from it -->
+        <unzip src="${android.project.dir}/dependencies/mopub-sdk-${mopub.android.version}.aar" dest="temp/android/tmp/mopub-sdk-${mopub.android.version}" />
+        <copy file="temp/android/tmp/mopub-sdk-${mopub.android.version}/classes.jar" tofile="temp/android/mopub-sdk-${mopub.android.version}.jar" overwrite="true"/>
         <copy todir="temp/android/${name}-res" overwrite="true">
-            <fileset dir="temp/android/tmp/${mopub.android.sdk}/res" includes="**/**.**" />
+            <fileset dir="temp/android/tmp/mopub-sdk-${mopub.android.version}/res" includes="**/**.**" />
+        </copy>
+
+        <!-- Extract mopub-sdk.aar file and copy .jar file and resources from it -->
+        <unzip src="${android.project.dir}/dependencies/mopub-sdk-banner-${mopub.android.version}.aar" dest="temp/android/tmp/mopub-sdk-banner-${mopub.android.version}" />
+        <copy file="temp/android/tmp/mopub-sdk-banner-${mopub.android.version}/classes.jar" tofile="temp/android/mopub-sdk-banner-${mopub.android.version}.jar" overwrite="true"/>
+        <copy todir="temp/android/${name}-res" overwrite="true">
+            <fileset dir="temp/android/tmp/mopub-sdk-banner-${mopub.android.version}/res" includes="**/**.**" />
+        </copy>
+        <!-- Extract mopub-sdk.aar file and copy .jar file and resources from it -->
+        <unzip src="${android.project.dir}/dependencies/mopub-sdk-base-${mopub.android.version}.aar" dest="temp/android/tmp/mopub-sdk-base-${mopub.android.version}" />
+        <copy file="temp/android/tmp/mopub-sdk-base-${mopub.android.version}/classes.jar" tofile="temp/android/mopub-sdk-base-${mopub.android.version}.jar" overwrite="true"/>
+        <copy todir="temp/android/${name}-res" overwrite="true">
+            <fileset dir="temp/android/tmp/mopub-sdk-base-${mopub.android.version}/res" includes="**/**.**" />
+        </copy>
+        <!-- Extract mopub-sdk.aar file and copy .jar file and resources from it -->
+        <unzip src="${android.project.dir}/dependencies/mopub-sdk-interstitial-${mopub.android.version}.aar" dest="temp/android/tmp/mopub-sdk-interstitial-${mopub.android.version}" />
+        <copy file="temp/android/tmp/mopub-sdk-interstitial-${mopub.android.version}/classes.jar" tofile="temp/android/mopub-sdk-interstitial-${mopub.android.version}.jar" overwrite="true"/>
+        <copy todir="temp/android/${name}-res" overwrite="true">
+            <fileset dir="temp/android/tmp/mopub-sdk-interstitial-${mopub.android.version}/res" includes="**/**.**" />
+        </copy>
+        <!-- Extract mopub-sdk.aar file and copy .jar file and resources from it -->
+        <unzip src="${android.project.dir}/dependencies/mopub-sdk-rewardedvideo-${mopub.android.version}.aar" dest="temp/android/tmp/mopub-sdk-rewardedvideo-${mopub.android.version}" />
+        <copy file="temp/android/tmp/mopub-sdk-rewardedvideo-${mopub.android.version}/classes.jar" tofile="temp/android/mopub-sdk-rewardedvideo-${mopub.android.version}.jar" overwrite="true"/>
+        <copy todir="temp/android/${name}-res" overwrite="true">
+            <fileset dir="temp/android/tmp/mopub-sdk-rewardedvideo-${mopub.android.version}/res" includes="**/**.**" />
         </copy>
 
         <!-- MoPub Volley Library -->

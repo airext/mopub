@@ -137,10 +137,10 @@
             <fileset dir="${network.android.project.dir}/dependencies" includes="*.jar" excludes="FlashRuntimeExtensions.jar" />
         </copy>
 
-        <unzip src="${network.android.project.dir}/dependencies/vungle-publisher-adaptive-id-3.3.5.jar" dest="${temp.dir}/android/tmp/vungle-publisher-adaptive-id-3.3.5" overwrite="true"/>
-        <copy todir="${temp.dir}/android/res/drawable" overwrite="true">
-            <fileset dir="${temp.dir}/android/tmp/vungle-publisher-adaptive-id-3.3.5/assets" includes="**/**.**" />
-        </copy>
+        <!--<unzip src="${network.android.project.dir}/dependencies/vungle-publisher-adaptive-id-4.0.3.jar" dest="${temp.dir}/android/tmp/vungle-publisher-adaptive-id-4.0.3" overwrite="true"/>-->
+        <!--<copy todir="${temp.dir}/android/res/drawable" overwrite="true">-->
+            <!--<fileset dir="${temp.dir}/android/tmp/vungle-publisher-adaptive-id-4.0.3/assets" includes="**/**.**" />-->
+        <!--</copy>-->
 
         <!-- Remove temporary directory for Android artifacts -->
         <delete dir="${temp.dir}/android/tmp" />
