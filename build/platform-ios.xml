@@ -4,7 +4,7 @@
 
     <linkerOptions>
 
-        <option>-ios_version_min 6.0</option>
+        <option>-ios_version_min 7.0</option>
 
         <option>-weak_framework AdSupport</option>
         <option>-framework CoreGraphics</option>
@@ -49,6 +49,6 @@
     </linkerOptions>
 
     <packagedDependencies>
-        <packagedDependency>libmopub-ios-sdk-iOS6.0.a</packagedDependency>
+        <packagedDependency>libmopub-ios-sdk.a</packagedDependency>
     </packagedDependencies>
 </platform>
