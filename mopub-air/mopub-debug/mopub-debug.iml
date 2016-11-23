@@ -38,8 +38,8 @@
         </dependencies>
         <compiler-options />
         <packaging-air-desktop />
-        <packaging-android enabled="true" use-generated-descriptor="false" custom-descriptor-path="$MODULE_DIR$/src/MoPubTest-app-adhoc.xml" package-file-name="mopub-debug_adhoc" />
-        <packaging-ios use-generated-descriptor="false" custom-descriptor-path="$MODULE_DIR$/src/MoPubTest-app-adhoc.xml" package-file-name="mopub-debug_adhoc">
+        <packaging-android use-generated-descriptor="false" custom-descriptor-path="$MODULE_DIR$/src/MoPubTest-app-adhoc.xml" package-file-name="mopub-debug_adhoc" />
+        <packaging-ios enabled="true" use-generated-descriptor="false" custom-descriptor-path="$MODULE_DIR$/src/MoPubTest-app-adhoc.xml" package-file-name="mopub-debug_adhoc">
           <files-to-package>
             <FilePathAndPathInPackage file-path="$MODULE_DIR$/Default-568h@2x.png" path-in-package="Default-568h@2x.png" />
           </files-to-package>
